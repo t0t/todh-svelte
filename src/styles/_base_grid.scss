@@ -1,6 +1,26 @@
-.Main__header {
-    padding-bottom: $h2;
+.Main {
+    @include media(s1) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
+.Main__header {
+    padding: $h0;
+    // background-color: $alpha_white;
+    @include media(s1) {
+        padding: $h1;
+    }
+    @include media(s2) {
+        padding: $h2;
+    }
+}
+.Main__nav {
+    min-height: $h4;
+    @include media(s0) {
+        margin-bottom: $h1;
+    }
+}
+
 // .Main {
 //     @include media(s2) {
 //         display: grid;

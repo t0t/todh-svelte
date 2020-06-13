@@ -1,6 +1,6 @@
 <script>
     import Nav from "../Nav.svelte";
-    import SiteBrand from "../components/SiteBrand.svelte";
+    // import SiteBrand from "../components/SiteBrand.svelte";
     import SiteFooter from "../components/SiteFooter.svelte";
 </script>
 
@@ -18,7 +18,6 @@
 </style>
 
 <main class="Main">
-    <SiteBrand />
     <nav class="Main__nav">
         <Nav />
     </nav>

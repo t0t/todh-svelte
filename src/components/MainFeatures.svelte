@@ -22,40 +22,55 @@
         @include media(s1) {
             display: grid;
             /* grid-template-columns: repeat(auto-fill, minmax($h6, 1fr)); */
-            grid-template-columns: repeat(3, 1fr);
-            /* grid-auto-flow: row;
-            grid-auto-rows: auto; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-flow: auto;
+            grid-auto-rows: auto;
             gap: $h4;
+            grid-template-areas:
+                "a a a"
+                "b b b"
+                "c c c"
+            ;
+        }
+
+        @include media(s2) {
+            grid-template-areas:
+                "a c c"
+                "b c c"
+            ;
+        }
+        @include media(s3) {
             grid-template-areas:
                 "a b c"
             ;
         }
 
-        @include media(s2) {}
-
         >div {
             background-color: $color_3;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-end;
+            /* width: 100%; */
+            /* justify-content: center; */
             /* text-align: center; */
             padding: $h2;
             /* width: $h7;
             height: $h7; */
             border: 1px solid $grey;
             /* border-radius: 50%; */
+            @include media(s3) {
+                padding: $h4;
+            }
 
             &:nth-child(1) {
                 grid-area: a;
             }
-
             &:nth-child(2) {
                 grid-area: b;
             }
-
             &:nth-child(3) {
                 grid-area: c;
             }
+            
         }
     }
 </style>
@@ -65,21 +80,21 @@
 
     <div>
         <a href="/styleguide">
-            <h4>Discernimiento</h4>
+            <h4>Arte</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <small>Learn more ></small>
         </a>
     </div>
     <div>
         <a href="/styleguide">
-            <h4>Discernimiento</h4>
+            <h4>Diseño de interfaces</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <small>Learn more ></small>
         </a>
     </div>
     <div>
         <a href="/styleguide">
-            <h4>Discernimiento</h4>
+            <h4>Pensamento holístico</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <small>Learn more ></small>
         </a>

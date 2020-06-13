@@ -46,7 +46,7 @@
     <title>TODH</title>
   </svelte:head>
   
-  <PageTitle pageTitle="T O D H" pageSubTitle="Visión holística y artefactos en torno a la Creación 👋" />
+  <PageTitle pageTitle="TODH" pageSubTitle="Visión holística y artefactos en torno a la Creación 👋" />
   
   <Content>
     <ContentArea>

@@ -44,7 +44,7 @@
                 margin-right: auto;
                 margin-top: $h5;
                 max-width: 90%;
-                /* border: 1px solid $alpha_grey; */
+                border: 1px solid $alpha_grey;
                 padding: $h3;
                 /* background-color: $tertiary; */
             }
@@ -60,7 +60,8 @@
 
         &ImgContainer {
             width: 100%;
-            overflow: hidden;
+            margin-top: $h4;
+            /* overflow: hidden; */
         }
     }
 </style>
