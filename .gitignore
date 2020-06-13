@@ -1,4 +1,7 @@
 /node_modules/
 /public/build/
 
+# Ignore public in order to deploy o gh-pages
+/public
+
 .DS_Store
