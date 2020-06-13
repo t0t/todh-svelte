@@ -1,7 +1,6 @@
 <script>
     import { url } from "@sveltech/routify";
     let home = "/";
-    export let NavBar__center = "";
 </script>
 
 <style lang="scss">
@@ -47,7 +46,7 @@
     }
 </style>
 
-<div class="NavBar__center">
+<div>
     <a href="{$url(home)}" class="SiteBrand" alt="Brand Logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 39">
             <title>Brand Logo</title>
