@@ -1,0 +1,10 @@
+svg {
+    fill: $alpha_black;
+    object-fit: cover;
+
+    circle,
+    path {
+        stroke: $alpha_black;
+        stroke-width: .5;
+    }
+}

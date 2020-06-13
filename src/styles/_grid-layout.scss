@@ -1,0 +1,115 @@
+// .Grid {
+//   @include media(s1) {
+//     display: grid;
+//     gap: $h5;
+//   }
+// }
+
+// .GridItem {
+//   padding-left: $h0;
+//   padding-right: $h0;
+
+//   @include media(s1) {
+//     padding-left: $h1;
+//     padding-right: $h1;
+//   }
+  
+//   @include media(s2) {
+//     padding-left: $h4;
+//     padding-right: $h4;
+//   }
+
+//   // @include media(s3) {
+//   //   padding-left: $h4;
+//   //   padding-right: $h4;
+//   // }
+
+//   @include media(s4) {
+//     padding-left: $h5;
+//     padding-right: $h5;
+//   }
+
+//   &FullRow {
+//     grid-column: -1/1;
+//   }
+//   &HalfRow {
+//     grid-column: 2 / span 2;
+//   }
+// }
+
+// .GridItemFluid {
+//   grid-column: -1/1;
+//   padding: $h2;
+// }
+
+// .GridArticle {
+//   &Title {
+//     margin-bottom: $h2;
+//   }
+//     p {
+//       margin-left: auto;
+//       margin-right: auto;
+//     }
+// }
+
+// .GridHome {
+//   text-align: center;
+//   @include media(s1) {
+//     grid-auto-rows: auto;
+//     grid-auto-flow: row;
+//   }
+//   @include media(s1) {
+//     .GridItem:nth-child(1) {
+//       grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+//     }
+//   }
+//   @include media(s2) {
+//     .GridItem:nth-child(1) {
+//       grid-column: -1/1;
+//       grid-template-columns: repeat(4, 1fr);
+//       align-items: center;
+//     }
+//   }
+
+//   .cualidades_btn {
+//     grid-column: -1 / 1;
+//   }
+
+//   figure {
+//     width: 100%;
+
+//     img {
+//       height: 100%;
+//       width: 100%;
+//       object-fit: cover;
+//     }
+//   }
+
+// }
+
+// // Paneles en Home
+// .GridSteps {
+//   display: grid;
+//   gap: $h3;
+//   @include media(s1) {
+//     grid-template-columns: 1fr;
+//   }
+//   @include media(s2) {
+//     grid-template-columns: 1fr 1fr;
+//   }
+//   &Nav {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-bottom: $h3;
+    
+//     button {
+//       margin-right: $h2;
+//       margin-bottom: 0;
+//       border-radius: 50%;
+//     }
+//     button[disabled] {
+//       display: none;
+//     }
+//   }
+// }

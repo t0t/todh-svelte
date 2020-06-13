@@ -1,0 +1,356 @@
+.StyleGuide.Main {
+    gap: $h0;
+    padding: $h1;
+    border: 2px solid green;
+    position: relative;
+
+    &:before {
+        color: green;
+        content: ".Main";
+        position: absolute;
+        top: $h-2;
+        left: $h-2;
+        font-size: $h0;
+        font-weight: bold;
+    }
+
+    > div {
+        position: relative;
+        border: 1px solid green;
+
+        &:before {
+            color: green;
+        }
+    }
+
+    div {
+        position: relative;
+        min-height: $h3;
+
+        &:before {
+            position: absolute;
+            font-size: $h0;
+            top: $h-2;
+            left: $h-2;
+        }
+    }
+
+    &__brand {
+        &:before {
+            content: ".Main__brand";
+        }
+    }
+
+    &__header {
+        border: 1px solid black;
+        &:before {
+            content: ".Main__header";
+        }
+    }
+
+    &__content {
+        padding: $h2;
+        &:before {
+            content: ".Main__content";
+        }
+    }
+
+    &__nav {
+        &:before {
+            content: ".Main__nav";
+        }
+    }
+
+    &__footer {
+        &:before {
+            content: ".Main__footer";
+        }
+    }
+
+    &__sidebar {
+        &:before {
+            content: ".Main__sidebar";
+        }
+    }
+
+    &__totop {
+        &:before {
+            content: ".Main__totop";
+        }
+    }
+}
+
+.StyleGuide.Content {
+    width: 100%;
+    min-height: 100%;
+    border: 2px solid blue;
+    padding: $h1;
+    &:before {
+        content: ".Content";
+        color: blue;
+        font-weight: bold;
+    }
+
+    div {
+        border: 1px solid $blue;
+
+        &:before {
+            color: blue;
+        }
+    }
+
+    &__header {
+        &:before {
+            content: ".Content__header"
+        }
+    }
+
+    &__area {
+        border: 1px solid $silver;
+        gap: $h-2;
+        padding: $h1;
+
+        &:before {
+            content: ".Content__area"
+        }
+    }
+
+    &__nav {
+        &:before {
+            content: ".Content__nav"
+        }
+    }
+
+    &__footer {
+        &:before {
+            content: ".Content__footer";
+        }
+    }
+}
+
+.StyleGuide.Area {
+    border: 1px dotted red;
+    position: relative;
+    min-height: $h2;
+
+    &:before {
+        content: ".Area";
+        color: red;
+        position: absolute;
+        top: $h-1;
+        left: $h-1;
+        font-weight: bold;
+        font-size: $h0;
+    }
+}
+
+.Colors {
+    @include media(s1) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax($h5, 1fr));
+        grid-auto-rows: auto;
+        grid-auto-flow: row;
+    }
+    > div {
+        &:after {
+            font-size: $h0;
+        }
+        &:before {
+            font-size: $h0;
+        }
+        &:nth-child(1) {
+            background-color: $primary;
+            padding: $h0;
+            &:before {
+                content: "#{$primary}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$primary";
+            }
+        }
+        &:nth-child(2) {
+            background-color: $secondary;
+            padding: $h-1;
+            &:before {
+                content: "#{$secondary}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$secondary";
+            }
+        }
+        &:nth-child(3) {
+            background-color: $tertiary;
+            padding: $h0;
+            &:before {
+                content: "#{$tertiary}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$tertiary";
+            }
+        }
+        &:nth-child(4) {
+            background-color: $quaternary;
+            padding: $h0;
+            &:before {
+                content: "#{$quaternary}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$quaternary";
+            }
+        }
+
+        &:nth-child(5) {
+            background-color: $blue;
+            padding: $h0;
+            &:before {
+                content: "#{$blue}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$blue";
+            }
+        }
+        &:nth-child(6) {
+            background-color: $alpha_black;
+            
+            &:before {
+                content: "#{$alpha_black}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$alpha_black";
+            }
+        }
+        &:nth-child(7) {
+            background-color: $alpha_grey;
+            
+            &:before {
+                content: "#{$alpha_grey}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$alpha_grey";
+
+            }
+        }
+        &:nth-child(8) {
+            background-color: $alpha_white;
+            
+            &:before {
+                content: "#{$alpha_white}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$alpha_white";
+            }
+        }
+        &:nth-child(9) {
+            background-color: $grey;
+            
+            &:before {
+                content: "#{$grey}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$grey";
+            }
+        }
+        &:nth-child(10) {
+            background-color: $dark_grey;
+            
+            &:before {
+                content: "#{$dark_grey}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$dark_grey";
+            }
+        }
+        &:nth-child(11) {
+            background-color: $black;
+            padding: $h0;
+            &:before {
+                content: "#{$black}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$black";
+            }
+        }
+        &:nth-child(12) {
+            background-color: $white;
+            padding: $h0;
+            &:before {
+                content: "#{$white}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$white";
+            }
+        }
+        &:nth-child(13) {
+            background-color: $silver;
+            padding: $h0;
+            &:before {
+                content: "#{$silver}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$primary";
+            }
+        }
+        &:nth-child(14) {
+            background-color: $color_1;
+            padding: $h0;
+            &:before {
+                content: "#{$color_1}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$color_1";
+            }
+        }
+        &:nth-child(15) {
+            background-color: $color_2;
+            padding: $h0;
+            &:before {
+                content: "#{$color_2}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$color_2";
+            }
+        }
+        &:nth-child(16) {
+            background-color: $color_3;
+            padding: $h0;
+            &:before {
+                content: "#{$color_3}";
+                font-weight: bold;
+                display: block;
+            }
+            &:after {
+                content: "$color_3";
+            }
+        }
+    }
+}

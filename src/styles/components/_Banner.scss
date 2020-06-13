@@ -1,0 +1,27 @@
+.Banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: auto;
+    gap: $h3;
+    padding: $h3;
+    
+    small {
+        padding-bottom: 0;
+    }
+    
+    p {
+        margin-bottom: 0;
+    }
+    
+    &Black {
+        color: $white;
+        background-color: $black;
+        svg {        
+            circle,
+            path {
+                stroke: $white;
+            }
+        }
+    }
+  }

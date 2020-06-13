@@ -1,0 +1,28 @@
+// Colors
+$color_1: #fde0be;
+$color_2: #ffd8d7;
+$color_3: #e9e4e0;
+$blue: blue;
+$silver: silver;
+
+$white: white;
+$black_light: #202020;
+$black: $black_light;
+
+$light_grey: $color_3;
+$grey: #878787;
+$dark_grey: #242424;
+
+$primary: $black_light;
+$secondary: #fe8e88;
+$tertiary: #82786f;
+$quaternary: darksalmon;
+$site_background: $color_3;
+
+$alpha_black: rgba($black, 0.9);
+$alpha_grey: rgba($black, 0.2);
+$alpha_white: rgba($white, 0.5);
+
+.BgColorAlert {
+    background-color: $secondary;
+}
