@@ -10,31 +10,32 @@
   // import Loading from "../components/Loading.svelte";
   import BlockQuote from "../components/BlockQuote.svelte";
   // import Button from "../components/Button.svelte";
-  // import Cards from "../components/Cards.svelte";
-  // import Card from "../components/Card.svelte";
+  import Cards from "../components/Cards.svelte";
+  import Card from "../components/Card.svelte";
   import IconEspiral from "../components/icons/IconEspiral.svelte";
   import IconTres from '../components/icons/IconTres.svelte';
-  import Step0 from '../components/Step0.svelte';
-  import Step1 from '../components/Step1.svelte';
-  import Step2 from '../components/Step2.svelte';
-  import Step3 from '../components/Step3.svelte';
-  import Step4 from '../components/Step4.svelte';
+  import MainFeatures from '../components/MainFeatures.svelte';
+  // import Step0 from '../components/Step0.svelte';
+  // import Step1 from '../components/Step1.svelte';
+  // import Step2 from '../components/Step2.svelte';
+  // import Step3 from '../components/Step3.svelte';
+  // import Step4 from '../components/Step4.svelte';
 
-  let step = 0;
-  let inX = 1000;
-  let outX = -1000;
+  // let step = 0;
+  // let inX = 1000;
+  // let outX = -1000;
 
-  function prev() {
-    inX = -1000;
-    outX = 1000;
-    step = step - 1;
-  }
+  // function prev() {
+  //   inX = -1000;
+  //   outX = 1000;
+  //   step = step - 1;
+  // }
 
-  function next() {
-    inX = 1000;
-    outX = -1000;
-    step = step + 1;
-  }
+  // function next() {
+  //   inX = 1000;
+  //   outX = -1000;
+  //   step = step + 1;
+  // }
   </script>
   
   <style lang="scss">
@@ -50,7 +51,7 @@
   <Content>
     <ContentArea>
       
-      <Area>
+      <!-- <Area>
         <div class="Content__nav">
           <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
           <button on:click="{next}" disabled="{step > 3}">&gt;</button>
@@ -77,7 +78,9 @@
           <Step4/>
         </div>
       {/if}
-      </Area>
+      </Area> -->
+
+      <MainFeatures></MainFeatures>
 
       <Banner variante={1}>
         <IconTres />

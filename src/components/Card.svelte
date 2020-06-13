@@ -7,6 +7,7 @@
     export let hasImage = true;
     export let hasInlineSvg = false;
     export let variante = 2;
+    export let href;
     let modificador = [
         "Default",
         "Inverse",
@@ -38,7 +39,14 @@
 .Transparent {
     border: none;
 }
+.hasLink {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .Card {
+    
     &Title {
         padding-top: $h1;
         padding-bottom: $h0;
@@ -55,7 +63,10 @@
 }
 </style>
 
-<div class="Card  {modificador[variante]}">
+<div 
+class="Card  {modificador[variante]}" 
+>
+<a href={href}>
     {#if hasImage}
         <img src="{image}" alt="{alt}">
     {/if}
@@ -67,4 +78,5 @@
         <p class="CardContent">{description}</p>
         <slot></slot>
     </div>
+</a>
 </div>

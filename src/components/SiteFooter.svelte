@@ -6,8 +6,10 @@
   @import "../styles/main.scss";
 
   .Main__footer {
+    padding: $h2;
     @include media(s1) {
       display: grid;
+      gap: $h1;
       grid-template-columns: 1fr;
       grid-auto-flow: row;
       grid-template-areas: 
@@ -15,7 +17,6 @@
       ". l"
       ". p"
       ;
-      gap: $h1;
     }
     @include media(s2) {
       padding-top: $h3;

@@ -18,10 +18,17 @@ $primary_font: Helvetica, Arial, sans-serif;
 $secondary_font: $primary_font;
 $tertiary_font: $secondary_font;
 
-body > * {
-  font-family: 'Montserrat', sans-serif;
+body > *,
+blockquote small {
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+h1,
+h3, blockquote {
+  font-family: 'Libre Baskerville', serif;
+  // font-family: 'Josefin Sans', sans-serif;
 
+}
 
 em {
   font-style: italic;
