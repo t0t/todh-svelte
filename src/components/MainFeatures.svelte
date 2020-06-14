@@ -9,19 +9,15 @@
     @import "../styles/main.scss";
 
     .MainFeatures {
-        padding: $h4;
-        width: 100%;
-        /* height: 100vh; */
-        /* background-repeat: no-repeat;
-        background-size: cover; */
-
+        padding: $h1;
+        
         a:hover small {
             text-decoration: underline;
         }
-
+        
         @include media(s1) {
+            padding: $h4;
             display: grid;
-            /* grid-template-columns: repeat(auto-fill, minmax($h6, 1fr)); */
             grid-template-columns: 1fr 1fr 1fr;
             grid-auto-flow: auto;
             grid-auto-rows: auto;
@@ -49,14 +45,15 @@
             background-color: $color_3;
             display: flex;
             align-items: flex-end;
-            /* width: 100%; */
-            /* justify-content: center; */
-            /* text-align: center; */
             padding: $h2;
-            /* width: $h7;
-            height: $h7; */
             border: 1px solid $grey;
-            /* border-radius: 50%; */
+            @include media(s0) {
+                margin-bottom: $h1;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
             @include media(s3) {
                 padding: $h4;
             }

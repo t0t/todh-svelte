@@ -56,7 +56,8 @@
       padding-bottom: $h1;
     }
     a {
-      @include media(s2) {
+      margin-right: $h0;
+      @include media(s1) {
         margin-right: $h1;
       }
 
@@ -87,10 +88,10 @@
   </div>
 
   <div class="Bio">
-    <small>
+    <p>
       <strong>Sergio Forés</strong>
       es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
-    </small>
+    </p>
   </div>
   
   <ul class="Links">
