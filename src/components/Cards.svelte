@@ -13,11 +13,6 @@
             grid-auto-flow: row;
             gap: $h2;
         }
-        /* @include media(s3) {
-            grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
-            gap: $h3;
-            background-color: yellow;
-        } */
     }
 </style>
 
