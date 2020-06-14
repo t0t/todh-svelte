@@ -45,7 +45,7 @@
           title={producto.title} 
           description={producto.description} 
           image={producto.imagen}
-          variante={3}>
+          variante={3}/></Card>
         </a>
       {:else}
         <Loading/>
