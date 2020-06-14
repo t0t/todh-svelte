@@ -32,7 +32,13 @@
         &Content {
             h3 {
                 text-align: inherit;
-                margin-bottom: $h3;
+                margin-bottom: $h0;
+                @include media(s1) {
+                    margin-bottom: $h0;
+                }
+                @include media(s2) {
+                    margin-bottom: $h1;
+                }
             }
 
             img {
@@ -42,7 +48,7 @@
             @include media(s2) {
                 margin-left: auto;
                 margin-right: auto;
-                margin-top: $h5;
+                margin-top: $h4;
                 max-width: 90%;
                 border: 1px solid $alpha_grey;
                 padding: $h3;
@@ -60,8 +66,11 @@
 
         &ImgContainer {
             width: 100%;
-            margin-top: $h4;
-            /* overflow: hidden; */
+            margin-top: $h3;
+            margin-bottom: $h3;
+            @include media(s2) {
+                margin-top: $h4;
+            }
         }
     }
 </style>

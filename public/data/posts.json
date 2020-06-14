@@ -1,13 +1,12 @@
 [
   {
     "id": 0,
-    "slug": "post0",
+    "slug": "todo-viene-de-un-prototipo",
     "title": "Todo viene de un prototipo",
     "subtitle": "01234",
     "thumb": "img/grafico-2.svg",
     "excerpt": "¿Puede existir un molde más original que la Creación?",
     "imagen": "img/grafico-4.svg",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque neque quos amet, incidunt quo, ipsam vero nostrum maiores temporibus molestiae quae? Officiis eos commodi cumque obcaecati, iure similique temporibus.",
     "content": {
       "h1": "¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
       "img1": "img/detalle1.jpg",
@@ -34,13 +33,12 @@
   },
   {
     "id": 1,
-    "slug": "post1",
+    "slug": "todo-viene-de-un-prototipo-2",
     "title": "Todo viene de un prototipo (2)",
     "subtitle": "Parte 2",
     "imagen": "img/grafico-5.svg",
     "thumb": "img/grafico-5.svg",
     "excerpt": "Un prototipo es ya de algún modo, ese 'algo' latente que andamos buscando.",
-    "description": "Lgggggg",
     "content": {
       "h1": "Bajo un paradigma funcional sistémico y vivo",
       "img1": "img/detalle1.jpg",
@@ -67,17 +65,16 @@
   },
   {
     "id": 3,
-    "slug": "mi-workflow",
+    "slug": "mi-workflow-ideal",
     "title": "Mi workflow ideal para prototipado UI",
     "subtitle": "Svelte, Sass, CSS Grid, Git, VS Code",
     "imagen": "img/vibra.svg",
     "thumb": "img/vibra.svg",
     "excerpt": "Mantener las cosas tan simples como se pueda, que luego ya habrá tiempo para complicaciones",
-    "description": "Lgggggg",
     "content": {
       "h1": "Precedentes",
-      "img1": "img/detalle1.jpg",
-      "img2": "img/grafico-4.svg",
+      "img1": "img/grafico-0.svg",
+      "img2": "img/grafico-0.svg",
       "p": "Recuerdo la primera web que hice, mucho ha llovido en el panorama web desde entonces, ahora usamos metodologías, convenciones, tecnologías, roles, etc que son muy distintos y mejores. Sin embargo el espíritu es el mismo... o debería serlo.",
       "blockquote": "<blockquote>Lo más importante en la vida es que lo más importante sea lo más importante</blockquote>",
       "p2": "",
