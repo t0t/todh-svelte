@@ -1,6 +1,6 @@
 <script>
     import Loading from '../components/Loading.svelte';
-    import List from '../components/List.svelte';
+    // import List from '../components/List.svelte';
     import {
         onMount
     } from 'svelte';
@@ -13,13 +13,16 @@
     });
 </script>
 
-<List>
-    {#each conceptos as concepto}
-    <li>
-      <p><strong>{concepto.title} </strong>{@html concepto.text}
-      <a href="{concepto.href}" target="{concepto.target}"><small>{concepto.link}</small></a></p>
-    </li>
-    {:else}
-        <Loading/>
-    {/each}
-</List>
+<style lang="scss">
+    @import "../styles/main.scss";
+</style>
+
+<dl>
+{#each conceptos as concepto}
+    <dt>{concepto.title}</dt>
+    <dd>
+        {@html concepto.text}
+        <a href={concepto.href} target={concepto.target}>{concepto.link}</a>
+    </dd>
+{/each}
+</dl>

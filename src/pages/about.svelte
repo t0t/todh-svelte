@@ -3,12 +3,6 @@
     onMount
   } from 'svelte';
 
-  // let productos = [];
-  // onMount(async () => {
-  //   const res = await fetch("/data/products.json");
-  //   productos = [...await res.json()];
-  // });
-
   import PageTitle from '../components/PageTitle.svelte';
   import BlockQuote from '../components/BlockQuote.svelte';
   import Content from '../components/Content.svelte';
@@ -105,11 +99,9 @@
 
 <PageTitle pageTitle="El proceso de la Creación" pageSubTitle="Matriz-modelo-prototipo base de cualquier cosa." />
 
-
 <Content>
   <ContentArea>
 
-    <Area>
     <Cards>
       <Card title="0" variante={4} description={cualidades.cero[count]} image="img/grafico-cero.svg">
         <button on:click={increment}>
@@ -117,31 +109,30 @@
         </button>
       </Card>
 
-      <Card title="1" variante={1} description={cualidades.uno[count]} image="img/grafico-uno.svg">
+      <Card title="1" variante={4} description={cualidades.uno[count]} image="img/grafico-uno.svg">
         <button on:click={increment}>
           +
         </button>
       </Card>
 
-      <Card title="2" variante={2} description={cualidades.dos[count]} image="img/dos.svg">
+      <Card title="2" variante={4} description={cualidades.dos[count]} image="img/dos.svg">
         <button on:click={increment}>
           +
         </button>
       </Card>
 
-      <Card title="3" variante={3} description={cualidades.tres[count]} image="img/tres.svg">
+      <Card title="3" variante={4} description={cualidades.tres[count]} image="img/tres.svg">
         <button on:click={increment}>
           +
         </button>
       </Card>
 
-      <Card title="4" description={cualidades.cuatro[count]} image="img/cuatro.svg" variante={0}>
+      <Card title="4" description={cualidades.cuatro[count]} image="img/cuatro.svg" variante={4}>
         <button on:click={increment}>
           +
         </button>
       </Card>
     </Cards>
-    </Area>
 
     <Banner>
       <figure slot="image">

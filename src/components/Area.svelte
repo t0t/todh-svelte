@@ -6,29 +6,34 @@
     @import "../styles/main.scss";
 
     .Area {
+        padding-top: $h1;
+        padding-right: $h1;
+        padding-bottom: $h1;
+        padding-left: $h1;
+
         @include media(s1) {
-            margin-bottom: $h1;
-            padding: $h1;
+            padding-top: $h2;
+            padding-right: $h3;
+            padding-bottom: $h2;
+            padding-left: $h3;
         }
+
         @include media(s2) {
-            padding: $h2;
+            max-width: $h9;
+            margin-left: auto;
+            margin-right: auto;
         }
+        
         @include media(s3) {
-            margin-left: $h4;
-            margin-right: $h4;
-            padding: $h2;
+            max-width: $h10;
         }
     }
-    /* .Banner ~ .Area{
-        margin-top: $h4;
-    } */
+
     h3,
     h5 {
-        text-align: center;
-        padding-bottom: $h1;
+        padding-bottom: $h2;
         color: $alpha_grey;
     }
-    
 </style>
 
 <article class="Area">

@@ -3,8 +3,10 @@
     .Cards {
         display: grid;
         gap: $h0;
+        padding: $h0;
         @include media(s1) {
             gap: $h1;
+            padding: $h1;
             grid-template-columns: repeat(auto-fill, minmax($h6, 1fr));
         }
         @include media(s2) {
@@ -12,6 +14,7 @@
             grid-auto-rows: auto;
             grid-auto-flow: row;
             gap: $h2;
+            padding: $h2;
         }
     }
 </style>

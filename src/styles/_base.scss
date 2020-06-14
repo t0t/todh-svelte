@@ -12,22 +12,14 @@ body {
   }
   margin: 0 !important;
 }
-small {
-  // display: block;
-}
-body > * {
-  // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
 img {
   width: auto;
   max-width: 100%;
   height: auto;
 }
-article {
-  // @include padding-top(2);
-}
+
 *:focus {
-  // background-color: $light_grey;
 	  outline: none;
 }
 a {
@@ -40,16 +32,16 @@ a {
   &:focus {
     outline: color $secondary 5px;
   }
-
 }
 
-.GridArticle a[target="_blank"]::after {
+
+a[target="_blank"]::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   margin: 0px 3px 0px 5px;
 }
 
 p,
-blockquote {
+dl {
   @include margin-bottom(1);
   @include media(s0) {
     @include type-setting(0);
@@ -59,23 +51,17 @@ blockquote {
   }
   @include media(s2) {
     @include type-setting(0);
-    max-width: $s2;
     margin-left: auto;
     margin-right: auto;
   }
   @include media(s3) {
-    max-width: $h9;
     @include type-setting(1);
   }
   @include media(s4) {
-    max-width: $h10;
     @include type-setting(2);
   }
 }
 
-strong {
-  font-weight: bold;
-}
 button:hover {
   cursor: pointer;
 }
@@ -96,6 +82,7 @@ h1 {
   @include media(s4) {
     @include type-setting(6);
   }
+  font-weight: normal;
 }
 
 h2 {
@@ -156,7 +143,6 @@ h6 {
   }
 }
 
-
 small,
 h6, h5 {
   text-align: left;
@@ -170,11 +156,16 @@ h6, h5 {
   }
 }
 
+li a {
+  color: $tertiary;
+}
+
 pre, code {
   font-family: monospace, monospace;
   @include type-setting(0);
   text-align: left;
 }
+
 pre {
   overflow: auto;
   background-color: $light_grey;
@@ -186,24 +177,11 @@ pre {
     color: $secondary;
   }
 }
+
 pre > code {
   display: block;
   padding: 1rem;
   word-wrap: normal;
-}
-
-.title {
-  @include margin-top(1);
-  @include media(s2) {
-    @include margin-top(2);
-    @include margin-bottom(1);
-    text-align: center;
-  }
-  @include media(s3) {
-    @include margin-top(4);
-    @include margin-bottom(2);
-    text-align: center;
-  }
 }
 
 label {

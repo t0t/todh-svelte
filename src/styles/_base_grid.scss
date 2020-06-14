@@ -19,7 +19,6 @@
     min-height: $h4;
     @include media(s0) {
         margin-bottom: $h1;
-        background-color: yellow;
     }
     @include media(s1) {}
 }

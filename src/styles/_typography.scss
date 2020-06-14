@@ -23,16 +23,13 @@ blockquote small {
   // font-family: 'Montserrat', sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
+
 h1,
 h3, 
 blockquote, 
 .NavBar {
   font-family: 'Libre Baskerville', serif;
   // font-family: 'Josefin Sans', sans-serif;
-}
-
-em {
-  font-style: italic;
 }
 
 .text-center {
@@ -63,6 +60,11 @@ h1,
 dt {
   font-weight: bold;
 }
+
 h2 {
   font-weight: normal;
+}
+
+dd {
+  margin-bottom: $h1;
 }

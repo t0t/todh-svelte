@@ -13,10 +13,11 @@
     @import "../styles/main.scss";
 
     .Quote {
-        color: $primary;
+        /* color: $tertiary; */
         font-style: italic;
+        margin-bottom: $h1;
+        @include type-setting(1);
     }
-
     .Default {
         color: $white;
     }
@@ -29,6 +30,6 @@
 </style>
 
 <blockquote class="Quote QuoteLine {modificador[variante]}">
-    <strong>"{quote}"</strong><br>
+    "{quote}"<br>
     <small>{author}</small>
 </blockquote>

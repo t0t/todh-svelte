@@ -7,28 +7,33 @@
 
   .Main__footer {
     padding: $h2;
+
     @include media(s1) {
       display: grid;
       gap: $h1;
+      padding-left: $h3;
+      padding-top: $h4;
       grid-template-columns: 1fr;
       grid-auto-flow: row;
-      grid-template-areas: 
-      "a b"
-      ". l"
-      ". p"
+      grid-template-areas:
+        "a b"
+        ". l"
+        ". p"
       ;
     }
+
     @include media(s2) {
       padding-top: $h3;
       padding-bottom: $h3;
       gap: $h2;
     }
+
     @include media(s3) {
       /* background-color: blue; */
-      grid-template-areas: 
-      "a b p"
-      ". l p"
-      ". . p"
+      grid-template-areas:
+        "a b p"
+        ". l p"
+        ". . p"
       ;
     }
   }
@@ -36,12 +41,16 @@
   .Player {
     grid-area: p;
   }
+
   .Bio {
     grid-area: b;
+    max-width: $h9;
   }
 
   .Avatar {
     grid-area: a;
+    justify-self: end;
+
     img {
       border-radius: 50%;
       max-width: $h4;
@@ -49,14 +58,21 @@
     }
   }
 
+  a[target="_blank"]::after {
+    display: none;
+  }
+
   .Links {
     grid-area: l;
+
     @include media(s0) {
       padding-top: $h1;
       padding-bottom: $h1;
     }
+
     a {
       margin-right: $h0;
+
       @include media(s1) {
         margin-right: $h1;
       }
@@ -64,14 +80,17 @@
       svg {
         fill: $alpha_black;
         width: $h2;
+
         circle,
         path {
           stroke: none;
         }
+
         path,
         rect,
         polygon {
           fill: $alpha_grey;
+
           &:hover {
             fill: $primary;
           }
@@ -90,10 +109,11 @@
   <div class="Bio">
     <p>
       <strong>Sergio Forés</strong>
-      es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
+      es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero
+      también plasmar ideas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
     </p>
   </div>
-  
+
   <ul class="Links">
     <li>
       <a href="https://www.instagram.com/t.o.d.h/" target="_blank" rel="noopener">
@@ -165,7 +185,9 @@
   </ul>
 
   <div class="Player">
-    <AudioPlayer src="https://sveltejs.github.io/assets/music/mozart.mp3" title="Requiem in D minor, K. 626 - III. Sequence - Lacrymosa" composer="Wolfgang Amadeus Mozart" performer="Markus Staab" />
+    <AudioPlayer src="https://sveltejs.github.io/assets/music/mozart.mp3"
+      title="Requiem in D minor, K. 626 - III. Sequence - Lacrymosa" composer="Wolfgang Amadeus Mozart"
+      performer="Markus Staab" />
   </div>
 
 </footer>

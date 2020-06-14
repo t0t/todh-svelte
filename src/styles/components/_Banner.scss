@@ -5,23 +5,47 @@
     height: auto;
     gap: $h3;
     padding: $h3;
-    
+
     small {
         padding-bottom: 0;
     }
-    
+
     p {
         margin-bottom: 0;
     }
-    
+
     &Black {
         color: $white;
         background-color: $black;
-        svg {        
+
+        svg {
+
             circle,
             path {
                 stroke: $white;
             }
         }
     }
-  }
+}
+
+.Area~.Banner {
+    margin-top: $h1;
+
+    @include media(s2) {
+        margin-top: $h4;
+        // background-color: lime;
+    }
+}
+
+.Area > blockquote {
+    font-weight: 700;
+    margin-top: $h3;
+    margin-bottom: $h3;
+    @include type-setting(0);
+    color: $alpha_grey;
+    text-align: right;
+
+    small {
+        font-weight: 100;
+    }
+}

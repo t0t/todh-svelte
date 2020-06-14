@@ -59,9 +59,6 @@
         
         <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
     
-        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
-
-        <BlockQuote variante={2} quote="This is a blockquote" author="Author" />
     </Area>
 
     <Area title="Icons and graphics">
@@ -204,7 +201,8 @@
     </Area>
 
     <Banner variante={0}>
-        Banner (inverted variant) with simple text inside
+        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
     </Banner>
 
     <Banner variante={1}>

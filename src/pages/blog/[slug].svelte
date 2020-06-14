@@ -2,12 +2,13 @@
     import {
     onMount
   } from 'svelte';
-    import Content from "../../components/Content.svelte";
-    import ContentArea from "../../components/ContentArea.svelte";
-    import Area from "../../components/Area.svelte";
     import {
         url
     } from "@sveltech/routify";
+    import PageTitle from "../../components/PageTitle.svelte";
+    import Content from "../../components/Content.svelte";
+    import ContentArea from "../../components/ContentArea.svelte";
+    import Area from "../../components/Area.svelte";
     export let slug;
 
     let elpost = [];
@@ -21,7 +22,9 @@
     @import "../../styles/main.scss";
 
     .Post {
-        padding: $h2;
+        @include media(s0) {
+            padding: $h0;
+        }
 
         &Article h3 {
             text-align: center;
@@ -46,17 +49,13 @@
             }
 
             @include media(s2) {
-                margin-left: auto;
-                margin-right: auto;
                 margin-top: $h4;
-                max-width: 90%;
-                border: 1px solid $alpha_grey;
-                padding: $h3;
-                /* background-color: $tertiary; */
+                background-color: $alpha_white;
+                padding: $h2;
             }
-
+            
             @include media(s3) {
-                max-width: 68%;
+                padding: $h4;
             }
         }
 
@@ -66,14 +65,23 @@
 
         &ImgContainer {
             width: 100%;
-            margin-top: $h3;
             margin-bottom: $h3;
-            @include media(s2) {
-                margin-top: $h4;
+            @include media(s0) {
+                margin-top: $h3;
             }
         }
     }
 </style>
+
+<svelte:head>
+  <title>Blog de TODH</title>
+</svelte:head>
+
+{#each elpost as post}
+{#if (post.slug === slug)}
+    <PageTitle pageTitle={post.title} pageSubTitle={post.subtitle} />
+{/if}
+{/each}
 
 <Content>
     <ContentArea>
@@ -82,12 +90,6 @@
         {#each elpost as post}
         {#if (post.slug === slug)}
             <article class="PostArticle">
-                <h1 class="PostHeader">
-                    {post.title}
-                </h1>
-                <h3>
-                    {@html post.subtitle}
-                </h3>
                 <div class="PostImgContainer">
                     <img src="/{post.imagen}" alt="{post.title}"/>
                 </div>

@@ -34,7 +34,6 @@
 <Content>
 <ContentArea>
 
-  <Area>
     <Cards>
       {#each posts as post}
         <Card 
@@ -46,7 +45,6 @@
         </Card>
       {/each}
     </Cards>
-  </Area>
 
   </ContentArea>
   </Content>  

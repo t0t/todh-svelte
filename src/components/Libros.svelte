@@ -12,6 +12,10 @@
     });
 </script>
 
+<style lang="scss">
+    @import "../styles/main.scss";
+</style>
+
 <ul>
     {#each libros as item}
         <li><a href="{item.href}" target="{item.target}">{item.link}</a></li>

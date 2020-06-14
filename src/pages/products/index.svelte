@@ -10,7 +10,6 @@
   import PageTitle from "../../components/PageTitle.svelte";
   import Content from '../../components/Content.svelte';
   import ContentArea from '../../components/ContentArea.svelte';
-  import Area from '../../components/Area.svelte';
   import Cards from '../../components/Cards.svelte';
   import Card from '../../components/Card.svelte';
   import Banner from '../../components/Banner.svelte';
@@ -37,7 +36,6 @@
 <Content>
   <ContentArea>
     
-  <Area>
     <Cards>
       {#each productos as producto}
       <Card 
@@ -49,7 +47,6 @@
       </Card>
       {/each}
     </Cards>
-  </Area>
 
   <Banner variante={0}>
     <IconEspiral />

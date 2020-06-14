@@ -9,7 +9,6 @@
 
     import Content from "../../components/Content.svelte";
     import ContentArea from "../../components/ContentArea.svelte";
-    import Area from "../../components/Area.svelte";
     export let slug;
 
     let productos = [];
@@ -18,18 +17,17 @@
         productos = [...await res.json()];
     });
 
-    let cur = 0;
-
-    function changeSlide(slide) {
-        cur = slide;
-    }
 </script>
 
 <style lang="scss">
     @import "../../styles/main.scss";
 
     .Product {
+        padding-left: $h0;
+        padding-right: $h0;
         @include media(s1) {
+            padding-left: $h2;
+            padding-right: $h2;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-auto-flow: row;
@@ -48,9 +46,12 @@
                 "a a a n n"
             ;
         }
-
         @include media(s3) {
             gap: $h5;
+            padding-top: $h3;
+            padding-bottom: $h3;
+            padding-left: $h5;
+            padding-right: $h5;
         }
 
         &Article {
@@ -63,14 +64,16 @@
 
             @include media(s0) {
                 padding: $h1;
-
-                p {
-                    margin-bottom: 0;
-                }
             }
-
+            
             h3 {
+                padding-top: $h2;
                 padding-bottom: $h1;
+                @include media(s3) {
+                    padding-top: $h4;
+                    /* padding: $h1; */
+                    /* background-color: red; */
+                }
             }
         }
 
@@ -106,7 +109,6 @@
 
 <Content>
     <ContentArea>
-        <Area>
         <div class="Product">
             {#each productos as product}
                 {#if (product.slug === slug)}
@@ -133,6 +135,5 @@
                     {/each}
                 </nav>
             </div>
-        </Area>
     </ContentArea>
 </Content>
