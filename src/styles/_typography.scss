@@ -14,22 +14,17 @@
 //   }
 // @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
-$primary_font: Helvetica, Arial, sans-serif;
-$secondary_font: $primary_font;
-$tertiary_font: $secondary_font;
+$primary_font: 'Open Sans', sans-serif;
+$secondary_font: 'Libre Baskerville', serif;
 
-body > *,
-blockquote small {
-  // font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+body > * {
+  font-family: $primary_font;
 }
 
 h1,
 h3, 
-blockquote, 
 .NavBar {
-  font-family: 'Libre Baskerville', serif;
-  // font-family: 'Josefin Sans', sans-serif;
+  font-family: $secondary_font;
 }
 
 .text-center {

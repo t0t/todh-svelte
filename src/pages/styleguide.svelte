@@ -279,17 +279,17 @@
         </Swipe>
       </div>
     
-    <Banner variante={0}>
-        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
+      <Banner variante={0}>
         <IconEspiral />
+        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
     </Banner>
     <Banner variante={1}>
         <BlockQuote variante={2} quote="This is a blockquote" author="Author" />
         <IconEspiral />
     </Banner>
     <Banner variante={2}>
-        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
         <IconEspiral />
+        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
     </Banner>
 
 </ContentArea>

@@ -1,10 +1,13 @@
 .Banner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: auto;
     gap: $h3;
     padding: $h3;
+    grid-template-columns: 1fr;
+    
+    @include media(s2) {
+        grid-template-columns: 1fr 1fr;
+    }
 
     small {
         padding-bottom: 0;
@@ -30,22 +33,7 @@
 
 .Area~.Banner {
     margin-top: $h1;
-
     @include media(s2) {
         margin-top: $h4;
-        // background-color: lime;
-    }
-}
-
-.Area > blockquote {
-    font-weight: 700;
-    margin-top: $h3;
-    margin-bottom: $h3;
-    @include type-setting(0);
-    color: $alpha_grey;
-    text-align: right;
-
-    small {
-        font-weight: 100;
     }
 }

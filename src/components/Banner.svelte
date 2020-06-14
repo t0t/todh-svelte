@@ -22,5 +22,5 @@
 
 <div class="Banner {modificador[variante]}">
     <slot name="image"></slot>
-    <slot></slot>
+    <slot>xx</slot>
 </div>

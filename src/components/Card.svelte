@@ -7,7 +7,6 @@
     export let hasImage = true;
     export let hasInlineSvg = false;
     export let variante = 2;
-    export let href;
     let modificador = [
         "Default",
         "Inverse",
@@ -18,55 +17,53 @@
 </script>
 
 <style lang="scss">
-@import "../styles/main.scss";
-.Default {
-    background-color: $tertiary;
-}
-.Inverse {
-    color: $light_grey;
-    background-color: $primary;
-}
-.White {
-    color: $tertiary;
-    background-color: $white;
-    border-bottom-right-radius: $h2;
-    border-bottom-left-radius: $h2;
-}
-.Line {
-    background-color: transparent;
-    border: 1px solid $silver;
-}
-.Transparent {
-    border: none;
-}
-.hasLink {
-    &:hover {
-        cursor: pointer;
+    @import "../styles/main.scss";
+    .Default {
+        background-color: $tertiary;
     }
-}
-
-.Card {
-    
-    &Title {
-        padding-top: $h1;
-        padding-bottom: $h0;
+    .Inverse {
+        color: $light_grey;
+        background-color: $primary;
     }
-    &Main {
-        padding-left: $h2;
-        padding-right: $h2;
+    .White {
+        color: $tertiary;
+        background-color: $white;
+        border-bottom-right-radius: $h2;
+        border-bottom-left-radius: $h2;
     }
-    &Content {
-        padding-bottom: $h2;
-        margin-left: 0;
-        margin-bottom: 0;
+    .Line {
+        background-color: transparent;
+        border: 1px solid $silver;
     }
-}
+    .Transparent {
+        border: none;
+    }
+    .hasLink {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .Card {
+        
+        &Title {
+            padding-top: $h1;
+            padding-bottom: $h0;
+        }
+        &Main {
+            padding-left: $h2;
+            padding-right: $h2;
+        }
+        &Content {
+            padding-bottom: $h2;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+    }
 </style>
 
 <div 
 class="Card  {modificador[variante]}" 
 >
-<a href={href}>
     {#if hasImage}
         <img src="{image}" alt="{alt}">
     {/if}
@@ -78,5 +75,4 @@ class="Card  {modificador[variante]}"
         <p class="CardContent">{description}</p>
         <slot></slot>
     </div>
-</a>
 </div>

@@ -1,0 +1,33 @@
+blockquote small {
+  font-family: $primary_font;
+}
+.Area > blockquote {
+    font-weight: 700;
+    margin-top: $h3;
+    margin-bottom: $h3;
+    @include type-setting(1);
+    color: $alpha_grey;
+    text-align: right;
+    small {
+        font-weight: 100;
+    }
+}
+.Banner > .Quote {
+    text-align: center;
+    font-weight: 700;
+    @include type-setting(2);
+    font-family: $secondary_font;
+}
+.Quote {
+    font-style: italic;
+    margin-bottom: $h1;
+}
+.Default {
+    color: $white;
+}
+.Invert {
+    color: $primary;
+}
+.Grey {
+    color: $grey;
+}
