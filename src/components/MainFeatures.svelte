@@ -15,13 +15,16 @@
             text-decoration: underline;
         }
         
+        /* @include media(s0) {
+            background-color: red;
+        } */
         @include media(s1) {
-            padding: $h4;
+            padding: $h2;
+            gap: $h2;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-auto-flow: auto;
             grid-auto-rows: auto;
-            gap: $h4;
             grid-template-areas:
                 "a a a"
                 "b b b"
@@ -44,7 +47,7 @@
         >div {
             background-color: $color_3;
             display: flex;
-            align-items: flex-end;
+            align-items: flex-start;
             padding: $h2;
             border: 1px solid $grey;
             @include media(s0) {

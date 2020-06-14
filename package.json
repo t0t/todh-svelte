@@ -4,20 +4,18 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public -s"
+    "start": "sirv public --single"
   },
   "devDependencies": {
+    "node-sass": "^4.14.1",
+    "@sveltech/routify": "^1.7.13",
+    "svelte-preprocess": "^3.7.4",
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
-    "@rollup/plugin-json": "^4.0.3",
-    "@sveltech/routify": "^1.7.13",
     "rollup": "^2.3.4",
-    "node-sass": "^4.14.1",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte-preprocess": "^3.7.4",
-    "svelte-image": "^0.2.3",
     "svelte": "^3.0.0"
   },
   "dependencies": {

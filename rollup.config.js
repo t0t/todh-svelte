@@ -3,12 +3,12 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
-import image from "svelte-image";
+// import image from "svelte-image";
 import { routify } from "@sveltech/routify";
 // import {sveltePreprocess} from './svelte.config.js';
 import autoPreprocess from "svelte-preprocess";
 
-import json from "@rollup/plugin-json";
+// import json from "@rollup/plugin-json";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -21,22 +21,12 @@ export default {
     file: "public/build/bundle.js",
   },
   plugins: [
-    json(),
     routify({
       singleBuild: production,
     }),
     svelte({
       // enable run-time checks when not in production
       dev: !production,
-      preprocess: {
-        ...image({
-          publicDir: "./public/",
-          inlineBelow: 10000, // inline all images in img tags below 10kb
-          quality: 70, // jpeg/webp quality level
-          placeholder: "blur", // or "blur",
-          optimizeAll: true, // optimize all images discovered in img tags
-        }),
-      },
       // we'll extract any component CSS out into
       // a separate file - better for performance
       css: (css) => {
@@ -86,6 +76,6 @@ function serve() {
           shell: true,
         });
       }
-    },
+    }
   };
 }
