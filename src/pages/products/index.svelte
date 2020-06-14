@@ -47,8 +47,6 @@
           image={producto.imagen}
           variante={3}></Card>
         </a>
-      {:else}
-        <Loading/>
       {/each}
     </Cards>
   </Area>
