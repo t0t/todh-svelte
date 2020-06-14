@@ -22,7 +22,6 @@
     const res = await fetch("/data/products.json");
     productos = [...await res.json()];
   });
-
 </script>
 
 <style lang="scss">
@@ -46,8 +45,8 @@
           title={producto.title} 
           description={producto.description} 
           image={producto.imagen}
-          variante={3}
-        /></a>
+          variante={3}>
+        </a>
       {:else}
         <Loading/>
       {/each}
