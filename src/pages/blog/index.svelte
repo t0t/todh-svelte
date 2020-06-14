@@ -26,7 +26,7 @@
 </style>
 
 <svelte:head>
-  <title>Blog TODH</title>
+  <title>Blog de TODH</title>
 </svelte:head>
 
 <PageTitle pageTitle="Blog" pageSubTitle="My crazy thoughts" />
@@ -41,11 +41,8 @@
         title={post.title}
         description={post.excerpt}
         image={post.imagen}
-        variante={4}
-        >
-          <a href="/blog/{$url(post.slug)}">
-          Read >
-          </a>
+        variante={4}>
+          <a href="/blog/{$url(post.slug)}">Read ></a>
         </Card>
       {/each}
     </Cards>
