@@ -14,6 +14,6 @@
 </style>
 
 <blockquote class="Quote QuoteLine {modificador[variante]}">
-    "{quote}"<br>
+    {quote}
     <small>{author}</small>
 </blockquote>

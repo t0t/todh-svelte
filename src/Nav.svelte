@@ -7,18 +7,18 @@
   let y;
   let home = "/";
   const _links = [
-    ["/about", "TODH"],
-    ["/products", "Artifacts"],
-    ["/blog", "Blog"],
-    ["/styleguide", "Styleguide"]
+    ["./about", "TODH"],
+    ["./products", "Artifacts"],
+    ["./blog", "Blog"],
+    ["./styleguide", "LAB"]
   ];
   const _linksLeft = [
-    ["/about", "TODH"],
-    ["/products", "Artifacts"]
+    ["./about", "TODH"],
+    ["./products", "Artifacts"]
   ];
   const _linksRight = [
-    ["/styleguide", "Styleguide"],
-    ["/blog", "Blog"]
+    ["./styleguide", "LAB"],
+    ["./blog", "Blog"]
   ];
   let showControls = false;
   const toggleControls = () => (showControls = !showControls);

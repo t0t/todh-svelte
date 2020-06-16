@@ -55,9 +55,11 @@
         <h3>h3 Header</h3>
         <h4>h4 Header</h4>
         <h5>h5 Header</h5>
-        <p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Est ullam <strong>tempora</strong> accusamus porro doloremque. Mollitia praesentium neque aut! Quibusdam id in <a href="./about">repellendus</a> sint? Quam iste dignissimos amet nisi, eveniet ullam. <small>Small text</small></p>
+        <p>La ignorancia de lo que hay de mejor (en el hombre) sirve fatalmente a lo que de peor hay en él. (Hierocles)</p>
         
-        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={1} quote="El hombre inteligente no es el que tiene muchas ideas, sino el que sabe sacar provecho de las pocas que tiene." author="J. Dotras" />
+
+        <p>La ciencia no puede resolver el último misterio de la naturaleza. Y eso se debe a que, en última instancia, nosotros mismos somos una parte del misterio que estamos tratando de resolver. __Max Planck</p>
     
     </Area>
 
@@ -152,7 +154,7 @@
     <Area title="Group Cards">
         <Cards>
             <Card 
-            title="Title" description="Lorem ipsum dolor sit amet consectetur adipisicing."
+            title="Title" description="El ojo que ves no es ojo porque tú lo veas; es ojo porque te ve. (Antonio Machado)"
             variante={1}
             >
                 <Button variante={1} text="Button" />
@@ -160,13 +162,13 @@
         
             <Card 
             title="Variante 3"
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima."
+            description="La auténtica felicidad consiste en la contemplación de la belleza y el orden del cosmos. _Aristóteles"
             image="img/img1.jpg" 
             />
         
             <Card 
             title="With inlne svg instead image"
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima."
+            description="Todo símbolo tiene un poder resonante, éste depende de su forma, contenido e intención. (Adrià García)"
             variante={4}
             hasImage={false} hasInlineSvg={true}>
                 <span slot="hasSvg">
@@ -187,11 +189,11 @@
             <Card 
             title="Éste card no lleva imagen"
             hasImage={false}
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum"
+            description="Para componer el mundo ha sido precisa la totalidad de cada uno de los cuatro elementos. Porque con todo el fuego, con toda el agua, con todo el aire, con toda la tierra, le ha formado el Supremo Ordenador. __Platón, Timeo"
             variante={3}
             />
 
-            <Card title="Éste tampoco..." hasImage={false} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?"
+            <Card title="Éste tampoco..." hasImage={false} description="Ama tu ritmo y ritma tus acciones bajo su ley, así como tus versos; eres un universo de universos y tu alma una fuente de canciones. Rubén Darío"
             variante={0}/>
         </Cards>
     </Area>
@@ -201,8 +203,8 @@
     </Area>
 
     <Banner variante={0}>
-        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
-        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={1} quote="Es bueno repetir incluso dos veces lo que es necesario." author="Empedocles" />
+        <BlockQuote variante={0} quote="Son cuatro los principios materiales de la realidad y se hallan en constante movimiento... todo es mezcla y modificación de lo mezclado." author="Empedocles" />
     </Banner>
 
     <Banner variante={1}>
@@ -244,7 +246,7 @@
         <PageTitle pageTitle="Page title" pageSubTitle="Page Subtitle" />
     </Area>
     
-    <Area title="Fetching Json data from service">
+    <!-- <Area title="Fetching Json data from service"> -->
         <!-- {#await loadedJson}
             <Loading/>
         {:then data}
@@ -260,7 +262,7 @@
         {:catch error}
             <p>An error occurred!</p>
         {/await} -->
-    </Area>
+    <!-- </Area> -->
 
     <div class="swipe-holder">
         <Swipe {showIndicators} {autoplay} {delay} {transitionDuration} {defaultIndex}>
@@ -281,15 +283,15 @@
     
       <Banner variante={0}>
         <IconEspiral />
-        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={1} quote="En el universo hay cosas que son conocidas y hay cosas que son desconocidas y entre ellas hay puertas..." author="William Blake" />
     </Banner>
     <Banner variante={1}>
-        <BlockQuote variante={2} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={2} quote="The universe exists solely of waves of motion... There exists nothing other than vibration" author="Walter Russell" />
         <IconEspiral />
     </Banner>
     <Banner variante={2}>
         <IconEspiral />
-        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={0} quote="Para conocer los secretos del Universo piensa en términos de energía, frecuencia y vibración." author="Nikola Tesla" />
     </Banner>
 
 </ContentArea>

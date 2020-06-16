@@ -36,6 +36,9 @@
   //   outX = -1000;
   //   step = step + 1;
   // }
+  import { metatags } from '@sveltech/routify'
+  metatags.title = 'T-O-D-H'
+  metatags['twitter:card'] = 'Visión holística y artefactos en torno a la Creación';
   </script>
   
   <style lang="scss">

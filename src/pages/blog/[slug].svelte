@@ -50,8 +50,8 @@
 
             @include media(s2) {
                 margin-top: $h4;
-                background-color: $alpha_white;
-                padding: $h2;
+                /* background-color: $alpha_white;
+                padding: $h2; */
             }
             
             @include media(s3) {
@@ -96,18 +96,37 @@
                 <div class="PostContent">
                     <h3>{@html post.content.h1}</h3>
                     <p>{@html post.content.p}</p>
-                    <blockquote>{@html post.content.blockquote}</blockquote>
-                    <p>{@html post.content.p2}</p>
-                    <p>{@html post.content.p3}</p>
-                    <p>{@html post.content.p4}</p>
-                    <p>{@html post.content.p5}</p>
-                    <p>{@html post.content.p6}</p>
-                    <img src="/{post.content.img1}" alt="Imagen">
+                    {#if post.content.blockquote}
+                    <blockquote>
+                        <strong>{post.content.blockquote.quote}</strong>
+                        <small>{post.content.blockquote.author}</small>
+                    </blockquote>
+                    {/if }
+                    {#if post.content.p2}
+                        <p>{@html post.content.p2}</p>
+                    {/if }
+                    {#if post.content.p3}
+                        <p>{@html post.content.p3}</p>
+                    {/if }
+                    {#if post.content.p4}
+                        <p>{@html post.content.p4}</p>
+                    {/if }
+                    {#if post.content.p5}
+                        <p>{@html post.content.p5}</p>
+                    {/if }
+                    {#if post.content.p6}
+                        <p>{@html post.content.p6}</p>
+                    {/if }
+                    {#if post.content.img1}
+                        <img src="/{post.content.img1}" alt="Imagen">
+                    {/if }
                     <p>{@html post.content.p7}</p>
                     <p>{@html post.content.p8}</p>
                     <p>{@html post.content.p9}</p>
                     <p>{@html post.content.p10}</p>
-                    <img src="/{post.content.img2}" alt="Imagen">
+                    {#if post.content.img2}
+                        <img src="/{post.content.img2}" alt="Imagen">
+                    {/if }
                     <p>{@html post.content.p11}</p>
                     <p>{@html post.content.p12}</p>
                     <p>{@html post.content.p13}</p>
