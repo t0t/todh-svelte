@@ -6,7 +6,6 @@
     figcaption {
         padding-top: $h0;
         padding-right: $h1;
-        /* text-align: right; */
         color: $grey;
         @include type-setting(0);
     }

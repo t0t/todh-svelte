@@ -7,8 +7,13 @@
 
 <style lang="scss">
     @import "../styles/main.scss";
-
+    .bg-image {
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+    }
     .MainFeatures {
+        position: relative;
         padding: $h1;
         
         a:hover small {
@@ -34,8 +39,7 @@
 
         @include media(s2) {
             grid-template-areas:
-                "a c c"
-                "b c c"
+                "a b c"
             ;
         }
         @include media(s3) {
@@ -48,8 +52,8 @@
             background-color: $color_3;
             display: flex;
             align-items: flex-start;
-            padding: $h2;
-            border: 1px solid $grey;
+            /* padding: $h2; */
+            /* border: 1px solid $grey; */
             @include media(s0) {
                 margin-bottom: $h1;
                 &:last-child {
@@ -57,8 +61,12 @@
                 }
             }
 
+            img {
+                margin-bottom: $h2;
+            }
+
             @include media(s3) {
-                padding: $h4;
+                /* padding: $h4; */
             }
 
             &:nth-child(1) {
@@ -70,32 +78,32 @@
             &:nth-child(3) {
                 grid-area: c;
             }
-            
         }
     }
 </style>
-
+  
 <div class="MainFeatures">
-    <!-- <div><IconCuatro/></div> -->
-
+    <div>
+        <a href="/products">
+            <img src="img/img1.jpg" alt="">
+            <h4>Artefactos</h4>
+            <p>Obra plástica e impresión 3D</p>
+            <small>Learn more ></small>
+            </a>
+    </div>
     <div>
         <a href="/styleguide">
-            <h4>Arte</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="img/front.png" alt="">
+            <h4>Diseñador gráfico especializado en UI y web layout</h4>
+            <p>Diseño front-end de batalla. Browser prototyping. I love: System Design, CSS grid layout, Sass mixins, Svelte...</p>
             <small>Learn more ></small>
         </a>
     </div>
     <div>
-        <a href="/styleguide">
-            <h4>Diseño de interfaces</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <small>Learn more ></small>
-        </a>
-    </div>
-    <div>
-        <a href="/styleguide">
+        <a href="/blog">
+            <img src="img/grafico-6.svg" alt="">
             <h4>Pensamento holístico</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Cuaderno de bitácora de mi filosofía TODH</p>
             <small>Learn more ></small>
         </a>
     </div>

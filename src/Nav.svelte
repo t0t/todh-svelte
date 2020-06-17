@@ -4,24 +4,19 @@
     isActive
   } from "@sveltech/routify";
   import SiteBrand from "./components/SiteBrand.svelte";
-  let y;
-  let home = "/";
-  const _links = [
-    ["./about", "TODH"],
-    ["./products", "Artifacts"],
-    ["./blog", "Blog"],
-    ["./styleguide", "LAB"]
-  ];
+
   const _linksLeft = [
     ["./about", "TODH"],
-    ["./products", "Artifacts"]
+    ["./styleguide", "LAB"]
   ];
   const _linksRight = [
-    ["./styleguide", "LAB"],
+    ["./products", "Artifacts"],
     ["./blog", "Blog"]
   ];
-  let showControls = false;
-  const toggleControls = () => (showControls = !showControls);
+  // let showControls = false;
+  // const toggleControls = () => (showControls = !showControls);
+  let y;
+
 </script>
 
 <style lang="scss">
@@ -109,8 +104,6 @@
   }
 </style>
 
-<svelte:window bind:scrollY={y} />
-
 
 <nav class="NavBar">
   <ul class="NavBar__left">
@@ -124,7 +117,7 @@
   <div class="NavBar__center">
     <SiteBrand/>
   </div>
-  
+
   <ul class="NavBar__right">
     {#each _linksRight as [path, name]}
     <li>
@@ -133,27 +126,3 @@
     {/each}
   </ul>
 </nav>
-
-{#if y > 340}
-<div class="fixed">
-  <button class="toggle-button" on:click={toggleControls}>
-    {#if showControls}
-      X
-      {:else}
-      Menu
-    {/if}
-  </button>
-    
-  {#if showControls}
-    <ul class="MainNav">
-      <a class="backlink" href={$url(home)}>&#8656; BACK TO HOME</a>
-      {#each _links as [path, name]}
-      <li>
-        <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
-      </li>
-      {/each}
-    </ul>
-  {/if}
-</div>
-
-{/if}

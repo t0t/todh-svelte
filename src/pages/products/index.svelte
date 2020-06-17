@@ -50,7 +50,7 @@
 
   <Banner variante={0}>
     <IconEspiral />
-    <BlockQuote variante={0} quote="El Universo existe solo con ondas de movimiento ... No hay nada más que vibración" author="Walter Russell" />
+    <BlockQuote variante={0} quote="El Universo existe solo con ondas de movimiento... No hay nada más que vibración" author="Walter Russell" />
   </Banner>
 
 </ContentArea>
