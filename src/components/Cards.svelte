@@ -13,8 +13,8 @@
             grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
             grid-auto-rows: auto;
             grid-auto-flow: row;
-            gap: $h2;
-            padding: $h2;
+            gap: $h4;
+            padding: $h4;
         }
     }
 </style>

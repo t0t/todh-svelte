@@ -38,13 +38,16 @@
     
     <Cards>
       {#each productos as producto}
-      <Card 
-      title={producto.title} 
-      description={producto.description} 
-      image={producto.imagen}
-      variante={3}>
-        <a href="/products/{$url(producto.slug)}">Read ></a>
-      </Card>
+      <div>
+        <a href="/products/{$url(producto.slug)}">
+          <Card 
+          title={producto.title} 
+          description={producto.description} 
+          image={producto.imagen}
+          variante={2}>
+          </Card>
+        </a>
+      </div>
       {/each}
     </Cards>
 
