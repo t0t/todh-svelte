@@ -48,6 +48,8 @@
           </Card>
         </a>
       </div>
+      {:else}
+      Loading
       {/each}
     </Cards>
 

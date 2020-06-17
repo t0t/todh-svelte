@@ -36,13 +36,17 @@
 
     <Cards>
       {#each posts as post}
-        <Card 
-        title={post.title}
-        description={post.excerpt}
-        image={post.imagen}
-        variante={4}>
-          <a href="/blog/{$url(post.slug)}">Read ></a>
-        </Card>
+      <div>
+        <a href="/blog/{$url(post.slug)}">
+          <Card 
+          title={post.title}
+          description={post.excerpt}
+          image={post.imagen}
+          variante={4}>
+            Read >
+          </Card>
+        </a>
+      </div>
       {/each}
     </Cards>
 
