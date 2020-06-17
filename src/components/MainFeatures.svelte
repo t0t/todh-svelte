@@ -87,7 +87,7 @@
         <a href="/products">
             <img src="img/img1.jpg" alt="">
             <h4>Artefactos</h4>
-            <p>Obra plástica e impresión 3D</p>
+            <p>Visión holística y artefactos en torno a la Creación. Obra plástica e impresión 3D</p>
             <small>Learn more ></small>
         </a>
     </div>

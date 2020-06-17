@@ -29,7 +29,7 @@
     <title>TODH</title>
   </svelte:head>
   
-  <PageTitle pageTitle="TODH" pageSubTitle="Visión holística y artefactos en torno a la Creación 👋" />
+  <PageTitle pageTitle="Sergio Forés" pageSubTitle="Arte, Diseño Front-end y conciencia holística. 👋" />
   
   <Content>
     <ContentArea>

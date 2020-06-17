@@ -1,5 +1,5 @@
 <script>
-	import {fade} from 'svelte/transition'
+	// import {fade} from 'svelte/transition';
 	
 	const carouselPhotos = [
 		'img/grafico-cero.svg',
@@ -7,7 +7,7 @@
 		'img/grafico-dos.svg',
 		'img/grafico-tres.svg',
 		'img/grafico-cuatro.svg'
-	]
+	];
 	
 	let index = 0;
 	
@@ -34,7 +34,7 @@
 </style>
 
 <div class="ImageCarouselContainer">
-{#each [carouselPhotos[index]] as src (index)}
-	<img on:click={next} transition:fade {src} alt="" />	
-{/each}
+	{#each [carouselPhotos[index]] as src (index)}
+		<img on:click={next} {src} alt="" />	
+	{/each}
 </div>
