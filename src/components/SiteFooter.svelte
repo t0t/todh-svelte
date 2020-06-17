@@ -1,5 +1,5 @@
 <script>
-  import AudioPlayer from "../components/AudioPlayer.svelte";
+  // import AudioPlayer from "../components/AudioPlayer.svelte";
 </script>
 
 <style lang="scss">
@@ -7,24 +7,32 @@
 
   .Main__footer {
     padding: $h2;
-
+    p {
+      max-width: $h8;
+      font-style: italic;
+      margin-bottom: 0;
+    }
+    
     @include media(s1) {
       display: grid;
       gap: $h1;
-      padding-left: $h3;
-      padding-top: $h4;
-      grid-template-columns: 1fr;
-      grid-auto-flow: row;
+      /* padding-left: $h3;
+      padding-top: $h4; */
+      /* grid-template-columns: 1fr;
+      grid-auto-flow: row; */
       grid-template-areas:
-        "a b"
-        ". l"
-        ". p"
+      "a b"
+      ". l"
+      ". p"
       ;
+      p {
+        max-width: $h9;
+      }
     }
 
     @include media(s2) {
-      padding-top: $h3;
-      padding-bottom: $h3;
+      /* padding-top: $h3;
+      padding-bottom: $h3; */
       gap: $h2;
     }
 
@@ -185,9 +193,7 @@
   </ul>
 
   <div class="Player">
-    <AudioPlayer src="https://sveltejs.github.io/assets/music/mozart.mp3"
-      title="Requiem in D minor, K. 626 - III. Sequence - Lacrymosa" composer="Wolfgang Amadeus Mozart"
-      performer="Markus Staab" />
+    
   </div>
 
 </footer>
