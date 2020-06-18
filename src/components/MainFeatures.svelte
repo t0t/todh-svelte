@@ -1,8 +1,13 @@
 <script>
-    // import Cards from "../components/Cards.svelte";
-    // import Card from "../components/Card.svelte";
     import IconCuatro from "./icons/IconCuatro.svelte";
-    // export let href = "";
+    let html = {
+        js: `let message = "Cosmos"`,
+        style: `.helloCosmos {
+    background-color: black;
+}`,
+    html: `<p class="helloCosmos">
+    Hello { message }!
+</p>`};
 </script>
 
 <style lang="scss">
@@ -19,10 +24,7 @@
         a:hover small {
             text-decoration: underline;
         }
-        
-        /* @include media(s0) {
-            background-color: red;
-        } */
+
         @include media(s1) {
             padding: $h2;
             gap: $h2;
@@ -52,8 +54,6 @@
             background-color: $color_3;
             display: flex;
             align-items: flex-start;
-            /* padding: $h2; */
-            /* border: 1px solid $grey; */
             @include media(s0) {
                 margin-bottom: $h1;
                 &:last-child {
@@ -61,12 +61,9 @@
                 }
             }
 
-            img {
+            img,
+            pre {
                 margin-bottom: $h2;
-            }
-
-            @include media(s3) {
-                /* padding: $h4; */
             }
 
             &:nth-child(1) {
@@ -80,30 +77,69 @@
             }
         }
     }
+    
+    pre {
+        background-color: $alpha_black;
+        margin: 0;
+        padding-left: $h0;
+        padding-top: $h0;
+        overflow: hidden;
+        &:hover {
+            background-color: $primary;
+        }
+    }
+    code {
+        margin: 0;
+        &.html {
+            color: $white;
+        }
+        &.style {
+            color: $color_2;
+        }
+        &.js {
+            color: $color_1;
+        }
+        &.comment {
+            color: $tertiary;
+        }
+    }
+    pre > code {
+        margin: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-top: 0;
+        &:last-child {
+            padding-bottom: $h0;
+        };
+        color: $color_3;
+    }
 </style>
   
 <div class="MainFeatures">
     <div>
         <a href="/products">
             <img src="img/img1.jpg" alt="">
-            <h4>Artefactos</h4>
-            <p>Visión holística y artefactos en torno a la Creación. Obra plástica e impresión 3D</p>
+            <h4>Coagulando la vibración</h4>
+            <p>TODH traído a la materia como objeto de contemplación. Obra plástica e impresiones 3D</p>
             <small>Learn more ></small>
         </a>
     </div>
     <div>
         <a href="/styleguide">
-            <img src="img/front.png" alt="">
-            <h4>Diseñador gráfico especializado en UI y web layout</h4>
-            <p>Diseño front-end de batalla. Browser prototyping. I love: System Design, CSS grid layout, Sass mixins, Svelte...</p>
+            <pre>
+                <code class="comment">// Discernir</code><code class="js">{html.js}</code><code class="comment">// Sentir</code><code class="style">{html.style}</code><code class="comment">// Hacer</code><code class="html">{html.html}</code><code class="comment">// Transmtir</code><code>Hello Cosmos!</code>
+            </pre>
+
+            <h4>Hello Cosmos</h4>
+            <p>TODH en el diseño Frontend y mi workflow de creación digital ideal.</p>
             <small>Learn more ></small>
         </a>
     </div>
     <div>
         <a href="/blog">
             <img src="img/grafico-6.svg" alt="">
-            <h4>Pensamento holístico</h4>
-            <p>Cuaderno de bitácora de mi filosofía TODH</p>
+            <h4>Sentir-Orden-Forma-Conexión</h4>
+            <p>Laboratorio de experiencias y bitácora de reflexiones en torno al proceso de la Creación desde la Sabiduría Primigenia.</p>
             <small>Learn more ></small>
         </a>
     </div>

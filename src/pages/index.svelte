@@ -25,63 +25,39 @@
     @import "../styles/main.scss";
   </style>
   
-  <svelte:head>
-    <title>TODH</title>
-  </svelte:head>
-  
-  <PageTitle pageTitle="Sergio Forés" pageSubTitle="Arte, Diseño Front-end y conciencia holística. 👋" />
-  
-  <Content>
-    <ContentArea>
-      <Area>
-        <CoverIntroCarousel/>
-      </Area>
-      <!-- <Area>
-        <div class="Content__nav">
-          <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
-          <button on:click="{next}" disabled="{step > 3}">&gt;</button>
-          <em>{ step } / 4</em>
-        </div>
-      {#if step == 0}
-        <div in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step0/>
-        </div>
-        {:else if step == 1}
-        <div in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step1/>
-        </div>
-        {:else if step == 2}
-        <div in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step2/>
-        </div>
-        {:else if step == 3}
-        <div in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step3/>
-        </div>
-        {:else if step == 4}
-        <div in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step4/>
-        </div>
-      {/if}
-      </Area> -->
+<svelte:head>
+  <title>TODH</title>
+  <script src="https://gist.github.com/t0t/791d882295d5530c4a7c9689e7ba73f9.js"></script>
+</svelte:head>
 
-      <MainFeatures></MainFeatures>
+<PageTitle pageTitle="T-O-D-H" pageSubTitle="Artefactos y procesos basados en la cosmovisión primigenia" />
 
-      <Area>
-      <p>Separate and Join Together (or dissolve and coagulate in Latin), is a medieval #alchemy quote, which is to say that nothing new can be built if not before we make space, breaking the old.</p>
-      <BlockQuote variante={2} quote="Nada sé de caminos; pero conozco la maquinaria del universo. Esto es todo. La aprehendí con mi alma, la alcancé por la simple fuerza de la intuición." author="E. A. Poe, Eureka" />
-      </Area>
+<Content>
+  <ContentArea>
+    <Area>
+      <CoverIntroCarousel/>
+    </Area>
 
-      <Banner variante={1}>
-        <IconTres />
-        <BlockQuote variante={2} quote="En el universo hay cosas que son conocidas y hay cosas que son desconocidas y entre ellas hay puertas..." author="William Blake" />
-      </Banner>
-  
-        <Banner>
-          <BlockQuote quote="Todo tiende a ser lo que viene siendo." author="TODH" />
-          <IconEspiral />
-        </Banner>
-  
-    </ContentArea>
-  
-  </Content>
+    <MainFeatures></MainFeatures>
+
+    <Area>
+      <script src="https://gist.github.com/t0t/791d882295d5530c4a7c9689e7ba73f9.js"></script>
+    </Area>
+    <Area>
+    <p>Separate and Join Together (or dissolve and coagulate in Latin), is a medieval #alchemy quote, which is to say that nothing new can be built if not before we make space, breaking the old.</p>
+    <BlockQuote variante={2} quote="Nada sé de caminos; pero conozco la maquinaria del universo. Esto es todo. La aprehendí con mi alma, la alcancé por la simple fuerza de la intuición." author="E. A. Poe, Eureka" />
+    </Area>
+
+    <Banner variante={1}>
+      <IconTres />
+      <BlockQuote variante={2} quote="En el universo hay cosas que son conocidas y hay cosas que son desconocidas y entre ellas hay puertas..." author="William Blake" />
+    </Banner>
+
+    <Banner>
+      <BlockQuote quote="Todo tiende a ser lo que viene siendo." author="TODH" />
+      <IconEspiral />
+    </Banner>
+
+  </ContentArea>
+
+</Content>
