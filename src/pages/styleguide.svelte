@@ -1,8 +1,5 @@
 <script>
-    import {
-    Swipe,
-    SwipeItem
-  } from "svelte-swipe";
+    import { Swipe, SwipeItem } from "svelte-swipe";
     import PageTitle from "../components/PageTitle.svelte";
     import Content from "../components/Content.svelte";
     import ContentArea from "../components/ContentArea.svelte";
@@ -10,6 +7,8 @@
     import Banner from '../components/Banner.svelte';
     import Nav from "../Nav.svelte";
     import Loading from "../components/Loading.svelte";
+    // import CodeBlock from "../components/CodeBlock.svelte";
+    import CodeBlock from "../components/CodeBlock.svelte";
     import ToggleMenu from "../components/ToggleMenu.svelte";
     import BlockQuote from "../components/BlockQuote.svelte";
     import Button from "../components/Button.svelte";
@@ -31,8 +30,64 @@
     let autoplay = false;
   let delay = 2000; //ms
   let showIndicators = false;
-  let transitionDuration = 1000; //ms
-  let defaultIndex = 3; //start from 0
+  let transitionDuration = 1000; // ms
+  let defaultIndex = 3; // start from 0
+  let code_javascript = 
+`let multiplicar = function(x) { 
+    return x * x * x;
+}
+
+map(multiplicar, [0, 1, 2, 5, 10]);
+`;
+let code_json = 
+`{
+    "id": 3,
+    "slug": "el-proceso-de-la-incursion",
+    "title": "El proceso de la incursión",
+    "subtitle": "Otro acercamiento a lo que es TODH",
+    "imagen": "img/grafico-7.svg",
+    "thumb": "img/grafico-7.svg",
+    "excerpt": "Lo que hacemos, sentimos, decimos y pensamos es la misma cosa.",
+    "content": {
+        "h1": "Todo es lo mismo",
+        "img1": "img/grafico-8.svg",
+        "img2": "img/grafico-5.svg",
+}`;
+let code_markup = 
+`<head>...</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <aside>...</aside>
+    <footer>...</footer>
+</body>`;
+let code_scss = 
+`// Preprocesado de CSS con Sass
+$size-scales: (
+  -2: $h-1,
+  -1: $h0,
+  0: $h1, // 1rem
+  1: $h2, // 1.618rem
+  2: $h3,
+  3: $h4,
+  4: $h5,
+  5: $h6,
+  6: $h6
+);
+@function font-scale($level) {
+  @return map-get($size-scales, $level);
+}`;
 </script>
 
 <style lang="scss">
@@ -44,43 +99,43 @@
     }
 </style>
 
-<PageTitle pageTitle="Design System" pageSubTitle="Living styleguide 👋" />
+<PageTitle pageTitle="Hello cosmos!" pageSubTitle="Living metadesign system 🧘🏻‍♂️" />
+
+<svelte:head>
+  <title>TODH</title>
+</svelte:head>
 
 <Content>
 <ContentArea>
 
-    <Area title="El proceso de la incursión">
-        <p><em>Lo que hacemos, sentimos, decimos y pensamos es la misma cosa.</em> Por eso es que la humanidad ha pretendido desde siempre separar estos cuatro principios o dimensiones del ser. TODH va en dirección "contraria". No es una explosión sino una implosión.</p>
-        <p>Este proyecto que denomino TODH se centró primeramente en comprender el núcleo, la esencia, de estos 4 principios constitutivos de la realidad. Así que en primera instancia uno se adentra en el símbolo para registrar lo más hondo de que es capaz, <u>atravesando la superfície de las cosas</u>, percibiendo lo idéntico en lo diferente.</p>
-        
-        <BlockQuote variante={1} quote="En el mar increado de Nun bullían millones de pececillos y sin embargo inexistían pues que esperaban ansiosos a picar en el anzuelo de Isis a fin de pasar de la inexistencia a la existencia." author="Ash-Shamsi: Kitab hayati qawmiyati al-mummiyat" />
+    <Area title="Lenguaje poético del código">
+        <p>Antes de nada, que no se enfaden los de sistemas computacionales, redes, hardware, bases de datos y demás tribus, sabemos que el vasto territoro de lo tecnológco abarca innumerables áreas y todas son importantes, no se trata aquí de establecer un ranquing de importancia ni de ofrecer un riguroso estudio del panorama actual.</p>
+        <p><strong>Simplemente veremos desde la óptica TODH una aplicación web armada desde el frontend con los 4 elementos que considero básicos: javascript, css, html y json.</strong> Cada uno de ellos tiene una función, unas cualidades, una energía que unida constituye la inmensa mayoría de sitios web. Trataré de que veamos cómo hasta la tecnología sigue unas pautas, un orden, que podemos extrapolar análogamente a cualquier otro ámbito, desde lo micro hasta lo macro.</p>
 
-        <h4>Toma de consciencia</h4>
-        <p><em>El hacer</em> no es visto sólamente como un verbo sino que a un nivel más profundo es lo que está ocurriendo ahora mismo. Es el tiempo, el elemento tierra, es la vida, es el cuaternario, es la cruz y el cuadrado, son los ejes de la tierra, las estaciones del año... y así indefinidamente. Un montón de cosas son <em><strong>hacer</strong>.</em></p> 
-        <p>Hacer es estar viviendo, habitar un cuerpo. Ser un cuerpo. Ser materia. Incluso la muerte, que puede ser entendida como el fin de toda actividad tiene que suceder en algún momento. Tiene que <em>estar pasando</em> tarde o temprano. El hacer es la experiencia misma. Cualquier experiencia. Cualquier manfestación. La duración, la vigencia, los hechos, la prueba de las cosas. Nada puede no-hacerse. Los pensamientos, cuando se producen, se hacen, suceden. Aunque pensemos en la no-acción, ya estamos haciendo algo; pensar. Las cosas sólo pueden n<strong>hacer</strong>. (nacer)</p>
-        <p>La mente humana, la mente concreta sólo sabe hacer una cosa; construir objetos, ya sean éstos virtuales o físicos, no importa, todo es un objeto si cumple la condición de estar en alguna parte...</p>
-        <p>Podrámos decir que el hacer es cualquier forma que adopta el momento presente. Pero no me interesa perderme en ese despliegue, es imposible abarcar la multiplicidad y fragmentación del mundo, del colectivo... para eso ya está el mundo y el colectivo, lo que sí puedo hacer es comprenderme a mi mismo, la semilla que soy, la singularidad holística que me habita... y entrar más adentro, al origen común de las cosas. Porque son sólo 4 cosas y así es más fácil comprender.</p>
-        <p>Decía antes que las cosas sólo pueden <em>hacerse</em>, y esto significa que <strong>nacen del ser</strong>. Qué bonita expresión. Porque, el ser, es otro de los cuatro elementos constitutivos primigenios de la realidad. Osea que también hay otro montón de cosas análogas al ser, al 1, la Unidad, que diría Pitágoras. Y que decir del decir... y qué decir del sentir...</p>
-        <p>Siempre es lo mismo; 1, 2, 3, 4 y.. 0! En esta primera fase de incursión a TODH uno se da cuenta de la estructura invisible que vertebra la realidad es en realidad visible. Resulta paradógico pero es así. Es como darse cuenta de que las gafas que andabas buscando las llevabas puestas. Es insultantemente obvio y maravilloso.</p>
-        <p>La mente abstracta es capaz de registrar las relaciones entre los objetos. Digamos que es un paso más allá. Usándola uno es capaz de percibir la analogía que baña todas las cosas, lo que las cosas tienen en común. El decir, al igual que pasaba con el hacer, adopta una dimensión más profunda y a la vez más extensa. Es el lenguaje poético, es el símbolo, es la relación, es el tercer punto que conecta otros dos. El decir es el color, el perfume de una rosa que le dice al mundo que existe. No sólo es sino que también se pronuncia, transmite, se vincula con otros "algos".</p>
-        <p>Me tiré años creando mapas mentales, nubes de palabras y conceptos, observando la relación de las cosas, fascinado por la rotundidad y la magia que es todo este castillo de naipes de la vida, la cultura, el conocimiento... que se construye sobre algo tan elemental, y nunca mejor dicho, como los 5 elementos. Que son los números-idea de los que hablaba ya Pitágoras 5 siglos antes de Cristo.</p>
-        <p>Don Quijote es fuego (1) y aire (3), Sancho Panza es tierra (4) y agua (2). De repente llega a tí cualquer cosa y lo primero que haces es encontrar qué parte de esa cosa es 1 qué parte es 2, 3, 4 y 0. La astrología, la alquimia, la geometría, filosofía presocrática, Platón, la Tempestad de Shakespeare, las cosmogonías Mesopotámica y Egpcia... todo me habla de TODH, todo se ha construido siempre y se sigue construyendo en base a estas 5 dimensiones. Uno cae en una especie de fascinación de ver y comprobar una y otra vez la especie de telón de fondo o tapiz que sirve de guión de esta película.</p>
-        <p>Este tipo de "risa", de plenitud, de comprensión, de "euforia callada" sólo se comprende si le ocurre uno, no es algo para todo el mundo, es facil de experimentar pero hay que hacer algo muy difícil, sólo una cosa, tienes que estar abierto a ello y darte cuenta si es que te ocurre.</p>
-        <h4>Fase 2, lo mismo pero de otra manera</h4>
-        <p>A medida que uno integra este modo de percibir van tomando más peso conceptos como <strong>la analogía, el símbolo, la función o el orden,</strong> entre otros. Y los vas trayendo a tu vida de una forma más meticulosa y práctica. Digo esto porque es facil llegados a este punto creerse que sabes de qué va la vida, que lo comprendes todo, cuando en realidad no tenemos ni puñetera idea. Ves que incluso los problemas que te asaltan, los peligros, los conflictos y dificultades son también parte del guión de la vida. Nada escapa de lo que es. Tu vida se convierte en un "Viaje del héroe" vivido en primera persona, vas a seguir quieras o no, las fases que atravesa el héroe de cualquier historia, tendrás mentores que te ayudarán, elixires mágicos que te darán poderes, dragones que vencer, cuevas donde esconderte, las mismas pruebas que superar, y sólo cambia una cosa; que ahora lo sabes.</p>
-        <p>Se produce un cierto desencantamiento agridulce. Todo tu mundo que puede ser super especial y único es a la vez ordinario, popular y en cierto modo predecible.</p>
-        <p>Hay un orden mayor lo dirige todo, te guste o no. Ahora ya no es una especulación, una teoría, lo tienes claro. Las experiencias que vivas siempre van a estar teñidas por tu configuración específica, digamos que por la composición fíquica, psíquica y emocional que tengas.</p>
-        <p>Tu modo de funcionar en el mundo está regido por "tu composición". Percibes al otro en función de la cantidad de agua que tengas, comunicas en función de la mayor o menor presencia de aire en tu organismo. Disciernes, decides o piensas en función de tu fuego, tu ímpetu, tu intuición... y tus acciones, tus obras estarán marcadas por la manera en que manifiestas la energía del 4.</p>
-        <p>La ignorancia de lo que hay de mejor <em>(en el hombre)</em> sirve fatalmente a lo que de peor hay en él. (Hierocles)</p>
-        <p>Todo ello dependerá, obviamente, del uso que les des, tienes cierto margen de maniobra, claro, cierta libertad pero si eres un olmo dejarás de actuar como una higuera. Llegará la coherencia a tu vida. En esta fase existe cierto desencantamiento o desilusión pero lo único que se rompe en realidad es tu falsa creencia de que eso que llamas tú es algo separado del universo. Un dia te irás de igual modo que un día viniste, como la primavera.</p>
-        <p>En esta fase, incorporas la percepción TODH de que todo es lo mismo, viene de lo mismo y va a lo mismo. La diferencia es sólo ilusión.</p>
-        <p>Separar deja de tener sentido. No puedes separar tus aficiones, de tu empleo o tu familia. Eres la misma persona cuando juegas con tu hijo que cuando trabajas. Ya no puedo diferenciar mi yo que maqueta sitios web, "mi yo" que escribe, que pinta, que imprime objetos en 3D... Veo filosofía en las cascadas de estilos, en el HTML, en Git... Sólo veo lenguaje, símbolo o analogía. Formas que dan tierra a ideas de fuego, viento que me lleva hasta el lenguaje poético que es lo más lejos y cerca que puedo estar de lo que soy en esencia.</p>
-        <p>Veo simplemente el proceso. Actualizo mi potencial en coherencia. Abandono falsas ilusiones que una vez me creí. Despejo una y otra vez la incógnita que sigue estando. Proceso, es lo que hay. Creación manifestandose. Dinámicas, patrones que se repiten. Todo ordenado, establecido, todo infestado de sentido. Todo lógico e ilógico a la vez. Sin secreto pero misterioso. Inacabado pero completo.</p>
+        <CodeBlock language="js" code="{code_javascript}" header="Fuego"/>
+        <p>El lenguaje de programacón es el que decide cómo se van a comportar todos. Decide y determina cuáles serán las funciones o acciones que se van a llevar a cabo. En un sitio web se cumple su voluntad sí o sí.</p>
+        <p>No es fácil de aprender y su poder no tiene límites. Es el fuego, es el pensamiento, la voluntad, el motor que mueve las cosas, las procesa. Su arquetipo es Marte, el guerrero y el rey que hace lo que quiere.</p>
         
-        <BlockQuote variante={1} quote="El hombre inteligente no es el que tiene muchas ideas, sino el que saca provecho de las pocas que tiene." author="J. Dotras" />
+        <CodeBlock language="css" code="{code_scss}" header="Agua"/>
+        <p>La hoja de estilos se encarga del aspecto visual, el tono, la consistencia, la armonía, el ritmo, la armonía, las proporciones, la empatía con el usuario, lo cognitivo, la interfaz grafica, el sabor. El CSS dota de identidad a los distintos elementos de la App.</p>
+        <p>No por casualidad su elemento es el agua y el número dos, porque media entre lo de dentro y lo de afuera, entre el observador y lo observado.</p>
+        
+        <CodeBlock language="html" code="{code_markup}" header="Tierra"/>
+        <p>El <code>Html</code> nos dará la base sobre la que se edifica todo. Es la estructura de nuestro sitio. Es el elemento que da cuerpo, que baja, cristaliza y posibilita las ideas. Es el sentido de realidad tan necesario. Al <code>Html</code> le interesa la practicidad, la accesibilidad. Es el lienzo donde todo ocurre y se manifiesta. Es el organizador, el soporte.</p>
 
-        <p>La ciencia no puede resolver el último misterio de la naturaleza. Y eso se debe a que, en última instancia, nosotros mismos somos una parte del misterio que estamos tratando de resolver. __Max Planck</p>
-    
+        <CodeBlock language="json" code="{code_json}" header="Aire"/>
+        <p>Y llegamos al contenido, al mensaje, el vínculo con el otro. Es el reino del lenguaje. Uno de los formatos que más se usa es JSON, un standar para el intercambio de información. Innumerables webs se conectan a servicios API Rest que consumen datos. Tiene que ver con el arquetipo del mensajero que transmite.</p>
+
+        <hr>
+        <p>Estos serían los cuatro actores principales.</p>
+
+    </Area>
+    <Area>
+    <p> Luego vendrian los frameworks front end los entornos de desarrollo que unen estas tecnologías, etc.</p>
+    </Area>
+
+    <Area title="Componentización">
+        Sistemas vivientes de diseño, Svelte, atomización, fractalidad, micro/macro, hermetismo, fragmentación y defragmentación, la división de la Unidad.
     </Area>
 
     <Area title="Icons and graphics">

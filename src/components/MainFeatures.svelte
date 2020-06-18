@@ -127,7 +127,7 @@
     <div>
         <a href="/styleguide">
             <pre>
-                <code class="comment">// Discernir</code><code class="js">{html.js}</code><code class="comment">// Sentir</code><code class="style">{html.style}</code><code class="comment">// Hacer</code><code class="html">{html.html}</code><code class="comment">// Transmtir</code><code>Hello Cosmos!</code>
+                <code class="comment">// Discernir</code><code class="js">{html.js}</code><code class="comment">// Sentir</code><code class="style">{html.style}</code><code class="comment">// Hacer</code><code class="html">{html.html}</code><code class="comment">// Transmitir</code><code>Hello Cosmos!</code>
             </pre>
 
             <h4>Hello Cosmos</h4>

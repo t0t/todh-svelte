@@ -27,7 +27,6 @@
   
 <svelte:head>
   <title>TODH</title>
-  <script src="https://gist.github.com/t0t/791d882295d5530c4a7c9689e7ba73f9.js"></script>
 </svelte:head>
 
 <PageTitle pageTitle="T-O-D-H" pageSubTitle="Artefactos y procesos basados en la cosmovisión primigenia" />
