@@ -1,13 +1,15 @@
 <script>
     import IconCuatro from "./icons/IconCuatro.svelte";
-    let html = {
-        js: `let message = "Cosmos"`,
-        style: `.helloCosmos {
+let code_javascript = 
+`let message = "Cosmos";
+.helloCosmos {
     background-color: black;
-}`,
-    html: `<p class="helloCosmos">
+}
+<p class="helloCosmos">
     Hello { message }!
-</p>`};
+</p>`;
+    import CodeBlock from "./CodeBlock.svelte";
+
 </script>
 
 <style lang="scss">
@@ -77,42 +79,6 @@
             }
         }
     }
-    
-    pre {
-        background-color: $alpha_black;
-        margin: 0;
-        padding-left: $h0;
-        padding-top: $h0;
-        overflow: hidden;
-        &:hover {
-            background-color: $primary;
-        }
-    }
-    code {
-        margin: 0;
-        &.html {
-            color: $white;
-        }
-        &.style {
-            color: $color_2;
-        }
-        &.js {
-            color: $color_1;
-        }
-        &.comment {
-            color: $tertiary;
-        }
-    }
-    pre > code {
-        margin: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-top: 0;
-        &:last-child {
-            padding-bottom: $h0;
-        };
-        color: $color_3;
-    }
 </style>
   
 <div class="MainFeatures">
@@ -126,10 +92,7 @@
     </div>
     <div>
         <a href="/styleguide">
-            <pre>
-                <code class="comment">// Discernir</code><code class="js">{html.js}</code><code class="comment">// Sentir</code><code class="style">{html.style}</code><code class="comment">// Hacer</code><code class="html">{html.html}</code><code class="comment">// Transmitir</code><code>Hello Cosmos!</code>
-            </pre>
-
+            <CodeBlock header={false} language="javascript" code="{code_javascript}"/>
             <h4>Hello Cosmos</h4>
             <p>TODH en el diseño Frontend y mi workflow de creación digital ideal.</p>
             <small>Learn more ></small>
@@ -143,5 +106,4 @@
             <small>Learn more ></small>
         </a>
     </div>
-
 </div>

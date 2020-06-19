@@ -1,29 +1,23 @@
 <script>
-  import {
-    fade
-  } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
   import PageTitle from "../components/PageTitle.svelte";
   import Content from "../components/Content.svelte";
   import ContentArea from "../components/ContentArea.svelte";
   import Area from "../components/Area.svelte";
   import Banner from '../components/Banner.svelte';
-  // import Loading from "../components/Loading.svelte";
   import BlockQuote from "../components/BlockQuote.svelte";
-  import Cards from "../components/Cards.svelte";
-  import Card from "../components/Card.svelte";
-  import IconEspiral from "../components/icons/IconEspiral.svelte";
   import IconTres from '../components/icons/IconTres.svelte';
   import MainFeatures from '../components/MainFeatures.svelte';
   import CoverIntroCarousel from '../components/CoverIntroCarousel.svelte';
-
+  import IconEspiral from '../components/icons/IconEspiral.svelte';
   import { metatags } from '@sveltech/routify'
   metatags.title = 'T-O-D-H'
   metatags['twitter:card'] = 'Visión holística y artefactos en torno a la Creación';
-  </script>
+</script>
   
-  <style lang="scss">
-    @import "../styles/main.scss";
-  </style>
+<style lang="scss">
+  @import "../styles/main.scss";
+</style>
   
 <svelte:head>
   <title>TODH</title>
@@ -33,6 +27,7 @@
 
 <Content>
   <ContentArea>
+  
     <Area>
       <CoverIntroCarousel/>
     </Area>
@@ -40,11 +35,9 @@
     <MainFeatures></MainFeatures>
 
     <Area>
-      <script src="https://gist.github.com/t0t/791d882295d5530c4a7c9689e7ba73f9.js"></script>
-    </Area>
-    <Area>
-    <p>Separate and Join Together (or dissolve and coagulate in Latin), is a medieval #alchemy quote, which is to say that nothing new can be built if not before we make space, breaking the old.</p>
-    <BlockQuote variante={2} quote="Nada sé de caminos; pero conozco la maquinaria del universo. Esto es todo. La aprehendí con mi alma, la alcancé por la simple fuerza de la intuición." author="E. A. Poe, Eureka" />
+      <p>Separate and Join Together (or dissolve and coagulate in Latin), is a medieval #alchemy quote, which is to say that nothing new can be built if not before we make space, breaking the old.</p>
+      <BlockQuote variante={2} quote="La distancia entre Dios y tú es tan corta que no cabe un camino." author="Wei Wu Wei (Terence Gray)" />
+      <BlockQuote variante={2} quote="Nada sé de caminos; pero conozco la maquinaria del universo. Esto es todo. La aprehendí con mi alma, la alcancé por la simple fuerza de la intuición." author="E. A. Poe, Eureka" />
     </Area>
 
     <Banner variante={1}>
@@ -58,5 +51,4 @@
     </Banner>
 
   </ContentArea>
-
 </Content>

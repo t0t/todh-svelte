@@ -152,30 +152,6 @@ li a {
   color: $tertiary;
 }
 
-pre, code {
-  font-family: monospace, monospace;
-  @include type-setting(0);
-  text-align: left;
-}
-
-pre {
-  overflow: auto;
-  background-color: $light_grey;
-  @include margin-bottom(1);
-  em {
-    color: $secondary;
-  }
-  strong {
-    color: $secondary;
-  }
-}
-
-pre > code {
-  display: block;
-  padding: 1rem;
-  word-wrap: normal;
-}
-
 label {
 	display: block;
 }

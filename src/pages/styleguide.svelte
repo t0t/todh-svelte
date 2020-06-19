@@ -16,6 +16,7 @@
     import Card from "../components/Card.svelte";
     import SiteBrand from "../components/SiteBrand.svelte";
     import List from "../components/List.svelte";
+    import Tag from "../components/Tag.svelte";
     import Figure from "../components/Figure.svelte";
     import IconEspiral from "../components/icons/IconEspiral.svelte";
     import IconCuatro from '../components/icons/IconCuatro.svelte';
@@ -112,7 +113,7 @@ $size-scales: (
         <p>Antes de nada, que no se enfaden los de sistemas computacionales, redes, hardware, bases de datos y demás tribus, sabemos que el vasto territoro de lo tecnológco abarca innumerables áreas y todas son importantes, no se trata aquí de establecer un ranquing de importancia ni de ofrecer un riguroso estudio del panorama actual.</p>
         <p><strong>Simplemente veremos desde la óptica TODH una aplicación web armada desde el frontend con los 4 elementos que considero básicos: javascript, css, html y json.</strong> Cada uno de ellos tiene una función, unas cualidades, una energía que unida constituye la inmensa mayoría de sitios web. Trataré de que veamos cómo hasta la tecnología sigue unas pautas, un orden, que podemos extrapolar análogamente a cualquier otro ámbito, desde lo micro hasta lo macro.</p>
 
-        <CodeBlock language="js" code="{code_javascript}" header="Fuego"/>
+        <CodeBlock language="javascript" code="{code_javascript}" header="Fuego"/>
         <p>El lenguaje de programacón es el que decide cómo se van a comportar todos. Decide y determina cuáles serán las funciones o acciones que se van a llevar a cabo. En un sitio web se cumple su voluntad sí o sí.</p>
         <p>No es fácil de aprender y su poder no tiene límites. Es el fuego, es el pensamiento, la voluntad, el motor que mueve las cosas, las procesa. Su arquetipo es Marte, el guerrero y el rey que hace lo que quiere.</p>
         
@@ -121,13 +122,20 @@ $size-scales: (
         <p>No por casualidad su elemento es el agua y el número dos, porque media entre lo de dentro y lo de afuera, entre el observador y lo observado.</p>
         
         <CodeBlock language="html" code="{code_markup}" header="Tierra"/>
-        <p>El <code>Html</code> nos dará la base sobre la que se edifica todo. Es la estructura de nuestro sitio. Es el elemento que da cuerpo, que baja, cristaliza y posibilita las ideas. Es el sentido de realidad tan necesario. Al <code>Html</code> le interesa la practicidad, la accesibilidad. Es el lienzo donde todo ocurre y se manifiesta. Es el organizador, el soporte.</p>
+        <p>El <Tag isCode={true} tag="Html"/> nos dará la base sobre la que se edifica todo. Es la estructura de nuestro sitio. Es el elemento que da cuerpo, que baja, cristaliza y posibilita las ideas. Es el sentido de realidad tan necesario. Al <Tag isCode={true} tag="Html"/> le interesa la practicidad, la accesibilidad. Es el lienzo donde todo ocurre y se manifiesta. Es el organizador, el soporte.</p>
 
         <CodeBlock language="json" code="{code_json}" header="Aire"/>
         <p>Y llegamos al contenido, al mensaje, el vínculo con el otro. Es el reino del lenguaje. Uno de los formatos que más se usa es JSON, un standar para el intercambio de información. Innumerables webs se conectan a servicios API Rest que consumen datos. Tiene que ver con el arquetipo del mensajero que transmite.</p>
 
         <hr>
-        <p>Estos serían los cuatro actores principales.</p>
+        <p>Estos serían los cuatro actores principales. 
+
+        <Tag tag="Javascript" isCode={true} />
+        <Tag tag="CSS" isCode={true} />
+        <Tag tag="Html" isCode={true} />
+        <Tag tag="Json" isCode={true} />
+        <Tag tag="Etiqueta"/>
+        <Tag tag="Otra etiqueta"/>
 
     </Area>
     <Area>
@@ -253,11 +261,11 @@ $size-scales: (
                 transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
                 <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
                 transform="matrix(.03822 0 0 .03822 -536 -33.668)" />
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            transform="matrix(.03822 0 0 .03822 -493.61 -33.668)" />
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            stroke-width="13.08" transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-                    </svg>
+                <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+                    transform="matrix(.03822 0 0 .03822 -493.61 -33.668)" />
+                <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+                    stroke-width="13.08" transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
+                </svg>
                 </span>
             </Card>
 
