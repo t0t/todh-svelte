@@ -19,17 +19,17 @@
         padding-bottom: $h0;
         overflow: auto;
         display: block;
-
+        width: 90vw;
+        /* width: 336px; */
+        
         &:hover {
             background-color: $primary;
         }
         @include media(s1) {
-            /* width: 80vw; */
+            width: 684px;
         }
     }
-    /* code {
-        width: 100px;
-    } */
+
     .language {
         margin: 0;
         &-html {

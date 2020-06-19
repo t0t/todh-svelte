@@ -1,7 +1,3 @@
-<script>
-  // import AudioPlayer from "../components/AudioPlayer.svelte";
-</script>
-
 <style lang="scss">
   @import "../styles/main.scss";
 
@@ -14,16 +10,12 @@
     }
     
     @include media(s1) {
+      padding: $h4;
       display: grid;
       gap: $h1;
-      /* padding-left: $h3;
-      padding-top: $h4; */
-      /* grid-template-columns: 1fr;
-      grid-auto-flow: row; */
       grid-template-areas:
       "a b"
       ". l"
-      ". p"
       ;
       p {
         max-width: $h9;
@@ -31,23 +23,15 @@
     }
 
     @include media(s2) {
-      /* padding-top: $h3;
-      padding-bottom: $h3; */
       gap: $h2;
     }
 
     @include media(s3) {
-      /* background-color: blue; */
       grid-template-areas:
-        "a b p"
-        ". l p"
-        ". . p"
+        "a b"
+        ". l"
       ;
     }
-  }
-
-  .Player {
-    grid-area: p;
   }
 
   .Bio {

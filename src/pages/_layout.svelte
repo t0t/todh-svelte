@@ -3,6 +3,7 @@
     import SiteFooter from "../components/SiteFooter.svelte";
     import VanishingHeader from "../components/VanishingHeader.svelte";
     let y = 0;
+
 </script>
 
 <svelte:head>

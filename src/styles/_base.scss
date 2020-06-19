@@ -118,6 +118,10 @@ h6 {
   }
 }
 
+code {
+  @include type-setting(0);
+}
+
 small {
   text-align: left;
   @include padding-bottom(1);

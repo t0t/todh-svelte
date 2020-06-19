@@ -89,6 +89,7 @@ $size-scales: (
 @function font-scale($level) {
   @return map-get($size-scales, $level);
 }`;
+
 </script>
 
 <style lang="scss">
