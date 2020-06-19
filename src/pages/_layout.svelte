@@ -15,6 +15,8 @@
     @import "../styles/main.scss";
     .Main {
         padding-top: $h5;
+        width: 100vw;
+        display: block;
         @include media(s1) {
             padding-top: $h4;
         }

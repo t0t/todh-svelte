@@ -122,6 +122,9 @@ code {
   @include type-setting(0);
 }
 
+pre {
+  border-radius: $h-1;
+}
 small {
   text-align: left;
   @include padding-bottom(1);

@@ -26,7 +26,8 @@
             background-color: $primary;
         }
         @include media(s1) {
-            width: 684px;
+            width: 76vw;
+            /* width: 684px; */
         }
     }
 
