@@ -2,19 +2,15 @@
 // @TODH BASE VARIABLES - phi: 1.6180339887498948482;
 // ****************************************
 
-$base_html_size: 16px;
 $global_scale_unit: rem;
 
 // ****************************************
 // @TODH VERTICAL RHYTHM
 // ****************************************
 
-html {
-  font-size: $base_html_size; // 16px
-}
 
 $base-font-size: 1rem;
-$base-line-height: $base-font-size * 1.618;
+$base-line-height: $base-font-size * 1.62;
 
 // Breakpoints
 $s1: 374px;

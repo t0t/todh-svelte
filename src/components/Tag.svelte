@@ -12,10 +12,10 @@
         margin-bottom: $h-2;
         color: $tertiary;
         &--code {
-            padding-top: $h-1;
+            /* padding-top: $h-2; */
         }
         &--default {
-            display: inline-block;
+            /* display: inline-block; */
         }
     }
 </style>

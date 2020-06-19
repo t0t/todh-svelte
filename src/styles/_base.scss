@@ -136,7 +136,7 @@ h6 {
 }
 
 small,
-h6, h5 {
+h6 {
   text-align: left;
   @include padding-bottom(1);
 
@@ -146,6 +146,11 @@ h6, h5 {
   @include media(s1) {
     @include type-setting(0);
   }
+}
+
+h5 {
+  margin-top: inherit;
+  margin-bottom: $h0;
 }
 
 li a {

@@ -31,20 +31,22 @@ let code_javascript =
             padding: $h2;
             gap: $h2;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-auto-flow: auto;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-auto-flow: row;
             grid-auto-rows: auto;
             grid-template-areas:
-                "a a a"
-                "b b b"
-                "c c c"
+            "a a a"
+            "b b b"
+            "c c c"
             ;
         }
-
+        
         @include media(s2) {
             grid-template-areas:
-                "a b c"
+            "a b c"
             ;
+            padding: $h4;
+            gap: $h4;
         }
         @include media(s3) {
             grid-template-areas:
@@ -54,8 +56,6 @@ let code_javascript =
 
         >div {
             background-color: $color_3;
-            display: flex;
-            align-items: flex-start;
             @include media(s0) {
                 margin-bottom: $h1;
                 &:last-child {
@@ -93,7 +93,7 @@ let code_javascript =
     <div>
         <a href="/styleguide">
             <CodeBlock header={false} language="javascript" code="{code_javascript}"/>
-            <h4>Hello Cosmos</h4>
+            <h4>Hello Cosmos!</h4>
             <p>TODH en el diseño Frontend y mi workflow de creación digital ideal.</p>
             <small>Learn more ></small>
         </a>
