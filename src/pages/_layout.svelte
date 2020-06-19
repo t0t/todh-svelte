@@ -13,7 +13,10 @@
 <style lang="scss">
     @import "../styles/main.scss";
     .Main {
-        padding-top: $h4;
+        padding-top: $h5;
+        @include media(s1) {
+            padding-top: $h4;
+        }
     }
 </style>
 

@@ -70,6 +70,7 @@
       grid-template-areas: 
       "l c r"
       ;
+      border-bottom: 1px solid $primary;
     }
     @include media(s2) {
       justify-items: center;

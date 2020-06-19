@@ -50,12 +50,6 @@
 
             @include media(s2) {
                 margin-top: $h4;
-                /* background-color: $alpha_white;
-                padding: $h2; */
-            }
-            
-            @include media(s3) {
-                padding: $h4;
             }
         }
 

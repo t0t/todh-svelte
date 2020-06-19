@@ -17,14 +17,12 @@
             padding-bottom: $h2;
             padding-left: $h3;
         }
-
         @include media(s2) {
             max-width: $h9;
             margin-left: auto;
             margin-right: auto;
         }
-        
-        @include media(s3) {
+        @include media(s4) {
             max-width: $h10;
         }
     }

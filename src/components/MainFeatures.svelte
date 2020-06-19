@@ -31,19 +31,20 @@ let code_javascript =
             padding: $h2;
             gap: $h2;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            grid-auto-flow: row;
-            grid-auto-rows: auto;
             grid-template-areas:
-            "a a a"
-            "b b b"
-            "c c c"
+            "a a"
+            "b b"
+            "c c"
             ;
         }
         
         @include media(s2) {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            /* grid-auto-flow: row;
+            grid-auto-rows: auto; */
             grid-template-areas:
-            "a b c"
+            "a a c c"
+            "b b b b"
             ;
             padding: $h4;
             gap: $h4;
@@ -52,6 +53,7 @@ let code_javascript =
             grid-template-areas:
                 "a b c"
             ;
+            /* background-color: lime; */
         }
 
         >div {

@@ -1,53 +1,37 @@
 blockquote {
-    position: relative;
-    margin-bottom: $h2;
-    padding-left: $h3;
-    font-style: italic;
+    margin-bottom: 0;
     font-weight: 300;
-    font-weight: 700;
-
-    &:before {
-        content: open-quote;
-        position: absolute;
-        top: -$h2;
-        left: -0.3rem;
-        @include type-setting(3);
-        // color: $secondary;
-    }
-            
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+      
     p {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-    small {
-        display: block;
-        font-weight: 100;
-        font-weight: 300;
-        // font-family: $primary_font;
+        margin: 0;
     }
 }
 
 .Area > blockquote {
     font-weight: 700;
     margin-top: $h3;
-    margin-bottom: $h3;
-    @include type-setting(1);
-    color: $alpha_grey;
+    color: $grey;
     text-align: right;
     small {
         font-weight: 100;
     }
 }
 .Banner > .Quote {
-    text-align: center;
+    align-items: flex-end;
     font-weight: 700;
-    @include type-setting(2);
+    @include type-setting(1);
     font-family: $secondary_font;
 }
 .Quote {
     font-style: italic;
-    margin-bottom: $h1;
+    margin-bottom: $h2;
 }
 .Default {
     color: $white;
