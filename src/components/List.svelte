@@ -1,14 +1,26 @@
 <script>
-    export const items = [];
-    import { fade } from 'svelte/transition';
+    export let type = "numbered";
 </script>
 
-<style>
+<style lang="scss">
+    @import "../styles/main.scss";
     .List {
-        /* border: 1px solid red; */
+        padding-left: 1.2em;
+        &Numbered {
+            list-style-type: decimal;
+        }
+        &Default {
+            list-style-type: circle;
+        }
     }
 </style>
 
-<ul class="List" transition:fade>
+{#if type === "numbered"}
+<ol class="List ListNumbered">
     <slot/>
-</ul>
+</ol>
+{:else}
+<ol class="List ListDefault">
+    <slot/>
+</ol>
+{/if}

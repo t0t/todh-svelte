@@ -36,7 +36,10 @@
 
     <Area>
       <p>Separate and Join Together (or dissolve and coagulate in Latin), is a medieval #alchemy quote, which is to say that nothing new can be built if not before we make space, breaking the old.</p>
+      <BlockQuote variante={2} quote="The path isn't a straight line, its a spiral. You continually come back to things you thought you understood and see deeper truths." author="Barry H. Gillespie" />
+
       <BlockQuote variante={2} quote="La distancia entre Dios y tú es tan corta que no cabe un camino." author="Wei Wu Wei (Terence Gray)" />
+      
       <BlockQuote variante={2} quote="Nada sé de caminos; pero conozco la maquinaria del universo. Esto es todo. La aprehendí con mi alma, la alcancé por la simple fuerza de la intuición." author="E. A. Poe, Eureka" />
     </Area>
 

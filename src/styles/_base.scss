@@ -41,7 +41,10 @@ a[target="_blank"]::after {
 }
 
 p,
-dl {
+dl,
+ul,
+ol,
+blockquote {
   @include margin-bottom(1);
   @include type-setting(0);
   @include media(s2) {

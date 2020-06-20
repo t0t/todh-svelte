@@ -4,6 +4,7 @@
   } from 'svelte';
 
   import PageTitle from '../components/PageTitle.svelte';
+  import TODH from '../components/TODH.svelte';
   import BlockQuote from '../components/BlockQuote.svelte';
   import Content from '../components/Content.svelte';
   import ContentArea from '../components/ContentArea.svelte';
@@ -101,6 +102,13 @@
 
 <Content>
   <ContentArea>
+
+    <TODH
+    uno="JS"
+    dos="CSS"
+    tres="Html"
+    cuatro="JSON"
+    />
 
     <Cards>
       <Card title="0" variante={4} description={cualidades.cero[count]} image="img/grafico-cero.svg">

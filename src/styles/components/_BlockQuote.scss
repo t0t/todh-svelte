@@ -11,17 +11,13 @@ blockquote {
         margin-right: auto;
         max-width: 50%;
     }
+    // &:before {
+    //     content: quote($string: '"');
+    //     align-self: start;
+    //     background-color: red;
+    // }
 }
 
-.Area > blockquote {
-    font-weight: 700;
-    margin-top: $h3;
-    color: $grey;
-    text-align: right;
-    small {
-        font-weight: 100;
-    }
-}
 .Banner > .Quote {
     align-items: flex-end;
     font-weight: 700;
