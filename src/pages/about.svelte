@@ -26,66 +26,17 @@
   import Conceptos from '../components/Conceptos.svelte';
 
   let visible = true;
-  let cualidades = {
-    cero: [
-      'asd',
-      'sdf',
-      'fdh',
-      'dh',
-      'sfdf',
-      'dfhf',
-      'sd',
-      't54',
-    ],
-    uno: [
-      'mónada',
-      'punto',
-      'pensar',
-      'ser',
-      'fuego',
-      'orden',
-      'discernir',
-      'nigredo',
-    ],
-    dos: [
-      'díada',
-      'línea',
-      'sentir',
-      'dualidad',
-      'agua',
-      'incubación',
-      'empatizar',
-      'albedo',
-    ],
-    tres: [
-      'tríada',
-      'superficie',
-      'decir',
-      'símbolo',
-      'aire',
-      'conexión',
-      'testear',
-      'citrinitas',
-    ],
-    cuatro: [
-      'tétrada',
-      'objeto',
-      'hacer',
-      'manifestación',
-      'tierra',
-      'forma',
-      'prototipar',
-      'rubedo',
-    ],
-  }
 
-  let count = 0;
+  import {
+    todh,
+    counterStore
+  } from "../store/todh.js";
 
-  let increment = () => {
-    if (count < cualidades.uno.length - 1) {
-      count++
+  let incrementCounter = () => {
+    if ($counterStore < 7) {
+      $counterStore++;
     } else {
-      count = 0;
+      $counterStore = 0;
     }
   };
 </script>
@@ -102,45 +53,10 @@
 
 <Content>
   <ContentArea>
-
-    <TODH
-    uno="JS"
-    dos="CSS"
-    tres="Html"
-    cuatro="JSON"
-    />
-
-    <Cards>
-      <Card title="0" variante={4} description={cualidades.cero[count]} image="img/grafico-cero.svg">
-        <button on:click={increment}>
-          +
-        </button>
-      </Card>
-
-      <Card title="1" variante={4} description={cualidades.uno[count]} image="img/grafico-uno.svg">
-        <button on:click={increment}>
-          +
-        </button>
-      </Card>
-
-      <Card title="2" variante={4} description={cualidades.dos[count]} image="img/dos.svg">
-        <button on:click={increment}>
-          +
-        </button>
-      </Card>
-
-      <Card title="3" variante={4} description={cualidades.tres[count]} image="img/tres.svg">
-        <button on:click={increment}>
-          +
-        </button>
-      </Card>
-
-      <Card title="4" description={cualidades.cuatro[count]} image="img/cuatro.svg" variante={4}>
-        <button on:click={increment}>
-          +
-        </button>
-      </Card>
-    </Cards>
+    
+    <Area>
+      <TODH on:click={incrementCounter} cero={$todh[0].tags[$counterStore]} uno={$todh[1].tags[$counterStore]} dos={$todh[2].tags[$counterStore]} tres={$todh[3].tags[$counterStore]} cuatro={$todh[4].tags[$counterStore]} />
+    </Area>
 
     <Banner>
       <figure slot="image">
