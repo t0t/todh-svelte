@@ -108,10 +108,10 @@
         <p><strong>Cualquier ser, cualquier 'algo' requiere de estas 4 dimensiones:</strong></p>
 
         <List type="numbered">
-            <li>Una mente o principio conceptual. Un propósito.</li>
-            <li>Un cuerpo o forma concreta que le de realidad y soporte</li>
-            <li>Una piel sensible que lo contiene y le proporciona identidad</li>
-            <li>Un vínculo y conexión con el mundo externo</li>
+            <li class="text_color_uno">Una mente o principio conceptual. Un propósito.</li>
+            <li class="text_color_dos">Una piel sensible que lo contiene y le proporciona identidad</li>
+            <li class="text_color_tres">Un vínculo y conexión con el mundo externo</li>
+            <li class="text_color_cuatro">Un cuerpo o forma concreta que le de realidad y soporte</li>
         </List>
 
         <p>Cuatro dimensiones que 'van juntas' y determinan la Unidad. Y eso es lo único que hay, la Unidad, el Uno y

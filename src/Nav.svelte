@@ -31,15 +31,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $grey;
-
-    &:hover {
-      color: $silver;
-    }
-
-    &.selected {
-      color: $white;
-    }
   }
 
   .fixed,
@@ -53,7 +44,6 @@
   }
   .MainNav {
     padding: $h3;
-    background-color: $primary;
     border-radius: 50%;
     top: $h1;
     right: $h4;
@@ -70,7 +60,6 @@
       grid-template-areas: 
       "l c r"
       ;
-      border-bottom: 1px dashed $silver;
     }
     @include media(s2) {
       justify-items: center;
@@ -82,10 +71,6 @@
       margin-bottom: 0;
       li a {
         padding: $h0;
-      }
-      .selected {
-        color: $primary;
-        font-weight: bold;
       }
     }
   }

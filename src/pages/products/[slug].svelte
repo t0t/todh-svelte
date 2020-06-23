@@ -23,11 +23,9 @@
     @import "../../styles/main.scss";
 
     .Product {
-        padding-left: $h0;
-        padding-right: $h0;
+        padding: $h0;
         @include media(s1) {
-            padding-left: $h2;
-            padding-right: $h2;
+            padding: $h2;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-auto-flow: row;
@@ -46,12 +44,9 @@
                 "a a a n n"
             ;
         }
-        @include media(s3) {
-            gap: $h5;
-            padding-top: $h3;
-            padding-bottom: $h3;
-            padding-left: $h5;
-            padding-right: $h5;
+        @include media(s4) {
+            gap: $h4;
+            padding: $h4;
         }
 
         &Article {
@@ -71,8 +66,6 @@
                 padding-bottom: $h1;
                 @include media(s3) {
                     padding-top: $h4;
-                    /* padding: $h1; */
-                    /* background-color: red; */
                 }
             }
         }
@@ -121,10 +114,10 @@
                         </figcaption>
                     </figure>
                 </article>
-                <main class="ProductContent">
+                <aside class="ProductContent">
                     <h3>{@html product.content.h1}</h3>
                     <p>{@html product.content.p}</p>
-                </main>
+                </aside>
                 {/if}
                 {/each}
                 <nav class="ProductNav">

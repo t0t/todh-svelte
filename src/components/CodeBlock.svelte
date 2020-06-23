@@ -13,20 +13,16 @@
   }
   pre {
         margin-top: 0;
-        background-color: $alpha_black;
         padding-left: $h0;
         padding-top: $h0;
         padding-bottom: $h0;
         overflow: auto;
         display: block;
-        width: 90vw;
+        /* width: 90vw; */
         /* width: 336px; */
         
-        &:hover {
-            background-color: $primary;
-        }
         @include media(s1) {
-            width: 76vw;
+            /* width: 76vw; */
             /* width: 684px; */
         }
     }

@@ -2,12 +2,15 @@
 $color_1: #fde0be;
 $color_2: #ffd8d7;
 $color_3: #e9e4e0;
+$color_4: #ff767b;
+$color_5: #b9a7ff;
+$color_6: #65ddd9;
 $blue: blue;
 $silver: silver;
 
 $white: white;
-$black_light: #202020;
-$black: $black_light;
+$black: #202020;
+$black_light: #1a1a1a;
 
 $light_grey: $color_3;
 $grey: #878787;
@@ -16,14 +19,105 @@ $dark_grey: #242424;
 $primary: $black_light;
 $secondary: #fe8e88;
 $tertiary: #82786f;
+$tertiary_light: #988e86;
 $quaternary: darksalmon;
-$site_background: $color_3;
+$site_background: $primary;
 
 $alpha_black: rgba($black, 0.9);
 $alpha_grey: rgba($black, 0.2);
 $alpha_lightgrey: rgba($tertiary, 0.1);
 $alpha_white: rgba($white, 0.5);
 
+$color_cero: $color_1;
+$color_uno: $color_3;
+$color_dos: $color_6;
+$color_tres: $color_5;
+$color_cuatro: $tertiary;
+
+.text_color_uno {
+    color: $color_uno;
+}
+.text_color_dos {
+    color: $color_dos;
+}
+.text_color_tres {
+    color: $color_tres;
+}
+.text_color_cuatro {
+    color: $color_cuatro;
+}
 .BgColorAlert {
     background-color: $secondary;
+}
+.tag {
+    color: turquoise;
+    background-color: $alpha_lightgrey;
+}
+main {
+    background-color: #202020;
+}
+h3 {
+    color: $tertiary;
+}
+p,
+small,
+{
+    color: $grey;
+}
+h2 {
+    color: $tertiary;
+}
+h1 {
+    color: $silver;
+}
+h5 {
+    color: $color_5;
+}
+ul,
+ol {
+    color: rosybrown;
+}
+.selected {
+    color: $color_6;
+}
+blockquote {
+    color: $silver;
+    small {
+        color: inherit;
+    }
+}
+pre {
+    background-color: #2a2928;
+    &:hover {
+        background-color: #313131;
+    }
+}
+a {
+    &:hover {
+        color: rosybrown;
+    }
+}
+.PostContent {
+    background-color: $grey;
+    p,
+    blockquote,
+    h3 {
+
+        color: $primary;
+    }
+}
+.Cards {
+    background-color: $tertiary;
+}
+.CardMain {
+    background-color: $tertiary_light;
+}
+
+.Product {
+    background-color: $white;
+}
+.Links {
+    fill: $tertiary
+}
+.MainFeatures {
 }

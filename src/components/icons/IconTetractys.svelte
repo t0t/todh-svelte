@@ -6,6 +6,13 @@
 <style lang="scss">
   @import "../../styles/main.scss";
 
+  svg {
+    fill: black;
+    path {
+      stroke: $tertiary;
+    }
+  }
+
   svg.active path {
     stroke: none;
     stroke-dasharray: 0;

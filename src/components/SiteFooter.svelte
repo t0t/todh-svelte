@@ -70,7 +70,6 @@
       }
 
       svg {
-        fill: $alpha_black;
         width: $h2;
 
         circle,
@@ -81,10 +80,10 @@
         path,
         rect,
         polygon {
-          fill: $alpha_grey;
+          fill: black;
 
           &:hover {
-            fill: $primary;
+            fill: $grey;
           }
         }
       }

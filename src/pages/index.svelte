@@ -23,14 +23,13 @@
   <title>TODH</title>
 </svelte:head>
 
-<PageTitle pageTitle="T-O-D-H" pageSubTitle="Artefactos y procesos basados en la cosmovisión primigenia" />
+<PageTitle pageTitle="TODH" pageSubTitle="Artefactos y procesos basados en una cosmovisión primigenia" />
 
 <Content>
   <ContentArea>
   
-    <Area>
-      <CoverIntroCarousel/>
-    </Area>
+
+    <CoverIntroCarousel/>
 
     <MainFeatures></MainFeatures>
 

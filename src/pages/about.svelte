@@ -55,7 +55,12 @@
   <ContentArea>
     
     <Area>
-      <TODH on:click={incrementCounter} cero={$todh[0].tags[$counterStore]} uno={$todh[1].tags[$counterStore]} dos={$todh[2].tags[$counterStore]} tres={$todh[3].tags[$counterStore]} cuatro={$todh[4].tags[$counterStore]} />
+      <TODH on:click={incrementCounter} 
+      cero={$todh[0].tags[$counterStore]} 
+      uno={$todh[1].tags[$counterStore]} 
+      dos={$todh[2].tags[$counterStore]} 
+      tres={$todh[3].tags[$counterStore]} 
+      cuatro={$todh[4].tags[$counterStore]} />
     </Area>
 
     <Banner>

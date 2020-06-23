@@ -58,6 +58,7 @@ let code_javascript =
 
         >div {
             background-color: $color_3;
+            
             @include media(s0) {
                 margin-bottom: $h1;
                 &:last-child {
@@ -81,31 +82,48 @@ let code_javascript =
             }
         }
     }
+    .MainFeature__caption {
+        padding-left: $h2;
+        padding-right: $h2;
+        padding-bottom: $h2;
+    }
 </style>
   
 <div class="MainFeatures">
     <div>
         <a href="/products">
-            <img src="img/img1.jpg" alt="">
-            <h4>Coagulando la vibración</h4>
-            <p>TODH traído a la materia como objeto de contemplación. Obra plástica e impresiones 3D</p>
-            <small>Learn more ></small>
+            <figure class="MainFeature">
+                <img src="img/img1.jpg" alt="">
+                <figcaption class="MainFeature__caption">
+                    <h4>Coagulando la vibración</h4>
+                    <p>TODH traído a la materia como objeto de contemplación. Obra plástica e impresiones 3D</p>
+                    <small>Learn more ></small>
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div>
         <a href="/styleguide">
+            <figure class="MainFeature">
             <CodeBlock header={false} language="javascript" code="{code_javascript}"/>
-            <h4>Hello Cosmos!</h4>
+                <figcaption class="MainFeature__caption">
+                    <h4>Hello Cosmos!</h4>
             <p>TODH en el diseño Frontend y mi workflow de creación digital ideal.</p>
             <small>Learn more ></small>
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div>
         <a href="/blog">
-            <img src="img/grafico-6.svg" alt="">
-            <h4>Sentir-Orden-Forma-Conexión</h4>
+            <figure class="MainFeature">
+                <img src="img/grafico-6.svg" alt="">
+            <figcaption class="MainFeature__caption">
+                <h4>Sentir-Orden-Forma-Conexión</h4>
             <p>Laboratorio de experiencias y bitácora de reflexiones en torno al proceso de la Creación desde la Sabiduría Primigenia.</p>
             <small>Learn more ></small>
+            </figcaption>
+            </figure>
         </a>
     </div>
 </div>

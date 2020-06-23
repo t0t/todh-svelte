@@ -28,11 +28,13 @@
 
         &Article h3 {
             text-align: center;
-            color: $grey;
             font-weight: normal;
         }
 
         &Content {
+            @include media(s1) {
+                padding: $h3;
+            }
             h3 {
                 text-align: inherit;
                 margin-bottom: $h0;

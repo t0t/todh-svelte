@@ -26,7 +26,11 @@
         background-color: $primary;
     }
     .White {
-        color: $tertiary;
+        .CardTitle {
+            color: $primary;
+        }.CardContent {
+            color: $dark_grey;
+        }
         background-color: $white;
         border-bottom-right-radius: $h2;
         border-bottom-left-radius: $h2;

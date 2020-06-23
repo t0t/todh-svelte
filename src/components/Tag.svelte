@@ -6,11 +6,9 @@
 <style lang="scss">
     @import "../styles/main.scss";
     .tag {
-        background-color: $alpha_lightgrey;
         border-radius: 3px;
         padding: $h-2 $h0;
         margin-bottom: $h-2;
-        color: $tertiary;
         &--code {
             /* padding-top: $h-2; */
         }

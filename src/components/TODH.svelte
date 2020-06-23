@@ -7,7 +7,7 @@
 
     .T {
         user-select: none;
-        border: 1px solid $primary;
+        border: 1px solid $tertiary;
         border-radius: 50%;
         width: 20.1em;
         height: 20.1em;
@@ -16,7 +16,6 @@
         grid-template-areas:
             "uno dos tre cua"
         ;
-        background-color: $primary;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
@@ -35,54 +34,54 @@
             @include type-setting(1);
         }
 
-        >div {
-
+        div {
             border-radius: 50%;
-            border: 1px solid $site_background;
-            color: $site_background;
+            border: 1px solid $tertiary;
             width: 5em;
             height: 5em;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: $primary;
+            font-weight: lighter;
 
             &:hover {
-                color: inherit;
-                background-color: $site_background;
+                /* color: inherit; */
+                background-color: $black_light;
             }
         }
 
         &Cero {
             position: absolute;
-            top: 15%;
+            top: 0;
             width: 100%;
             text-align: center;
-            grid-area: cer;
-            color: white;
+            color: $color_cero;
         }
 
         &Uno {
             grid-area: uno;
-            color: red;
+            color: $color_uno;
         }
-
+        
         &Dos {
+            color: $color_dos;
             grid-area: dos;
         }
-
+        
         &Tres {
+            color: $color_tres;
             grid-area: tre;
         }
-
+        
         &Cuatro {
+            color: $color_cuatro;
             grid-area: cua;
         }
     }
 </style>
 
 <div class="T" on:click>
-    <p class="TCero">{cero}</p>
+    <div class="TCero">{cero}</div>
     <div class="TUno">{uno}</div>
     <div class="TDos">{dos}</div>
     <div class="TTres">{tres}</div>
