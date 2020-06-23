@@ -32,23 +32,18 @@
 <PageTitle pageTitle="Blog" pageSubTitle="My crazy thoughts" />
 
 <Content>
-<ContentArea>
-
-    <Cards>
-      {#each posts as post}
-      <div>
-        <a href="/blog/{$url(post.slug)}">
-          <Card 
-          title={post.title}
-          description={post.excerpt}
-          image={post.imagen}
-          variante={4}>
-            Read >
-          </Card>
-        </a>
-      </div>
-      {/each}
-    </Cards>
-
-  </ContentArea>
-  </Content>  
+  <Cards>
+    {#each posts as post}
+    <div>
+      <a href="/blog/{$url(post.slug)}">
+        <Card 
+        title={post.title}
+        description=""
+        image={post.imagen}
+        variante={3}>
+        </Card>
+      </a>
+    </div>
+    {/each}
+  </Cards>
+</Content>  

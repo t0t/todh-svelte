@@ -32,9 +32,6 @@
         }
 
         &Content {
-            @include media(s1) {
-                padding: $h3;
-            }
             h3 {
                 text-align: inherit;
                 margin-bottom: $h0;
@@ -50,9 +47,6 @@
                 margin-bottom: $h2;
             }
 
-            @include media(s2) {
-                margin-top: $h4;
-            }
         }
 
         &Header {
@@ -80,57 +74,61 @@
 {/each}
 
 <Content>
+    {#each elpost as post}
+    {#if (post.slug === slug)}
+    <div class="PostImgContainer">
+        <img src="/{post.imagen}" alt="{post.title}"/>
+    </div>
+    {/if}
+    {/each}
     <ContentArea>
         <Area>
-        <div class="Post">
-        {#each elpost as post}
-        {#if (post.slug === slug)}
-            <article class="PostArticle">
-                <div class="PostImgContainer">
-                    <img src="/{post.imagen}" alt="{post.title}"/>
-                </div>
-                <div class="PostContent">
-                    <h3>{@html post.content.h1}</h3>
-                    <p>{@html post.content.p}</p>
-                    {#if post.content.blockquote}
-                    <blockquote>
-                        <strong>{post.content.blockquote.quote}</strong>
-                        <small>{post.content.blockquote.author}</small>
-                    </blockquote>
-                    {/if }
-                    {#if post.content.p2}
-                        <p>{@html post.content.p2}</p>
-                    {/if }
-                    {#if post.content.p3}
-                        <p>{@html post.content.p3}</p>
-                    {/if }
-                    {#if post.content.p4}
-                        <p>{@html post.content.p4}</p>
-                    {/if }
-                    {#if post.content.p5}
-                        <p>{@html post.content.p5}</p>
-                    {/if }
-                    {#if post.content.p6}
-                        <p>{@html post.content.p6}</p>
-                    {/if }
-                    {#if post.content.img1}
-                        <img src="/{post.content.img1}" alt="Imagen">
-                    {/if }
-                    <p>{@html post.content.p7}</p>
-                    <p>{@html post.content.p8}</p>
-                    <p>{@html post.content.p9}</p>
-                    <p>{@html post.content.p10}</p>
-                    {#if post.content.img2}
-                        <img src="/{post.content.img2}" alt="Imagen">
-                    {/if }
-                    <p>{@html post.content.p11}</p>
-                    <p>{@html post.content.p12}</p>
-                    <p>{@html post.content.p13}</p>
-                </div>
-            </article>
-        {/if}
-        {/each}
-        </div>
+            <div class="Post">
+            {#each elpost as post}
+            {#if (post.slug === slug)}
+                <article class="PostArticle">
+                    <div class="PostContent">
+                        <h3>{@html post.content.h1}</h3>
+                        <p>{@html post.content.p}</p>
+                        {#if post.content.blockquote}
+                        <blockquote>
+                            <strong>{post.content.blockquote.quote}</strong>
+                            <small>{post.content.blockquote.author}</small>
+                        </blockquote>
+                        {/if }
+                        {#if post.content.p2}
+                            <p>{@html post.content.p2}</p>
+                        {/if }
+                        {#if post.content.p3}
+                            <p>{@html post.content.p3}</p>
+                        {/if }
+                        {#if post.content.p4}
+                            <p>{@html post.content.p4}</p>
+                        {/if }
+                        {#if post.content.p5}
+                            <p>{@html post.content.p5}</p>
+                        {/if }
+                        {#if post.content.p6}
+                            <p>{@html post.content.p6}</p>
+                        {/if }
+                        {#if post.content.img1}
+                            <img src="/{post.content.img1}" alt="Imagen">
+                        {/if }
+                        <p>{@html post.content.p7}</p>
+                        <p>{@html post.content.p8}</p>
+                        <p>{@html post.content.p9}</p>
+                        <p>{@html post.content.p10}</p>
+                        {#if post.content.img2}
+                            <img src="/{post.content.img2}" alt="Imagen">
+                        {/if }
+                        <p>{@html post.content.p11}</p>
+                        <p>{@html post.content.p12}</p>
+                        <p>{@html post.content.p13}</p>
+                    </div>
+                </article>
+            {/if}
+            {/each}
+            </div>
         </Area>
     </ContentArea>
 </Content>

@@ -11,11 +11,6 @@ blockquote {
         margin-right: auto;
         max-width: 50%;
     }
-    // &:before {
-    //     content: quote($string: '"');
-    //     align-self: start;
-    //     background-color: red;
-    // }
 }
 
 .Banner > .Quote {
@@ -34,4 +29,5 @@ blockquote {
 }
 .Grey {
     color: $grey;
+    font-weight: normal;
 }

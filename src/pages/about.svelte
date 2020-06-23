@@ -52,25 +52,20 @@
 <PageTitle pageTitle="El proceso de la Creación" pageSubTitle="Matriz-modelo-prototipo base de cualquier cosa." />
 
 <Content>
+  <Area>
+  <TODH on:click={incrementCounter} cero={$todh[0].tags[$counterStore]} uno={$todh[1].tags[$counterStore]}
+    dos={$todh[2].tags[$counterStore]} tres={$todh[3].tags[$counterStore]} cuatro={$todh[4].tags[$counterStore]} />
+  </Area>
+
+  <Banner>
+    <figure slot="image">
+      <IconEspiral />
+    </figure>
+    <BlockQuote quote="La raíz profunda de la Creación es el orden y sentirlo nos reconecta con todo lo que existe."
+      author="TODH" variante={1} />
+  </Banner>
+
   <ContentArea>
-    
-    <Area>
-      <TODH on:click={incrementCounter} 
-      cero={$todh[0].tags[$counterStore]} 
-      uno={$todh[1].tags[$counterStore]} 
-      dos={$todh[2].tags[$counterStore]} 
-      tres={$todh[3].tags[$counterStore]} 
-      cuatro={$todh[4].tags[$counterStore]} />
-    </Area>
-
-    <Banner>
-      <figure slot="image">
-        <IconEspiral />
-      </figure>
-      <BlockQuote quote="La raíz profunda de la Creación es el orden y sentirlo nos reconecta con todo lo que existe."
-        author="TODH" variante={1} />
-    </Banner>
-
     <Area title="Tetractys">
     <div class="center">
       <Figure caption="0 + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1">
@@ -120,7 +115,7 @@
     <Libros />
     </Area>
 
-    <Banner variante={1}>
+    <Banner variante={0}>
       <img src="img/dos.svg" alt="Alt text">
       <BlockQuote variante={2} quote="La creatividad es un proceso universal" author="Jaime Buhigas" />
     </Banner>

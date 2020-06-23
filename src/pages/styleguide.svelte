@@ -146,9 +146,9 @@
             <li>Living design Systems y Styleguides</li>
         </List>
 
-        Cuando le coges el gusto a prototipar directamente en el navegador y al uso de los inspectores de navegador se
-        te hace raro volver a Sketch App o Axure y es que nada es comparable a la certeza de saber cómo se va a
-        comportar tu diseño en un navegador al 100%.
+        <p>Cuando le coges el gusto a prototipar directamente en el navegador y al uso de los inspectores de navegador se
+            te hace raro volver a Sketch App o Axure y es que nada es comparable a la certeza de saber cómo se va a
+            comportar tu diseño en un navegador al 100%.</p>
 
         <p><strong>Mi entorno local ideal para prototipado web:</strong></p>
 
@@ -175,8 +175,8 @@
         </Area>
 
         <Area title="Componentización">
-        Sistemas vivientes de diseño, Svelte, atomización, fractalidad, micro/macro, hermetismo, fragmentación y
-        defragmentación, la división de la Unidad.
+        <p>Sistemas vivientes de diseño, Svelte, atomización, fractalidad, micro/macro, hermetismo, fragmentación y
+            defragmentación, la división de la Unidad.</p>
         </Area>
 
         <Area title="Icons and graphics">
@@ -307,7 +307,7 @@
         <Area title="Images">
         <img src="img/img0.jpg" alt="">
         </Area>
-
+    </ContentArea>
         <Banner variante={0}>
             <BlockQuote variante={1} quote="Es bueno repetir incluso dos veces lo que es necesario."
                 author="Empedocles" />
@@ -323,7 +323,7 @@
         <Banner variante={2}>
             Banner with simple text inside
         </Banner>
-
+    <ContentArea>
         <Area title="Tabs">
         <Tabs>
             <TabList>
@@ -389,7 +389,7 @@
                 </SwipeItem>
             </Swipe>
         </div>
-
+    </ContentArea>
         <Banner variante={0}>
             <IconEspiral />
             <BlockQuote variante={1}
@@ -409,5 +409,4 @@
                 author="Nikola Tesla" />
         </Banner>
 
-    </ContentArea>
 </Content>

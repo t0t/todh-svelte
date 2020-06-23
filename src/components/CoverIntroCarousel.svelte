@@ -20,7 +20,7 @@
     @import "../styles/main.scss";
 
 	.ImageCarouselContainer {
-        background-color: $color_2;
+        /* background-color: $color_2; */
 		display: flex;
 		justify-content: center;
 		align-items: center;

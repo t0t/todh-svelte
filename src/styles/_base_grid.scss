@@ -1,18 +1,24 @@
 .Main {
-    // width: 100%;
     @include media(s1) {
         display: grid;
         grid-template-columns: 1fr;
     }
 }
 .Main__header {
-    padding: $h0;
-    // background-color: $alpha_white;
+    padding-top: $h1;
+    padding-left: $h0;
+    padding-right: $h0;
     @include media(s1) {
-        padding: $h1;
+        padding-top: $h2;
+        padding-left: $h1;
+        padding-right: $h1;
+        padding-bottom: $h1;
     }
     @include media(s2) {
-        padding: $h2;
+        padding-top: $h4;
+        padding-left: $h1;
+        padding-right: $h1;
+        padding-bottom: $h4;
     }
 }
 .Main__nav {

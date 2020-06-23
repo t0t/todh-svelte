@@ -23,9 +23,9 @@
     @import "../../styles/main.scss";
 
     .Product {
-        padding: $h0;
+        /* padding: $h0; */
         @include media(s1) {
-            padding: $h2;
+            /* padding: $h2; */
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-auto-flow: row;
@@ -101,32 +101,30 @@
 </style>
 
 <Content>
-    <ContentArea>
-        <div class="Product">
+    <div class="Product">
+        {#each productos as product}
+        {#if (product.slug === slug)}
+        <article class="ProductArticle">
+            <figure class="ProductImgContainer">
+                <img src="/{product.imagen}" alt="{product.title}"/>
+                <figcaption class="ProductImgCaption">
+                    <strong>{product.title}</strong> 
+                    <em>{product.description}</em>
+                </figcaption>
+            </figure>
+        </article>
+        <aside class="ProductContent">
+            <h3>{@html product.content.h1}</h3>
+            <p>{@html product.content.p}</p>
+        </aside>
+        {/if}
+        {/each}
+        <nav class="ProductNav">
             {#each productos as product}
-                {#if (product.slug === slug)}
-                <article class="ProductArticle">
-                    <figure class="ProductImgContainer">
-                        <img src="/{product.imagen}" alt="{product.title}"/>
-                        <figcaption class="ProductImgCaption">
-                            <strong>{product.title}</strong> 
-                            <em>{product.description}</em>
-                        </figcaption>
-                    </figure>
-                </article>
-                <aside class="ProductContent">
-                    <h3>{@html product.content.h1}</h3>
-                    <p>{@html product.content.p}</p>
-                </aside>
-                {/if}
-                {/each}
-                <nav class="ProductNav">
-                    {#each productos as product}
-                    <a href="{product.slug}" class:selected="{$isActive(product.thumb)}">
-                    <img src="/{product.thumb}" alt="">
-                    </a>
-                    {/each}
-                </nav>
-            </div>
-    </ContentArea>
+            <a href="{product.slug}" class:selected="{$isActive(product.thumb)}">
+            <img src="/{product.thumb}" alt="">
+            </a>
+            {/each}
+        </nav>
+    </div>
 </Content>

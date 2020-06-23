@@ -33,9 +33,7 @@
 
 <PageTitle pageTitle="Coagulando la vibración" pageSubTitle="Sergio Forés" />
 
-<Content>
-  <ContentArea>
-    
+<Content>    
     <Cards>
       {#each productos as producto}
       <div>
@@ -57,6 +55,4 @@
     <IconEspiral />
     <BlockQuote variante={0} quote="El Universo existe solo con ondas de movimiento... No hay nada más que vibración" author="Walter Russell" />
   </Banner>
-
-</ContentArea>
 </Content>

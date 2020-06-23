@@ -28,7 +28,8 @@
     .White {
         .CardTitle {
             color: $primary;
-        }.CardContent {
+        }
+        .CardContent {
             color: $dark_grey;
         }
         background-color: $white;
@@ -37,7 +38,10 @@
     }
     .Line {
         background-color: transparent;
-        border: 1px solid $silver;
+        .CardMain {
+            background-color: transparent;
+            margin-top: $h2;
+        }
     }
     .Transparent {
         border: none;
@@ -72,11 +76,13 @@ class="Card  {modificador[variante]}"
         <img src="{image}" alt="{alt}">
     {/if}
     {#if hasInlineSvg}
-        <slot name="hasSvg">Put here inline-svg</slot>
+    <slot name="hasSvg">Put here inline-svg</slot>
     {/if}
     <div class="CardMain">
         <h4 class="CardTitle">{title}</h4>
+        {#if description}
         <p class="CardContent">{description}</p>
+        {/if}
         <slot></slot>
     </div>
 </div>

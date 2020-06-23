@@ -13,7 +13,7 @@ $black: #202020;
 $black_light: #1a1a1a;
 
 $light_grey: $color_3;
-$grey: #878787;
+$grey: #4e4e4e;
 $dark_grey: #242424;
 
 $primary: $black_light;
@@ -50,11 +50,11 @@ $color_cuatro: $tertiary;
     background-color: $secondary;
 }
 .tag {
-    color: turquoise;
+    color: $primary;
     background-color: $alpha_lightgrey;
 }
 main {
-    background-color: #202020;
+    background-color: $grey;
 }
 h3 {
     color: $tertiary;
@@ -62,7 +62,7 @@ h3 {
 p,
 small,
 {
-    color: $grey;
+    // color: $grey;
 }
 h2 {
     color: $tertiary;
@@ -93,16 +93,15 @@ pre {
     }
 }
 a {
+    color: $grey;
     &:hover {
         color: rosybrown;
     }
 }
 .PostContent {
-    background-color: $grey;
     p,
     blockquote,
     h3 {
-
         color: $primary;
     }
 }
@@ -112,12 +111,15 @@ a {
 .CardMain {
     background-color: $tertiary_light;
 }
-
 .Product {
     background-color: $white;
 }
 .Links {
     fill: $tertiary
 }
-.MainFeatures {
+.Bio {
+    color: $black;
+}
+.Main__header {
+    background-color: $alpha_black;
 }
