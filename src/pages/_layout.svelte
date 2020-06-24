@@ -21,6 +21,9 @@
             padding-top: $h4;
         }
     }
+    main {
+        overflow-x: hidden;
+    }
 </style>
 
 <main class="Main">
