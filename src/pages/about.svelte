@@ -116,7 +116,14 @@
     </Area>
 
     <Banner variante={0}>
-      <img src="img/dos.svg" alt="Alt text">
+      <svg class="logo-hexa" viewBox="0 0 53 46">
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M39 0l14 23H26z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M13 0l13 23H0z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M26 23l13 22H13z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M53 23L39 45 26 23z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M39 0L26 23 13 0z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M26 23L13 45 0 23z"/>
+    </svg>
       <BlockQuote variante={2} quote="La creatividad es un proceso universal" author="Jaime Buhigas" />
     </Banner>
 

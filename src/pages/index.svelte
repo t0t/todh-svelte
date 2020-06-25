@@ -29,8 +29,7 @@
 
 <Content>
   <AnimationOne/>
-  <CoverIntroCarousel>
-  </CoverIntroCarousel>
+  <!-- <CoverIntroCarousel/> -->
   
   <MainFeatures></MainFeatures>
   

@@ -8,95 +8,113 @@
         console.log(Math.floor(Math.random() * 10))
         $tweenedStore = Math.floor(Math.random() * 10);
         return $tweenedStore;
-	}
+    }
+    let active = false;
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
     .canvas {
-        /* min-height: 500px; */
-        background-color: grey;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    svg,
-    polygon {
-        fill: $color_cero;
-        width: 50px;
-        height: 50px;
+    .active {
+        animation-name: rota;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        path {
+            stroke-width: 1px;
+        }
     }
-
+    
+    svg {
+        max-width: $h5;
+        height: 50px;
+        transition: all .3s linear;
+        margin-top: -$h2;
+    }
+    
     .logo-hexa {
         width: 50%;
         height: 50%;
         stroke: black;
     }
     .triangle {
-        stroke-width: 0;
-        /* mix-blend-mode: color-dodge; */
-        &:nth-child(1),
-        &:nth-child(13),
-        &:nth-child(2),
-        &:nth-child(24) {
-            fill: $color_uno;
-        }
-        &:nth-child(21),
-        &:nth-child(23),
-        &:nth-child(7),
-        &:nth-child(22) {
-            fill: $color_dos;
-        }
-        &:nth-child(4),
-        &:nth-child(15),
-        &:nth-child(6),
-        &:nth-child(5) {
-            fill: $color_tres;
-        }
-        &:nth-child(12),
-        &:nth-child(18),
-        &:nth-child(11),
-        &:nth-child(19) {
-            fill: $color_cuatro;
-        }
-        animation-duration: 3s;
-        animation-name: animation_one;
+        /* stroke-width: 0; */
         animation-iteration-count: infinite;
+        animation-duration: 5s;
+        /* animation-fill-mode: forwards; */
+        &:nth-child(1) {
+            /* transform-origin: center left; */
+            /* fill: $color_uno;  */
+            animation-name: animation_uno;
+        }
+        &:nth-child(2) {
+            /* transform-origin: bottom right; */
+            animation-name: animation_dos;
+            /* fill: $color_dos; */
+        }
+        &:nth-child(3) {
+            /* fill: $color_tres; */
+            animation-name: animation_cuatro;
+        }
+        &:nth-child(4) {
+            /* fill: $color_cuatro; */
+            /* transform-origin: bottom right; */
+        }
+        &:nth-child(5) {
+            animation-name: animation_cuatro;
+            /* fill: $color_cero; */
+        }
+        &:nth-child(6) {
+            animation-name: animation_tres;
+            /* fill: $color_dos; */
+        }
+
     }
-    @keyframes animation_one {
+    @keyframes aumenta {
         50% {
-            transform: rotateX(-90deg) translateZ(50px);
+            transform: scale(1.1);
         }
     }
+    @keyframes rota {
+        100% {
+            transform: rotate(90deg);
+        }
+    }
+    @keyframes animation_uno {
+        30% {
+            fill: $color_3;
+        }
+    }
+    @keyframes animation_dos {
+        40% {
+            fill: aquamarine;
+            mix-blend-mode: screen;
+        }
+    }
+    @keyframes animation_tres {
+        50% {
+            fill: deeppink;
+        }
+    }
+    @keyframes animation_cuatro {
+        100% {
+            fill: $white;
+        }
+    }
+
 </style>
 <section class="canvas">
-    <svg on:click={getRandomIndex} class="logo-hexa" viewBox="0 0 105 91">
-        <path 
-        style="transform: rotateX({$tweenedStore}0deg)"
-        class="triangle triangle-1"  vector-effect="non-scaling-stroke" d="M79 0l13 23H66z"/>
-        <path class="triangle triangle-2"  vector-effect="non-scaling-stroke" d="M66 23l13 22H53z"/>
-        <path class="triangle triangle-3"  vector-effect="non-scaling-stroke" d="M53 0l13 23H39z"/>
-        <path class="triangle triangle-4"  vector-effect="non-scaling-stroke" d="M26 0l13 23H13z"/>
-        <path class="triangle triangle-5"  vector-effect="non-scaling-stroke" d="M39 23l14 22H26z"/>
-        <path class="triangle triangle-6"  vector-effect="non-scaling-stroke" d="M13 23l13 22H0z"/>
-        <path class="triangle triangle-7"  vector-effect="non-scaling-stroke" d="M26 45l13 23H13z"/>
-        <path class="triangle triangle-8"  vector-effect="non-scaling-stroke" d="M53 45l13 23H39z"/>
-        <path class="triangle triangle-9"  vector-effect="non-scaling-stroke" d="M39 68l14 23H26z"/>
-        <path class="triangle triangle-10" vector-effect="non-scaling-stroke"  d="M66 68l13 23H53z"/>
-        <path class="triangle triangle-11" vector-effect="non-scaling-stroke"  d="M79 45l13 23H66z"/>
-        <path class="triangle triangle-12" vector-effect="non-scaling-stroke"  d="M79 45L66 68 53 45z"/>
-        <path class="triangle triangle-13" vector-effect="non-scaling-stroke"  d="M92 23L79 45 66 23z"/>
-        <path class="triangle triangle-14" vector-effect="non-scaling-stroke"  d="M66 23L53 45 39 23z"/>
-        <path class="triangle triangle-15" vector-effect="non-scaling-stroke"  d="M39 23L26 45 13 23z"/>
-        <path class="triangle triangle-16" vector-effect="non-scaling-stroke"  d="M53 0L39 23 26 0z"/>
-        <path class="triangle triangle-17" vector-effect="non-scaling-stroke"  d="M79 0L66 23 53 0z"/>
-        <path class="triangle triangle-18" vector-effect="non-scaling-stroke"  d="M105 45L92 68 79 45z"/>
-        <path class="triangle triangle-19" vector-effect="non-scaling-stroke"  d="M92 68L79 91 66 68z"/>
-        <path class="triangle triangle-20" vector-effect="non-scaling-stroke"  d="M66 68L53 91 39 68z"/>
-        <path class="triangle triangle-21" vector-effect="non-scaling-stroke"  d="M53 45L39 68 26 45z"/>
-        <path class="triangle triangle-22" vector-effect="non-scaling-stroke"  d="M39 68L26 91 13 68z"/>
-        <path class="triangle triangle-23" vector-effect="non-scaling-stroke"  d="M26 45L13 68 0 45z"/>
-        <path class="triangle triangle-24" vector-effect="non-scaling-stroke"  d="M92 23l13 22H79z"/>
-      </svg>
+    <svg class:active={active} on:click="{() => active = !active}" class="logo-hexa" viewBox="0 0 53 46">
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M39 0l14 23H26z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M13 0l13 23H0z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M26 23l13 22H13z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M53 23L39 45 26 23z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M39 0L26 23 13 0z"/>
+        <path class="triangle" vector-effect="non-scaling-stroke" d="M26 23L13 45 0 23z"/>
+    </svg>
+
 </section>
