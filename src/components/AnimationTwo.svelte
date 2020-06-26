@@ -1,89 +1,67 @@
 <style lang="scss">
     @import "../styles/main.scss";
     $area: 450px;
-    .triangles {
+
+    .logo {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: $area;
-        height: $area;
-        border: 1px solid $primary;
-        border-radius: 50%;
-        margin-top: $h4;
+        max-width: 600px;
         margin-left: auto;
         margin-right: auto;
-        background-image: linear-gradient(to bottom right, $color_dos 0%, $primary 60%);
-        mix-blend-mode: screen;
-        opacity: 0.9;
-
-        &:hover {
-            .triangle:not(:nth-child(4)) {
-                transform: scale(1.2);
-            }
-        }
-
-        svg {
-            /* animation-name: anim; */
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
+    }
+    svg {
+        rect {
+            animation-name: anim;
             animation-direction: alternate;
-            /* animation: rotate 1.5s linear infinite; */
-            /* animation-timing-function: steps(3); */
-            /* animation-fill-mode: both; */
-        }
-    }
-
-    .triangle {
-        width: $area;
-        /* height: 290px; */
-        mix-blend-mode: screen;
-        opacity: 0.9;
-        transition: 400ms ease transform;
-        transform-origin: center center;
-        
-        &:nth-child(1) {
-            fill: red;
-            clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
-        }
-        
-        &:nth-child(2) {
-            fill: lime;
-            clip-path:circle(20%);
-            transition: .3s ease clip-path;
+            animation-iteration-count: infinite;
+            /* transition: 1s linear all; */
             &:hover {
-                clip-path:circle(100%);
+                animation-name: anim0;
+                /* animation-direction: normal; */
+                animation-duration: 120ms;
+                /* animation-play-state: paused; */
+                /* clip-path: circle(100%); */
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                /* animation-play-state: paused; */
+            }
+            &:nth-child(1) {
+                animation-duration: 3.7s;
+                fill: #fe8e88;
+                
+            }
+            &:nth-child(2) {
+                animation-duration: 2.1s;
+                fill: $color_dos;
+            }
+            &:nth-child(3) {
+                animation-duration: 7.1s;
+                fill: $color_tres;
+            }
+            &:nth-child(4) {
+                animation-duration: 4.5s;
+                fill: $color_cuatro;
             }
         }
-        
-        &:nth-child(3) {
-            fill: blueviolet;
-        }
-
-        &:nth-child(4) {            
-            /* clip-path: polygon(0% 0%, 0% 100%, 100% 100%); */
-            clip-path:circle(30%);
-            fill:gold;
-        }
     }
 
+    @keyframes anim0 {
+        100% { clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        }
+    }
     @keyframes anim {
-        
-        0% { clip-path: circle(100% at 50% 50%); }
-        25% { clip-path: circle(20% at 50% 50%); }
-        50% { clip-path: circle(20% at 12% 84%); }
-        75% { clip-path: circle(20% at 93% 51%); }
-        100% { clip-path: circle(20% at -30% 20%); }
+        0% { clip-path: circle(10% at 50% 50%); }
+        25% { clip-path: circle(10% at 50% 50%); }
+        50% { clip-path: circle(4% at 12% 84%); }
+        75% { clip-path: circle(3% at 70% 51%); }
+        100% { clip-path: circle(2% at 70% 51%); }
     }
 
 </style>
 
-
-<div class="triangles">
-    <svg width="450px" height="450px" viewBox="0 0 101 101">
-        <polygon class="triangle" points="22.303871 50.8576344 36.4167742 75.3019355 8.19096774 75.3019355"></polygon>
-        <polygon class="triangle" points="78.7554839 50.8576344 92.8683871 75.3019355 64.6425806 75.3019355"></polygon>
-        <polygon class="triangle" points="50.5296774 1.96913978 64.6425806 26.4133333 36.4167742 26.4133333"></polygon>
-        <polygon class="triangle" points="50.7049462 99.6344086 8.36623656 26.3121505 93.1022581 26.2783871"></polygon>
+    <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <rect class="" x="0" y="0" width="100" height="100"></rect>
+        <rect class="" x="0" y="100" width="100" height="100"></rect>
+        <rect class="" x="100" y="0" width="100" height="100"></rect>
+        <rect class="" x="100" y="100" width="100" height="100"></rect>
     </svg>
-</div>
+    <div class="container"></div>
