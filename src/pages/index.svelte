@@ -11,6 +11,7 @@
   import CoverIntroCarousel from '../components/CoverIntroCarousel.svelte';
   import IconEspiral from '../components/icons/IconEspiral.svelte';
   import AnimationOne from '../components/AnimationOne.svelte';
+  import AnimationTwo from '../components/AnimationTwo.svelte';
   import { metatags } from '@sveltech/routify'
   metatags.title = 'T-O-D-H'
   metatags['twitter:card'] = 'Visión holística y artefactos en torno a la Creación';
@@ -28,7 +29,8 @@
 <PageTitle pageTitle="TODH" pageSubTitle="Artefactos y procesos basados en una cosmovisión primigenia" />
 
 <Content>
-  <AnimationOne/>
+  <AnimationTwo/>
+  <!-- <AnimationOne/> -->
   <!-- <CoverIntroCarousel/> -->
   
   <MainFeatures></MainFeatures>
