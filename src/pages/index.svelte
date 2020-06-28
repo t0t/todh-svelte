@@ -10,26 +10,55 @@
   import MainFeatures from '../components/MainFeatures.svelte';
   import CoverIntroCarousel from '../components/CoverIntroCarousel.svelte';
   import IconEspiral from '../components/icons/IconEspiral.svelte';
-  import AnimationOne from '../components/AnimationOne.svelte';
-  import AnimationTwo from '../components/AnimationTwo.svelte';
-  import { metatags } from '@sveltech/routify'
-  metatags.title = 'T-O-D-H'
+  import { metatags } from '@sveltech/routify';
+  metatags.title = 'T-O-D-H';
   metatags['twitter:card'] = 'Visión holística y artefactos en torno a la Creación';
-  
+
+  import GraphSvelteSVG from '../components/NetworkGraphSvelteSVG.svelte';
+
+  import Graph from '../components/NetworkGraphCanvas.svelte';
+	import data from '../data/data.js';
+  // import data from '../store/dataviz.js';
+  // import { hierarchy } from 'd3-hierarchy';
+  // import Dviz from '../components/Dviz.svelte';
+  // import DvizDos from '../components/DvizDos.svelte';
+
 </script>
   
 <style lang="scss">
   @import "../styles/main.scss";
+  .chart {
+		width: 100%;
+		max-width: 640px;
+		height: calc(100% - 4em);
+		min-height: 280px;
+		max-height: 480px;
+		margin: 0 auto;
+	}
 </style>
   
 <svelte:head>
   <title>TODH</title>
+  <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
 </svelte:head>
 
-<PageTitle pageTitle="TODH" pageSubTitle="Artefactos y procesos basados en una cosmovisión primigenia" />
+<PageTitle pageTitle="TODH" pageSubTitle="Arte, Código y cosmovisión primigenia" />
 
 <Content>
-  <AnimationTwo/>
+  <ContentArea>
+    <div class="chart">
+      <!-- <GraphSvelteSVG {graph}/> -->
+      <Graph graph={data}/>
+    </div>
+    <!-- <Dviz></Dviz> -->
+    <!-- <DvizDos></DvizDos> -->
+  </ContentArea>
+
+  <!-- <DvizPie {data} {show}/>
+  <input id="show" type="checkbox" bind:checked={show} />
+ <label for="show" style="display: inline;">show curve</label>  -->
+
+  <!-- <AnimationTwo/> -->
   <!-- <AnimationOne/> -->
   <!-- <CoverIntroCarousel/> -->
   

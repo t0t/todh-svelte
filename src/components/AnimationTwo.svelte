@@ -13,29 +13,40 @@
             animation-name: anim;
             animation-direction: alternate;
             animation-iteration-count: infinite;
-            /* transition: 1s linear all; */
-            &:hover {
-                animation-name: anim0;
-                /* animation-direction: normal; */
-                animation-duration: 120ms;
-                /* animation-play-state: paused; */
-                /* clip-path: circle(100%); */
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
-                /* animation-play-state: paused; */
-            }
+
             &:nth-child(1) {
-                animation-duration: 3.7s;
                 fill: #fe8e88;
-                
+                animation-duration: 3.7s;
+                &:hover {
+                    animation: none;
+                    /* animation-direction: normal; */
+                    transform: scale(4);
+                    clip-path: circle(100%); 
+                    transition: 1s linear all;
+                    /* animation-play-state: paused; */
+                    /* clip-path: circle(100%); */
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                    /* animation-play-state: paused; */
+                }
             }
             &:nth-child(2) {
                 animation-duration: 2.1s;
                 fill: $color_dos;
+                &:hover {
+                    animation: none;
+                    transform: scale(3);
+                    clip-path: circle(100%); 
+                    transition: 1s linear all;
+                }
             }
             &:nth-child(3) {
                 animation-duration: 7.1s;
                 fill: $color_tres;
+                &:hover {
+                    animation: none;
+                    transform: scale(3);
+                }
             }
             &:nth-child(4) {
                 animation-duration: 4.5s;
@@ -45,7 +56,7 @@
     }
 
     @keyframes anim0 {
-        100% { clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        100% { clip-path: circle(100%); 
         }
     }
     @keyframes anim {
