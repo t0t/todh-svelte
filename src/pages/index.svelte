@@ -34,7 +34,6 @@
   
 <svelte:head>
   <title>TODH</title>
-  <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
 </svelte:head>
 
 <PageTitle pageTitle="TODH lab." pageSubTitle="Digital data visualizations and 3D printing from an archetypal worldview." />

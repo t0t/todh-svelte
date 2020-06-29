@@ -1,0 +1,22 @@
+.leaf circle {
+    fill: white;
+    fill-opacity: 1;
+}
+
+circle {
+    fill: red;
+    fill-opacity: .25;
+    stroke: black;
+    stroke-width: 1px;
+  }
+  
+  .leaf circle {
+    fill: white;
+    fill-opacity: 1;
+  }
+  
+  text {
+    font: 7px sans-serif;
+    text-anchor: middle;
+    cursor: pointer; cursor: hand
+  }
