@@ -6,12 +6,12 @@
   import SiteBrand from "./components/SiteBrand.svelte";
 
   const _linksLeft = [
-    ["./about", "TODH"],
-    ["./styleguide", "LAB"]
+    ["./styleguide", "Hacer"],
+    ["./blog", "Discernir"]
   ];
   const _linksRight = [
-    ["./products", "Artifacts"],
-    ["./blog", "Blog"]
+    ["./products", "Observar"],
+    ["./about", "Transmtir"]
   ];
   // let showControls = false;
   // const toggleControls = () => (showControls = !showControls);

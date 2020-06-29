@@ -36,13 +36,24 @@
   <title>TODH</title>
 </svelte:head>
 
-<PageTitle pageTitle="TODH lab." pageSubTitle="Digital data visualizations and 3D printing from an archetypal worldview." />
-
 <Content>
+  <Banner>
+    <DvizCinco/>
+    <div>
+      <h1>T-O-D-H</h1>
+    <h2>Sólo me interesa una cosa: TODO</h2>
+    <p>3d Printed art, holistic maps, front-end prototyping and all that shit</p>
+    </div>
+  </Banner>
+  <Banner variante={2}>
+    <BlockQuote quote="Data visualization, mental maps, front-end prototyping" author="TODH" />
+    <DvizCuatro/>
+  </Banner>
+  <Banner>
+    <BlockQuote quote="Sentir el orden forma la conexión" author="TODH" />
+    <DvizTres/>
+  </Banner>
 
-  <DvizCinco/>
-  <!-- <DvizCuatro/>
-  <DvizTres/> -->
   
   <MainFeatures></MainFeatures>
   
@@ -54,11 +65,6 @@
       
       <BlockQuote variante={2} quote="Nada sé de caminos; pero conozco la maquinaria del universo. Esto es todo. La aprehendí con mi alma, la alcancé por la simple fuerza de la intuición." author="E. A. Poe, Eureka" />
     </Area>
-
-    <Banner variante={1}>
-      <IconTres />
-      <BlockQuote variante={2} quote="En el universo hay cosas que son conocidas y hay cosas que son desconocidas y entre ellas hay puertas..." author="William Blake" />
-    </Banner>
   
   <ContentArea>
     <Banner>

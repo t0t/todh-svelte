@@ -4,7 +4,7 @@
 
     onMount(() => {
 
-        let radius = 600;
+        let radius = 450;
 
         const svg = d3.select("#chart5").append("svg")
         .attr("width", radius)

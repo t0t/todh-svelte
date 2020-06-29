@@ -20,7 +20,7 @@
 
     onMount(() => {
         const svgWidth = 500;
-        const svgHeight = 300;
+        const svgHeight = 500;
 
         const svg = d3.select("#graph2")
             .attr("width", svgWidth)
@@ -32,7 +32,7 @@
             .parentId((d) => d.parent)
             (dataset);
 
-        const treeStructure = d3.tree().size([400,200]);
+        const treeStructure = d3.tree().size([350,400]);
         const information = treeStructure(dataStructure)
 
         // console.log(information.descendants());
@@ -40,47 +40,47 @@
 
         const circles = svg.append("g").selectAll("circle")
                 .data(information.descendants());
+
         circles.enter().append("circle")
             .attr("cx", function(d) { return d.x;})
             .attr("cy", function(d) { return d.y;})
             .attr("r", 4)
-            .attr("fill","grey");
+            .attr("fill","black");
 
         const connections = svg.append("g").selectAll("path")
             .data(information.links());
+
         connections.enter().append("path")
             .attr("d",function(d){
                 return "M" + d.source.x + "," + d.source.y + "C" + d.source.x + "," + (d.source.y + d.target.y)/2 + " " + d.target.x + "," + (d.source.y + d.target.y)/2 + " " + d.target.x + "," + d.target.y;
             })
             .attr("stroke-width",1)
-            .attr("stroke","grey")
+            .attr("stroke","black")
             .attr("fill","none")
 
         const names = svg.append("g").selectAll("text")
             .data(information.descendants());
+
         names.enter().append("text")
             .text(function(d){return d.data.child;})
-            .attr("x", function(d){return d.x+8;})
+            .attr("x", function(d){return d.x+20;})
             .attr("y", function(d){return d.y+3;})
-            .attr("fill","white")
-            .attr("font-size","10");
-
+            .attr("fill","black");
     });
 </script>
 
 <style>
     /* @import "../styles/main.scss"; */
     .svg-container {
-        background-color: red;
         margin-left: auto;
         margin-right: auto;
     }
-    circle {
+    /* circle {
         fill: blue;
-    }
+    } */
     path {
         fill: none;
-        stroke: white;
+        stroke: black;
     }
 </style>
 <svg id="graph2"></svg>
