@@ -16,25 +16,20 @@
 
   import GraphSvelteSVG from '../components/NetworkGraphSvelteSVG.svelte';
 
-  import Graph from '../components/NetworkGraphCanvas.svelte';
-	import data from '../data/data.js';
+  // import Graph from '../components/NetworkGraphCanvas.svelte';
+	// import data from '../data/data.js';
   // import data from '../store/dataviz.js';
   // import { hierarchy } from 'd3-hierarchy';
   // import Dviz from '../components/Dviz.svelte';
   // import DvizDos from '../components/DvizDos.svelte';
+  import DvizTres from '../components/DvizTres.svelte';
+  import DvizCuatro from '../components/DvizCuatro.svelte';
+  import DvizCinco from '../components/DvizCinco.svelte';
 
 </script>
   
 <style lang="scss">
   @import "../styles/main.scss";
-  .chart {
-		width: 100%;
-		max-width: 640px;
-		height: calc(100% - 4em);
-		min-height: 280px;
-		max-height: 480px;
-		margin: 0 auto;
-	}
 </style>
   
 <svelte:head>
@@ -42,25 +37,13 @@
   <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
 </svelte:head>
 
-<PageTitle pageTitle="TODH" pageSubTitle="Arte, Código y cosmovisión primigenia" />
+<PageTitle pageTitle="TODH lab." pageSubTitle="Digital data visualizations and 3D printing from an archetypal worldview." />
 
 <Content>
-  <ContentArea>
-    <div class="chart">
-      <!-- <GraphSvelteSVG {graph}/> -->
-      <Graph graph={data}/>
-    </div>
-    <!-- <Dviz></Dviz> -->
-    <!-- <DvizDos></DvizDos> -->
-  </ContentArea>
 
-  <!-- <DvizPie {data} {show}/>
-  <input id="show" type="checkbox" bind:checked={show} />
- <label for="show" style="display: inline;">show curve</label>  -->
-
-  <!-- <AnimationTwo/> -->
-  <!-- <AnimationOne/> -->
-  <!-- <CoverIntroCarousel/> -->
+  <DvizCinco/>
+  <!-- <DvizCuatro/>
+  <DvizTres/> -->
   
   <MainFeatures></MainFeatures>
   
