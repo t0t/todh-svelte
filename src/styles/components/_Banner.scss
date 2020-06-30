@@ -16,19 +16,6 @@
     p {
         margin-bottom: 0;
     }
-
-    &Black {
-        color: $white;
-        background-color: $black;
-
-        svg {
-
-            circle,
-            path {
-                stroke: $white;
-            }
-        }
-    }
 }
 
 .Area~.Banner {

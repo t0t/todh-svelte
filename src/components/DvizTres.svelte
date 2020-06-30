@@ -3,14 +3,12 @@
     import * as d3 from 'd3';
 
     const dataset = [
-        {"skill": "SCSS", "percentage": 80},
-        {"skill": "SVG", "percentage": 85.3},
-        {"skill": "Html", "percentage": 80.1},
-        {"skill": "D3", "percentage": 15},
-        {"skill": "JS", "percentage": 20.2},
-        {"skill": "Svelte", "percentage": 28.3},
-        {"skill": "WP", "percentage": 40.1},
-        {"skill": "Git", "percentage": 20.1}
+        {"skill": "Meditation", "percentage": 60},
+        {"skill": "Data Vizualization", "percentage": 50},
+        {"skill": "CSS Grid/Animation", "percentage": 70},
+        {"skill": "Front-end Design", "percentage": 80},
+        {"skill": "3D Print/Art", "percentage": 50},
+        {"skill": "Ancient wisdom research", "percentage": 50}
     ]
 
     onMount(() => {
@@ -28,7 +26,7 @@
 
         const pie = d3.pie().value((d) => d.percentage)
 
-        const colors = d3.scaleOrdinal(d3.schemeAccent)
+        // const colors = d3.scaleOrdinal(d3.schemeAccent)
 
         const path = d3.arc()
             .outerRadius(radius)
@@ -41,25 +39,25 @@
 
         grupos.append("path")
             .attr("d", path)
-            .attr("fill", (d) => colors(d.data.percentage));
+            .attr("fill", "#1a1a1a")
+            .attr("stroke", "grey")
+            .attr("stroke-width", "1")
+            ;
+            // .attr("fill", (d) => colors(d.data.percentage));
 
         grupos.append("text")
+            .text((item) => item.data.skill)
             .attr("text-anchor", "middle")
+            .attr("fill", "white")
+            .attr("style","font-size: 12;")
             .attr("transform", (item) => `translate(${path.centroid(item)})`)
-            .text((item) => item.data.skill);
+            ;
     });
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
-    .svg-container {
-        background-color: $black;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    path {
-        fill: blue;
-    }
+
 </style>
 
 <svg id="graph"></svg>

@@ -12,7 +12,8 @@
         .attr("id", "svg");
 
         const g = svg.append("g")
-        .attr("transform", "translate(0,0)");
+        .attr("transform", "translate(0,0)")
+        .attr("fill","none");
 
         const packLayout = d3.pack()
         .size([radius - 4, radius - 4])
@@ -30,10 +31,13 @@
                 .data(root)
                 .enter().append("g")
                 .attr("class", d => d.children ? "node" : "leaf node")
-                .attr("transform", d => `translate(${d.x},${d.y})`);
-            
-            node.append("circle")
-                .attr("r", d => d.r);
+                .attr("transform", d => `translate(${d.x+1},${d.y+1})`);
+                
+                node.append("circle")
+                .attr("r", d => d.r)
+                .attr("stroke", "white")
+                .attr("stroke-width", "1")
+                .attr("fill","none");
 
             node.append("title")
                 .text(d => `${d.data.name} ${(d.value)}`);
@@ -41,7 +45,11 @@
             node.filter(d => !d.children)
                 .append("text")
                 .attr("dy", "0.35em")
-                .text(d => d.data.name.substring(0, d.r / 2));
+                .text(d => d.data.name.substring(0, d.r / 2))
+                .attr("style","font-size:6; text-anchor:middle; text-transform: uppercase;")
+                .attr("fill","grey")
+                .attr("stroke-width","0")
+                ;
         });
     });
 </script>

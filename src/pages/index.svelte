@@ -13,6 +13,7 @@
   import { metatags } from '@sveltech/routify';
   metatags.title = 'T-O-D-H';
   metatags['twitter:card'] = 'Visión holística y artefactos en torno a la Creación';
+  import Tag from "../components/Tag.svelte";
 
   import GraphSvelteSVG from '../components/NetworkGraphSvelteSVG.svelte';
 
@@ -37,21 +38,30 @@
 </svelte:head>
 
 <Content>
-  <Banner>
+  <Banner variante={0}>
     <DvizCinco/>
-    <div>
-      <h1>T-O-D-H</h1>
-    <h2>Sólo me interesa una cosa: TODO</h2>
-    <p>3d Printed art, holistic maps, front-end prototyping and all that shit</p>
-    </div>
+    <h1><strong>3D Prints & Hi-Res Web Prototypes</strong> (from a holistic worldview)</h1>
   </Banner>
-  <Banner variante={2}>
-    <BlockQuote quote="Data visualization, mental maps, front-end prototyping" author="TODH" />
+  <Banner variante={1}>
+    <h2>Existe un <strong>orden universal</strong> que estructura cualquier proceso creativo. Los pensamientos se convierten en cosas y las cosas actualizan pensamientos... Sentir ese orden da forma a la conexión.</h2>
     <DvizCuatro/>
   </Banner>
-  <Banner>
-    <BlockQuote quote="Sentir el orden forma la conexión" author="TODH" />
+  <Banner variante={2}>
     <DvizTres/>
+    <div>
+      <h2><strong>Todo está conectado</strong>, desde lo micro hasta lo macro.</h2>
+      <Tag tag="#designSystems" />
+      <Tag tag="#MejoraContínua" />
+      <Tag tag="#storyTelling" />
+      <Tag tag="#cosmogénesis" />
+      <Tag tag="#atomicDesign" />
+      <Tag tag="#geometría" />
+      <Tag tag="#simbología" />
+      <Tag tag="#astrología" />
+      <Tag tag="#mentalMaps" />
+      <Tag tag="#namingConventions" />
+      <Tag tag="..." />
+    </div>
   </Banner>
 
   

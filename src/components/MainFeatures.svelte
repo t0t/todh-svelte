@@ -37,11 +37,8 @@ let code_javascript =
             "c c"
             ;
         }
-        
         @include media(s2) {
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            /* grid-auto-flow: row;
-            grid-auto-rows: auto; */
             grid-template-areas:
             "a a c c"
             "b b b b"
@@ -49,11 +46,11 @@ let code_javascript =
             padding: $h4;
             gap: $h4;
         }
+        
         @include media(s3) {
             grid-template-areas:
-                "a b c"
+            "a b c"
             ;
-            /* background-color: lime; */
         }
 
         >div {

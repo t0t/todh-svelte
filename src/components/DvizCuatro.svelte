@@ -3,19 +3,27 @@
     import * as d3 from 'd3';
 
     const dataset = [
-        {"child": "TODH", "parent": ""},
-        {"child": "Pensar", "parent": "TODH"},
-        {"child": "Sentir", "parent": "TODH"},
-        {"child": "Decir", "parent": "TODH"},
-        {"child": "Hacer", "parent": "TODH"},
+        {"child": "Origen", "parent": ""},
+        {"child": "Pensar", "parent": "Origen"},
+        {"child": "Sentir", "parent": "Origen"},
+        {"child": "Decir", "parent": "Origen"},
+        {"child": "Hacer", "parent": "Origen"},
+        {"child": "Ser", "parent": "Fuego"},
+        {"child": "Idear", "parent": "Ser"},
         {"child": "2", "parent": "Sentir"},
-        {"child": "3", "parent": "Decir"},
-        {"child": "Vínculo", "parent": "Decir"},
+        {"child": "Agua", "parent": "Sentir"},
+        {"child": "Empatía", "parent": "Agua"},
+        {"child": "Escuchar", "parent": "Empatía"},
+        {"child": "Analogía", "parent": "Aire"},
+        {"child": "Tests", "parent": "Analogía"},
         {"child": "4", "parent": "Hacer"},
-        {"child": "Acción", "parent": "Hacer"},
+        {"child": "3", "parent": "Decir"},
+        {"child": "Aire", "parent": "Decir"},
+        {"child": "Tierra", "parent": "Hacer"},
+        {"child": "Experiencia", "parent": "Tierra"},
+        {"child": "Prototipar", "parent": "Experiencia"},
         {"child": "1", "parent": "Pensar"},
-        {"child": "Ser", "parent": "Pensar"},
-        {"child": "Intuición", "parent": "Pensar"},
+        {"child": "Fuego", "parent": "Pensar"},
     ]
 
     onMount(() => {
@@ -32,7 +40,7 @@
             .parentId((d) => d.parent)
             (dataset);
 
-        const treeStructure = d3.tree().size([350,400]);
+        const treeStructure = d3.tree().size([370,400]);
         const information = treeStructure(dataStructure)
 
         // console.log(information.descendants());
@@ -63,24 +71,26 @@
 
         names.enter().append("text")
             .text(function(d){return d.data.child;})
-            .attr("x", function(d){return d.x+20;})
-            .attr("y", function(d){return d.y+3;})
-            .attr("fill","black");
+            .attr("x", function(d){return d.x+10;})
+            .attr("y", function(d){return d.y+2;})
+            .attr("fill","black")
+            .attr("style","font-size:8; text-transform: uppercase;")
+            ;
     });
 </script>
 
 <style>
     /* @import "../styles/main.scss"; */
-    .svg-container {
+    /* .svg-container {
         margin-left: auto;
         margin-right: auto;
     }
-    /* circle {
+    circle {
         fill: blue;
-    } */
+    }
     path {
         fill: none;
-        stroke: black;
-    }
+        stroke: white;
+    } */
 </style>
 <svg id="graph2"></svg>

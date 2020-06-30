@@ -14,6 +14,8 @@
         }
         &--default {
             /* display: inline-block; */
+            color: $grey;
+            font-weight: lighter;
         }
     }
 </style>
