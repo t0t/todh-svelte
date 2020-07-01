@@ -74,9 +74,9 @@
         names.enter().append("text")
             .text(function(d){return d.data.child;})
             .attr("x", function(d){return d.x+10;})
-            .attr("y", function(d){return d.y+2;})
+            .attr("y", function(d){return d.y+3;})
             .attr("fill","black")
-            .attr("style","font-size:8; text-transform: uppercase;")
+            .attr("style","font-size:10px; text-transform: uppercase;")
             ;
     });
 </script>

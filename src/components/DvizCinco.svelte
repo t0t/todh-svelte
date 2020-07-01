@@ -51,7 +51,7 @@
                 .append("text")
                 .attr("dy", "0.35em")
                 .text(d => d.data.name.substring(0, d.r / 2))
-                .attr("style","font-size:6; text-anchor:middle; text-transform: uppercase;")
+                .attr("style","font-size:10px; text-anchor:middle; text-transform: uppercase;")
                 .attr("fill","grey")
                 .attr("stroke-width","0")
                 ;

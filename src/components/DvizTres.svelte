@@ -50,7 +50,7 @@
             .text((item) => item.data.skill)
             .attr("text-anchor", "middle")
             .attr("fill", "white")
-            .attr("style","font-size: 12;")
+            .attr("style","font-size:10px; text-anchor:middle; text-transform: uppercase;")
             .attr("transform", (item) => `translate(${path.centroid(item)})`)
             ;
     });
