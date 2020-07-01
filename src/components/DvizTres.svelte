@@ -17,8 +17,9 @@
         const radius = Math.min(svgWidth, svgHeight) / 2;
 
         const svg = d3.select("#graph")
-            .attr("width", svgWidth)
-            .attr("height", svgHeight)
+            .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`)
+            .attr("preserveAspectRatio", "none")
+            .attr("style","width:100%; height:auto;")
             .attr("class", "svg-container");
 
         const g = svg.append("g")

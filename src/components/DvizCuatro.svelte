@@ -33,7 +33,7 @@
         const svg = d3.select("#graph2")
             .attr("version", "1.1")
             .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`)
-            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("preserveAspectRatio", "none")
             .attr("style","width:100%; height:auto;")
             .append("g").attr("transform","translate(50,50)");
 
