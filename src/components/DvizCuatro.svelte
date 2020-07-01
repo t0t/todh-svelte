@@ -31,8 +31,10 @@
         const svgHeight = 500;
 
         const svg = d3.select("#graph2")
-            .attr("width", svgWidth)
-            .attr("height", svgHeight)
+            .attr("version", "1.1")
+            .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("style","width:100%; height:auto;")
             .append("g").attr("transform","translate(50,50)");
 
         const dataStructure = d3.stratify()

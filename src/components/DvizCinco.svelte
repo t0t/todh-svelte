@@ -7,13 +7,18 @@
         let radius = 450;
 
         const svg = d3.select("#chart5").append("svg")
-        .attr("width", radius)
-        .attr("height", radius)
         .attr("id", "svg");
+
+        d3.select("#svg")
+        .attr("version", "1.1")
+        .attr("viewBox", `0 0 ${radius} ${radius}`)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("style","width:100%; height:auto;");
 
         const g = svg.append("g")
         .attr("transform", "translate(0,0)")
-        .attr("fill","none");
+        .attr("fill","none")
+        ;
 
         const packLayout = d3.pack()
         .size([radius - 4, radius - 4])
@@ -55,7 +60,20 @@
 </script>
 
 <style lang="scss">
+    .svg-content-responsive {
+        width: 100%;
+    }
     /* @import "../styles/main.scss"; */
+    /* #chart5 {
+        height: 0;
+        padding-top: 48%;
+        position: relative;
+    } */
+    /* .svg--responsive {
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
     /* circle {
         fill: white;
         fill-opacity: .25;

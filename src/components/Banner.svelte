@@ -13,7 +13,7 @@
         :global(h2) {
             color: $primary;
         }
-        justify-items: center;
+        /* justify-items: center; */
     }
     .BannerDefault {
         background-color: $secondary;
