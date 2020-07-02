@@ -5,15 +5,23 @@
     export let modificador = [
         "Default",
         "Grey",
-        "Invert"
+        "Invert",
+        "Basic"
     ];
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
+    .Grey {
+        color: $silver;
+        /* font-weight: normal; */
+    }
+    .Basic {
+        color: red;
+    }
 </style>
 
-<blockquote class="Quote QuoteLine {modificador[variante]}">
+<blockquote class="Quote {modificador[variante]}">
     {quote}
     <small>{author}</small>
 </blockquote>

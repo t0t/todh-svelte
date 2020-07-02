@@ -8,17 +8,18 @@
     padding-top: $h1;
     padding-left: $h0;
     padding-right: $h0;
-    @include media(s1) {
+    padding-bottom: $h1;
+    // @include media(s1) {
+    //     padding-top: $h2;
+    //     padding-left: $h1;
+    //     padding-right: $h1;
+    //     padding-bottom: $h1;
+    // }
+    @include media(s2) {
         padding-top: $h2;
         padding-left: $h1;
         padding-right: $h1;
-        padding-bottom: $h1;
-    }
-    @include media(s2) {
-        padding-top: $h4;
-        padding-left: $h1;
-        padding-right: $h1;
-        padding-bottom: $h4;
+        padding-bottom: $h3;
     }
 }
 .Main__nav {

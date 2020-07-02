@@ -1,16 +1,27 @@
 <script>
-    export let caption = "Default figure caption";
+    export let img = 0;
+    export let caption = false;
+    export const modificadorImg = [
+        "Default",
+        "bordered",
+    ];
 </script>
 <style lang="scss">
     @import "../styles/main.scss";
     figcaption {
         padding-top: $h0;
         padding-right: $h1;
-        color: $grey;
+        color: $silver;
         @include type-setting(0);
     }
+    .bordered :global(img) {
+        border: $h0 solid $black;
+    }
 </style>
-<figure>
+
+<figure class="{modificadorImg[img]}">
     <slot/>
+    {#if caption}
     <figcaption>{caption}</figcaption>
+    {/if}
 </figure>

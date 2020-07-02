@@ -164,211 +164,10 @@
                 <Tag tag="Git" /> Control de versiones y Deployments (también Now, Netlify)</li>
         </List>
 
-        <p>Diseñar, maquetar y hasta publicar prototipos de máxima definición vuelve a ser relativamente fácil y simple
-            y ¡absolutamente divertido!</p>
+        <p>Diseñar, maquetar y hasta publicar prototipos de máxima definición vuelve a ser relativamente fácil y simple y ¡absolutamente divertido!</p>
 
         <CodeBlock language="javascript" code="{$codeBlocks[0].code_default}" header="Component.svelte" />
-
         </Area>
-
-        <Area title="Componentización">
-        <p>Sistemas vivientes de diseño, Svelte, atomización, fractalidad, micro/macro, hermetismo, fragmentación y
-            defragmentación, la división de la Unidad.</p>
-        </Area>
-
-        <Area title="Icons and graphics">
-        <div>
-            <IconEspiral />
-            Full size
-        </div>
-        <div>
-            <IconEspiral size="300px" />
-            Fixed custom size
-        </div>
-        <div>
-            <IconEspiral size="24px" />
-            Icon size
-        </div>
-        </Area>
-
-        <Area title="Figure">
-        <Figure caption="The caption">
-            <img src="img/img0.jpg" alt="Alt text">
-        </Figure>
-        </Area>
-
-        <Area title="Toggle Menu">
-        <ToggleMenu />
-        </Area>
-
-        <Area title="Buttons">
-        <Button variante={0} text="Button" />
-        <Button variante={1} text="Variante 1 de Button" />
-        </Area>
-
-        <Area title="Brand">
-        <SiteBrand />
-        </Area>
-
-        <Area title="Colors">
-        <div class="Colors">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        </Area>
-
-        <Area title="Grid Layout">
-        <div class="StyleGuide Main">
-            <div class="StyleGuide Main__brand"></div>
-            <div class="StyleGuide  Main__nav"></div>
-            <div class="StyleGuide  Main__header"></div>
-            <div class="StyleGuide  Main__content">
-                <div class="StyleGuide  Content">
-                    <div class="StyleGuide  Content__header"></div>
-                    <div class="StyleGuide  Content__nav"></div>
-                    <div class="StyleGuide  Content__area">
-                        <article class="StyleGuide  Area"></article>
-                        <article class="StyleGuide  Area"></article>
-                        <article class="StyleGuide  Area"></article>
-                    </div>
-                    <div class="StyleGuide  Content__footer"></div>
-                </div>
-            </div>
-            <div class="StyleGuide  Main__footer"></div>
-            <div class="StyleGuide  Main__totop"></div>
-        </div>
-        </Area>
-
-        <Area title="Full Simple Card">
-        <Card title="Title" description="Lorem ipsum dolor sit amet consectetur adipisicing." variante={2} />
-        </Area>
-
-        <Area title="Group Cards">
-        <Cards>
-            <Card title="Title"
-                description="El ojo que ves no es ojo porque tú lo veas; es ojo porque te ve. (Antonio Machado)"
-                variante={1}>
-                <Button variante={1} text="Button" />
-            </Card>
-
-            <Card title="Variante 3"
-                description="La auténtica felicidad consiste en la contemplación de la belleza y el orden del cosmos. _Aristóteles"
-                image="img/img1.jpg" />
-
-            <Card title="With inlne svg instead image"
-                description="Todo símbolo tiene un poder resonante, éste depende de su forma, contenido e intención. (Adrià García)"
-                variante={4} hasImage={false} hasInlineSvg={true}>
-                <span slot="hasSvg">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round"
-                        stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 169 169">
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            transform="matrix(.03822 0 0 .03822 -536 -33.668)" />
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            transform="matrix(.03822 0 0 .03822 -493.61 -33.668)" />
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            stroke-width="13.08" transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-                    </svg>
-                </span>
-            </Card>
-
-            <Card title="Éste card no lleva imagen" hasImage={false}
-                description="Para componer el mundo ha sido precisa la totalidad de cada uno de los cuatro elementos. Porque con todo el fuego, con toda el agua, con todo el aire, con toda la tierra, le ha formado el Supremo Ordenador. __Platón, Timeo"
-                variante={3} />
-
-            <Card title="Éste tampoco..." hasImage={false}
-                description="Ama tu ritmo y ritma tus acciones bajo su ley, así como tus versos; eres un universo de universos y tu alma una fuente de canciones. Rubén Darío"
-                variante={0} />
-        </Cards>
-        </Area>
-
-        <Area title="Images">
-        <img src="img/img0.jpg" alt="">
-        </Area>
-    </ContentArea>
-        <Banner variante={0}>
-            <BlockQuote variante={1} quote="Es bueno repetir incluso dos veces lo que es necesario."
-                author="Empedocles" />
-            <BlockQuote variante={0}
-                quote="Son cuatro los principios materiales de la realidad y se hallan en constante movimiento... todo es mezcla y modificación de lo mezclado."
-                author="Empedocles" />
-        </Banner>
-
-        <Banner variante={1}>
-            Banner with simple text inside
-        </Banner>
-
-        <Banner variante={2}>
-            Banner with simple text inside
-        </Banner>
-    <ContentArea>
-        <Area title="Tabs">
-        <Tabs>
-            <TabList>
-                <Tab>Tab 1</Tab>
-                <Tab>Tab 2</Tab>
-                <Tab>Tab 3</Tab>
-                <Tab>Tab 4</Tab>
-            </TabList>
-
-            <TabPanel>
-                Tab panel 1
-            </TabPanel>
-
-            <TabPanel>
-                Tab panel 2
-            </TabPanel>
-
-            <TabPanel>
-                Tab panel 3
-            </TabPanel>
-
-            <TabPanel>
-                Tab panel 4
-            </TabPanel>
-        </Tabs>
-        </Area>
-
-        <Area title="Component Header">
-        <PageTitle pageTitle="Page title" pageSubTitle="Page Subtitle" />
-        </Area>
-
-        <!-- <Area title="Fetching Json data from service"> -->
-        <!-- {#await loadedJson}
-            <Loading/>
-        {:then data}
-            <Cards>                
-                {#each data.demo as demo}
-                <Card 
-                    title={demo.title} 
-                    description={demo.description}
-                    image={demo.img}
-                />
-                {/each}
-            </Cards>
-        {:catch error}
-            <p>An error occurred!</p>
-        {/await} -->
-        <!-- </Area> -->
 
         <div class="swipe-holder">
             <Swipe {showIndicators} {autoplay} {delay} {transitionDuration} {defaultIndex}>
@@ -387,7 +186,19 @@
             </Swipe>
         </div>
     </ContentArea>
+
+    <Banner variante={0}>
+        <BlockQuote variante={1} quote="Es bueno repetir incluso dos veces lo que es necesario."
+            author="Empedocles" />
+        <BlockQuote variante={0}
+            quote="Son cuatro los principios materiales de la realidad y se hallan en constante movimiento... todo es mezcla y modificación de lo mezclado."
+            author="Empedocles" />
+    </Banner>
+
         <Banner variante={0}>
+            <Figure>
+                <img src="/img/img0.jpg" alt="imagen">
+            </Figure>
             <BlockQuote variante={1}
                 quote="En el universo hay cosas que son conocidas y hay cosas que son desconocidas y entre ellas hay puertas..."
                 author="William Blake" />

@@ -57,16 +57,17 @@ button:hover {
   cursor: pointer;
 }
 
-h1 {
-  @include type-setting(0);
-  @include media(s1) {
-    @include type-setting(2);
-  }
-  @include media(s4) {
-    @include type-setting(3);
-  }
-}
+// h1 {
+//   @include type-setting(0);
+//   @include media(s1) {
+//     @include type-setting(2);
+//   }
+//   @include media(s4) {
+//     @include type-setting(3);
+//   }
+// }
 
+h1, 
 h2 {
   @include media(s0) {
     @include type-setting(0);

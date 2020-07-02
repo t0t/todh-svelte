@@ -13,16 +13,21 @@
         :global(h2) {
             color: $primary;
         }
+        position: relative;
         /* justify-items: center; */
     }
     .BannerDefault {
-        background-color: $secondary;
-        stroke: $tertiary;
-        fill: $tertiary;
+        background-color: $black_primary;
+        path {
+            stroke: $grey;
+            fill: $tertiary;
+        }
     }
     .BannerBlack {
         background-color: $tertiary;
-        color: $primary;
+        blockquote {
+            color: $primary;
+        }
     }
     .BannerAlert {
         :global(h2) {

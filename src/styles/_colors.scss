@@ -8,9 +8,10 @@ $color_6: #65ddd9;
 $blue: blue;
 $silver: silver;
 
-$white: white;
-$black: #202020;
+$black_primary: #202020;
 $black_light: #1a1a1a;
+$white: white;
+$black: black;
 
 $light_grey: $color_3;
 $grey: #4e4e4e;
@@ -60,10 +61,10 @@ h3 {
     color: $tertiary;
 }
 
-h2 {
+h1 {
     color: $color_cero;
 }
-h1 {
+h2 {
     color: $silver;
 }
 
@@ -75,7 +76,7 @@ ol {
     color: $color_6;
 }
 blockquote {
-    color: $silver;
+    // color: $silver;
     small {
         color: inherit;
     }
@@ -115,5 +116,5 @@ a {
     color: $black;
 }
 .Main__header {
-    background-color: $alpha_black;
+    background-color: $site_background;
 }

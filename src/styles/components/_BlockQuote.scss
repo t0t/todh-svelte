@@ -17,6 +17,9 @@ blockquote {
     align-items: flex-end;
     max-width: inherit;
 }
+.BannerBlack .Quote {
+    color: black;
+}
 .Quote {
     font-style: italic;
     margin-bottom: $h2;
@@ -25,9 +28,5 @@ blockquote {
     color: $white;
 }
 .Invert {
-    // color: $primary;
-}
-.Grey {
-    color: $grey;
-    font-weight: normal;
+    color: $primary;
 }

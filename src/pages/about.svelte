@@ -49,20 +49,19 @@
   <title>TODH | About</title>
 </svelte:head>
 
-<PageTitle pageTitle="El proceso de la Creación" pageSubTitle="Matriz-modelo-prototipo base de cualquier cosa." />
+<PageTitle pageTitle="El proceso de la Creación" />
 
-<Content>
-  <Area>
-  <TODH on:click={incrementCounter} cero={$todh[0].tags[$counterStore]} uno={$todh[1].tags[$counterStore]}
-    dos={$todh[2].tags[$counterStore]} tres={$todh[3].tags[$counterStore]} cuatro={$todh[4].tags[$counterStore]} />
-  </Area>
+<TODH on:click={incrementCounter} cero={$todh[0].tags[$counterStore]} uno={$todh[1].tags[$counterStore]}
+  dos={$todh[2].tags[$counterStore]} tres={$todh[3].tags[$counterStore]} cuatro={$todh[4].tags[$counterStore]} />
+
+  <Content>
 
   <Banner>
     <figure slot="image">
       <IconEspiral />
     </figure>
     <BlockQuote quote="La raíz profunda de la Creación es el orden y sentirlo nos reconecta con todo lo que existe."
-      author="TODH" variante={1} />
+      author="TODH" variante={0} />
   </Banner>
 
   <ContentArea>
@@ -91,7 +90,7 @@
       no tanto perseguir una base teórica intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía,
       de modo que me parecería absurdo tratar de llenar más páginas al respecto.
     </p>
-    <BlockQuote quote="Un viaje que es de regreso a la Unidad." author="TODH" variante={1} />
+    <BlockQuote quote="Un viaje que es de regreso a la Unidad." author="TODH" variante={2} />
     <p>
       Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un
       viaje que es de regreso a la Unidad.
@@ -124,7 +123,7 @@
         <path class="triangle" vector-effect="non-scaling-stroke" d="M39 0L26 23 13 0z"/>
         <path class="triangle" vector-effect="non-scaling-stroke" d="M26 23L13 45 0 23z"/>
     </svg>
-      <BlockQuote variante={2} quote="La creatividad es un proceso universal" author="Jaime Buhigas" />
+      <BlockQuote variante={0} quote="La creatividad es un proceso universal" author="Jaime Buhigas" />
     </Banner>
 
   </ContentArea>

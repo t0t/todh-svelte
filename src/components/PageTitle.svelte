@@ -1,6 +1,6 @@
 <script>
+  // export let pageTitle;
   export let pageTitle;
-  export let pageSubTitle;
 </script>
 
 <style lang="scss">
@@ -10,6 +10,6 @@
 <header class="Main__header">
     <hgroup class="text-center">
       <h1>{pageTitle}</h1>
-      <h2>{pageSubTitle}</h2>
+      <!-- <h1>{pageSubTitle}</h1> -->
     </hgroup>
 </header>
