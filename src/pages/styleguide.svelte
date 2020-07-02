@@ -61,8 +61,7 @@
     <ContentArea>
 
         <Area title="TODH en el prototipado Frontend">
-        <p><strong>Veamos un prototipo Frontend en alta definición (este mismo sitio es un ejemplo), y veámoslo desde
-                sus 4 dimensiones básicas: </strong>
+        <p><strong>Veamos un prototipo Frontend en alta definición (este mismo sitio es un ejemplo), y veámoslo desde sus 4 dimensiones básicas: </strong>
             <Tag tag="Javascript" isCode={true} /> (motor),
             <Tag tag="CSS" isCode={true} /> (apariencia),
             <Tag isCode={true} tag="Html" /> (estructura) y
@@ -102,16 +101,14 @@
 
         </Area>
 
-        <TODH uno="JS" dos="CSS" tres="Html" cuatro="JSON" />
-
         <Area>
         <p><strong>Cualquier ser, cualquier 'algo' requiere de estas 4 dimensiones:</strong></p>
 
         <List type="numbered">
-            <li class="text_color_uno">Una mente o principio conceptual. Un propósito.</li>
-            <li class="text_color_dos">Una piel sensible que lo contiene y le proporciona identidad</li>
-            <li class="text_color_tres">Un vínculo y conexión con el mundo externo</li>
-            <li class="text_color_cuatro">Un cuerpo o forma concreta que le de realidad y soporte</li>
+            <li>Una mente o principio conceptual. Un propósito.</li>
+            <li>Una piel sensible que lo contiene y le proporciona identidad</li>
+            <li>Un vínculo y conexión con el mundo externo</li>
+            <li>Un cuerpo o forma concreta que le de realidad y soporte</li>
         </List>
 
         <p>Cuatro dimensiones que 'van juntas' y determinan la Unidad. Y eso es lo único que hay, la Unidad, el Uno y
@@ -391,7 +388,6 @@
         </div>
     </ContentArea>
         <Banner variante={0}>
-            <IconEspiral />
             <BlockQuote variante={1}
                 quote="En el universo hay cosas que son conocidas y hay cosas que son desconocidas y entre ellas hay puertas..."
                 author="William Blake" />

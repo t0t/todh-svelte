@@ -1,15 +1,16 @@
 <script>
-  
   export let language;
   export let code;
   export let header;
-
 </script>
 
 <style lang="scss">
   @import "../styles/main.scss";
   .CodeBlock {
-    margin-bottom: $h2;
+    margin-bottom: $h1;
+    @include media(s2) {
+        margin-bottom: $h2;
+    }
   }
   pre {
         margin-top: 0;
@@ -18,13 +19,6 @@
         padding-bottom: $h0;
         overflow: auto;
         display: block;
-        /* width: 90vw; */
-        /* width: 336px; */
-        
-        @include media(s1) {
-            /* width: 76vw; */
-            /* width: 684px; */
-        }
     }
 
     .language {

@@ -17,12 +17,6 @@
 
   import GraphSvelteSVG from '../components/NetworkGraphSvelteSVG.svelte';
 
-  // import Graph from '../components/NetworkGraphCanvas.svelte';
-	// import data from '../data/data.js';
-  // import data from '../store/dataviz.js';
-  // import { hierarchy } from 'd3-hierarchy';
-  // import Dviz from '../components/Dviz.svelte';
-  // import DvizDos from '../components/DvizDos.svelte';
   import DvizTres from '../components/DvizTres.svelte';
   import DvizCuatro from '../components/DvizCuatro.svelte';
   import DvizCinco from '../components/DvizCinco.svelte';

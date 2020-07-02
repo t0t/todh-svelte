@@ -14,6 +14,9 @@
 
 <style lang="scss">
     @import "../styles/main.scss";
+    li a {
+        color: inherit;
+    }
 </style>
 
 <ul>

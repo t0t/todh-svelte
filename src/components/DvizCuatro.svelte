@@ -49,7 +49,7 @@
         // console.log(information.links());
 
         const circles = svg.append("g").selectAll("circle")
-                .data(information.descendants());
+            .data(information.descendants());
 
         circles.enter().append("circle")
             .attr("cx", function(d) { return d.x;})

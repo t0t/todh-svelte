@@ -3,10 +3,14 @@
 
   .Main__footer {
     padding: $h2;
+    background-color: darken($silver,8%);
     p {
       max-width: $h8;
       font-style: italic;
       margin-bottom: 0;
+    }
+    ul {
+      margin-left: inherit;
     }
     
     @include media(s1) {
@@ -24,13 +28,6 @@
 
     @include media(s2) {
       gap: $h2;
-    }
-
-    @include media(s3) {
-      grid-template-areas:
-        "a b"
-        ". l"
-      ;
     }
   }
 

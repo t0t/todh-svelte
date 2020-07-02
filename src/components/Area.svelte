@@ -30,6 +30,7 @@
     h3,
     h5 {
         padding-bottom: $h2;
+        color: currentColor;
     }
 </style>
 

@@ -59,23 +59,17 @@ main {
 h3 {
     color: $tertiary;
 }
-p,
-small,
-{
-    // color: $grey;
-}
+
 h2 {
     color: $color_cero;
 }
 h1 {
     color: $silver;
 }
-h5 {
-    color: $color_5;
-}
+
 ul,
 ol {
-    color: rosybrown;
+    color: $grey;
 }
 .selected {
     color: $color_6;
@@ -95,7 +89,7 @@ pre {
 a {
     color: $grey;
     &:hover {
-        color: rosybrown;
+        color: $dark_grey;
     }
 }
 .PostContent {
