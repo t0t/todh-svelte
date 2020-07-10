@@ -29,7 +29,7 @@
   <title>Blog de TODH</title>
 </svelte:head>
 
-<PageTitle pageTitle="Blog" pageSubTitle="My crazy thoughts" />
+<PageTitle pageTitle="Blog" />
 
 <Content>
   <Cards>

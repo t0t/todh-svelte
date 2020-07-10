@@ -11,7 +11,7 @@
   ];
   const _linksRight = [
     ["./products", "Observar"],
-    ["./about", "Transmtir"]
+    ["./about", "Transmitir"]
   ];
   // let showControls = false;
   // const toggleControls = () => (showControls = !showControls);
@@ -31,6 +31,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  a:hover {
+    color: $main_nav_hover_color;
   }
 
   .fixed,
@@ -71,6 +74,7 @@
       margin-bottom: 0;
       li a {
         padding: $h0;
+        font-style: normal;
       }
     }
   }

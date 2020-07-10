@@ -14,19 +14,25 @@
 //   }
 // @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // $primary_font: 'Open Sans', sans-serif;
 $primary_font: 'Fira Sans', sans-serif;
-$secondary_font: 'Fira Sans', sans-serif;
+$secondary_font: 'Noto Sans', sans-serif;
 // $secondary_font: 'Libre Baskerville', serif;
 $tertiary_font: 'Fira Sans', sans-serif;
 // $tertiary_font: Monaco, "Lucida Console", monospace;
 
 body > * {
-  font-family: $primary_font;
-  // letter-spacing: 1px;
+  font-family: $secondary_font;
+  letter-spacing: 1px;
 }
 
+// p,
+// ul,
+// dl {
+//   font-family: $secondary_font;
+// }
 pre,
 code {
   font-family: $tertiary_font;
@@ -36,7 +42,7 @@ code {
 h1,
 h3, 
 .NavBar {
-  font-family: $secondary_font;
+  // font-family: $secondary_font;
 }
 
 h2,
@@ -81,9 +87,11 @@ h1 {
 dd {
   margin-bottom: $h1;
 }
-
+.text-big {
+  @include type-setting(2);
+}
 .Banner > .Quote {
   font-weight: lighter;
   @include type-setting(1);
-  font-family: $secondary_font;
+  // font-family: $secondary_font;
 }

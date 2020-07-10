@@ -12,6 +12,12 @@
         &Default {
             list-style-type: circle;
         }
+        :gobal(a) {
+            color: $dark_grey;
+        }
+        :global(a:hover) {
+            color: $black;
+        }
     }
 </style>
 

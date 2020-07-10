@@ -14,7 +14,7 @@
         }
         &--default {
             /* display: inline-block; */
-            color: $grey;
+            color: $tag_color;
             font-weight: lighter;
         }
     }

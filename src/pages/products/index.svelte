@@ -31,7 +31,7 @@
   <title>TODH - Artwork</title>
 </svelte:head>
 
-<PageTitle pageTitle="Coagulando la vibración" pageSubTitle="Sergio Forés" />
+<PageTitle pageTitle="Coagulando la vibración" />
 
 <Content>    
     <Cards>

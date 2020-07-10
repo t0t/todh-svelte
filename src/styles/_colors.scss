@@ -35,6 +35,12 @@ $color_dos: $color_6;
 $color_tres: $color_5;
 $color_cuatro: $tertiary;
 
+// Nav
+$main_nav_hover_color: $color_1;
+
+// Tags
+$tag_color: $tertiary_light;
+
 .text_color_uno {
     color: $color_uno;
 }
@@ -89,9 +95,6 @@ pre {
 }
 a {
     color: $grey;
-    &:hover {
-        color: $dark_grey;
-    }
 }
 .PostContent {
     p,

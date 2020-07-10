@@ -51,7 +51,7 @@
     }
 </style>
 
-<PageTitle pageTitle="Hello cosmos!" pageSubTitle="Living metadesign system 🧘🏻‍♂️" />
+<PageTitle pageTitle="Hello cosmos!"/>
 
 <svelte:head>
     <title>TODH</title>

@@ -69,7 +69,7 @@
 
 {#each elpost as post}
 {#if (post.slug === slug)}
-    <PageTitle pageTitle={post.title} pageSubTitle={post.subtitle} />
+    <PageTitle pageTitle={post.title} />
 {/if}
 {/each}
 
