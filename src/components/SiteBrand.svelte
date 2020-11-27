@@ -4,13 +4,14 @@
 </script>
 
 <style lang="scss">
-    /* @import "../styles/main.scss"; */
+    @import "../styles/main.scss";
 
     .SiteBrand {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 10px;
         align-items: center;
+        color: $tertiary;
     }
 
     .logo {
@@ -25,7 +26,7 @@
     }
 </style>
 
-<div>
+<div class="SiteBrand">
     <a href="{$url(home)}" class="SiteBrand" alt="Brand Logo">
         <svg class="logo" width="51" height="51">
             <g>
@@ -43,4 +44,5 @@
             </g>
         </svg>
     </a>
+    <h4>+0+1234</h4>
 </div>

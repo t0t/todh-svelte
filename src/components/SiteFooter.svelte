@@ -97,8 +97,7 @@
   <div class="Bio">
     <p>
       <strong>Sergio Forés</strong>
-      es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero
-      también plasmar ideas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
+      es Artista Plástico (También Diseñador Gráfico y Frontend). Amante de las ciencias sagradas y la tradición simbólica. Propone una cosmovisión sincrética y universalista de la Creación.
     </p>
   </div>
 

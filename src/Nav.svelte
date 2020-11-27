@@ -95,25 +95,28 @@
   }
 </style>
 
-
 <nav class="NavBar">
-  <ul class="NavBar__left">
+  <!-- <ul class="NavBar__left">
     {#each _linksLeft as [path, name]}
     <li>
       <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
     </li>
     {/each}
-  </ul>
-  
+  </ul> -->
+    
   <div class="NavBar__center">
     <SiteBrand/>
   </div>
 
-  <ul class="NavBar__right">
+  <!-- <ul>
+    <li>Discernir Observar Hacer Transmitir</li>
+  </ul> -->
+
+  <!-- <ul class="NavBar__right">
     {#each _linksRight as [path, name]}
     <li>
       <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
     </li>
     {/each}
-  </ul>
+  </ul> -->
 </nav>

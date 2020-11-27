@@ -10,6 +10,9 @@
 <style lang="scss">
     @import "../styles/main.scss";
     .Banner {
+        :global(div) {
+            color: $tertiary;
+        }
         :global(h2) {
             color: $primary;
         }

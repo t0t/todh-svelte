@@ -4,6 +4,7 @@
   import Content from "../components/Content.svelte";
   import Banner from '../components/Banner.svelte';
   import MainFeatures from '../components/MainFeatures.svelte';
+  import Slider from '../components/slider/Slider.svelte';
   import CoverIntroCarousel from '../components/CoverIntroCarousel.svelte';
   import { metatags } from '@sveltech/routify';
   metatags.title = 'T-O-D-H';
@@ -17,6 +18,9 @@
   
 <style lang="scss">
   @import "../styles/main.scss";
+  :global(body) {
+		background-color: $dark_grey;
+	}
 </style>
   
 <svelte:head>
@@ -25,14 +29,10 @@
 
 <Content>
 
-  <Banner variante={0}>
-    <figure class="MainFeature">
-      <img src="img/esquema-sintesis.svg" alt="Esquema tot">
-    </figure>
-    <h1 class="text-big"><strong>Una compresión unificada de toda la Creación</strong> (+0+1234)</h1>
-  </Banner>
+  <Slider></Slider>
 
   <Banner variante={2}>
+    <h2>Videocápsulas en torno al proceso de la Creación</h2>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/KAbnV6e8exs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/HFUOY7i4W8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/SRiftbEqnKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
