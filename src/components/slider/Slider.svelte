@@ -3,9 +3,9 @@
 	import { hslide } from './hslide.js';
 
 	let slides = [
+		{ content: 'Sergio Forés Raga - Arte Holístico', bg: 'img/img20.jpg' },
 		{ content: '', bg: 'img/esquema-sintesis3.svg' },
-		{ content: 'Detalle de impresión 3D', bg: 'img/img20.jpg' },
-		{ content: '+0+1234 - Una comprensión unificada de toda la Creación', bg: 'img/img3.jpg' }
+		{ content: 'Creando desde la Creación', bg: 'img/img3.jpg' }
 	]
 	
 	let cur = 0;

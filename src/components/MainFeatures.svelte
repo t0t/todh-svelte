@@ -90,37 +90,30 @@ let code_javascript =
     <div>
         <a href="/products">
             <figure class="MainFeature">
-                <img src="img/img1.jpg" alt="">
+                <img src="img/grafico-nueve.jpg" alt="">
                 <figcaption class="MainFeature__caption">
-                    <h4>Coagulando la vibración</h4>
-                    <p>TODH traído a la materia como objeto de contemplación. Obra plástica e impresiones 3D</p>
-                    <small>Learn more ></small>
+                    <p>Toda finitud surge de un autovaciamiento del infinito, la letra surge de "vaciar la materia" y la visión surge de un espacio vacío comunicante revelador de haces de luz... El secreto es secreto precisamente por lo evidente que es.</p>
                 </figcaption>
             </figure>
         </a>
     </div>
     <div>
-        <a href="/styleguide">
-            <figure class="MainFeature">
-            <CodeBlock header={false} language="javascript" code="{code_javascript}"/>
-                <figcaption class="MainFeature__caption">
-                    <h4>Hello Cosmos!</h4>
-            <p>TODH en el diseño Frontend y mi workflow de creación digital ideal.</p>
-            <small>Learn more ></small>
-                </figcaption>
-            </figure>
-        </a>
-    </div>
-    <div>
-        <a href="/blog">
-            <figure class="MainFeature">
-                <img src="img/grafico-6.svg" alt="">
+        <figure class="MainFeature">
+            <img src="img/grafico-siete.jpg" alt="">
             <figcaption class="MainFeature__caption">
-                <h4>Sentir-Orden-Forma-Conexión</h4>
-            <p>Laboratorio de experiencias y bitácora de reflexiones en torno al proceso de la Creación desde la Sabiduría Primigenia.</p>
-            <small>Learn more ></small>
+                <p>Showroom en Mediona, Barcelona. Encantado de recibirte si te apetece visitar mi estudio y ver las piezas al natural.</p>
+                <small>M. 619549032</small>
             </figcaption>
-            </figure>
-        </a>
+        </figure>
     </div>
+    <div>
+        <figure class="MainFeature">
+            <img src="img/grafico-ocho.jpg" alt="">
+            <figcaption class="MainFeature__caption">
+                <p>Experimento con impresión 3D en gran formato y postproducción con resinas, arenas y óxidos.</p>
+            </figcaption>
+        </figure>
+    </div>
+    
+   
 </div>

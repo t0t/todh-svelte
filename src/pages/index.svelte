@@ -11,6 +11,7 @@
   metatags['twitter:card'] = 'Visión holística y artefactos en torno a la Creación';
   import Tag from "../components/Tag.svelte";
   import GraphSvelteSVG from '../components/NetworkGraphSvelteSVG.svelte';
+  import Figure from '../components/Figure.svelte';
   import DvizTres from '../components/DvizTres.svelte';
   import DvizCuatro from '../components/DvizCuatro.svelte';
 
@@ -39,28 +40,12 @@
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/Kqc9iJTMWHE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </Banner>
  
-  
-    
   <Banner variante={1}>
-    <h2>Existe un <strong>orden universal</strong> que estructura cualquier proceso creativo. Los pensamientos se convierten en cosas y las cosas actualizan pensamientos... Sentir ese orden da forma a la conexión.</h2>
-    <DvizCuatro/>
-  </Banner>
-  <Banner variante={2}>
-    <DvizTres/>
-    <div>
-      <h2><strong>Todo está conectado</strong>, desde lo micro hasta lo macro.</h2>
-      <Tag tag="#designSystems" />
-      <Tag tag="#MejoraContínua" />
-      <Tag tag="#storyTelling" />
-      <Tag tag="#cosmogénesis" />
-      <Tag tag="#atomicDesign" />
-      <Tag tag="#geometría" />
-      <Tag tag="#simbología" />
-      <Tag tag="#astrología" />
-      <Tag tag="#mentalMaps" />
-      <Tag tag="#namingConventions" />
-      <Tag tag="..." />
-    </div>
+    <h2>“Y cuando el Todo hubo comenzado a ordenarse... todos los elementos recibieron del Creador sus figuras por la acción de las Ideas y de los Números...”<br>
+      <small>(Platón, Timeo, 360 aC)</small></h2>
+    <Figure caption="0 + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1">
+      <img src="/img/grafico-seis.jpg" alt="imagen">
+    </Figure>
   </Banner>
 
   <MainFeatures></MainFeatures>
