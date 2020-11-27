@@ -2,24 +2,16 @@
   import { fade } from 'svelte/transition';
   import PageTitle from "../components/PageTitle.svelte";
   import Content from "../components/Content.svelte";
-  // import ContentArea from "../components/ContentArea.svelte";
-  // import Area from "../components/Area.svelte";
   import Banner from '../components/Banner.svelte';
-  // import BlockQuote from "../components/BlockQuote.svelte";
-  // import IconTres from '../components/icons/IconTres.svelte';
   import MainFeatures from '../components/MainFeatures.svelte';
   import CoverIntroCarousel from '../components/CoverIntroCarousel.svelte';
-  // import IconEspiral from '../components/icons/IconEspiral.svelte';
   import { metatags } from '@sveltech/routify';
   metatags.title = 'T-O-D-H';
   metatags['twitter:card'] = 'Visión holística y artefactos en torno a la Creación';
   import Tag from "../components/Tag.svelte";
-
   import GraphSvelteSVG from '../components/NetworkGraphSvelteSVG.svelte';
-
   import DvizTres from '../components/DvizTres.svelte';
   import DvizCuatro from '../components/DvizCuatro.svelte';
-  import DvizCinco from '../components/DvizCinco.svelte';
 
 </script>
   
@@ -33,8 +25,11 @@
 
 <Content>
   <Banner variante={0}>
-    <DvizCinco/>
-    <h1 class="text-big"><strong>3D Prints & Hi-Res Web Prototypes</strong> (from a holistic worldview)</h1>
+    <figure class="MainFeature">
+      <img src="img/esquema-tot-sintesis.svg" alt="Esquema tot">
+    </figure>
+
+    <h1 class="text-big"><strong>Una compresión unificada de toda la Creación</strong> (+0+1234)</h1>
   </Banner>
   <Banner variante={1}>
     <h2>Existe un <strong>orden universal</strong> que estructura cualquier proceso creativo. Los pensamientos se convierten en cosas y las cosas actualizan pensamientos... Sentir ese orden da forma a la conexión.</h2>
