@@ -33,7 +33,10 @@
   <Slider></Slider>
 
   <Banner variante={2}>
-    <h2>Videocápsulas en torno al proceso de la Creación</h2>
+    <h2>Videocápsulas en torno al proceso de la Creación
+
+      <p>constantemente descubriendo cosas que ya fueron descubiertas.</p>
+    </h2>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/KAbnV6e8exs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/HFUOY7i4W8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/SRiftbEqnKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
