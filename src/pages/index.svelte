@@ -5,6 +5,7 @@
   import Banner from '../components/Banner.svelte';
   import MainFeatures from '../components/MainFeatures.svelte';
   import Slider from '../components/slider/Slider.svelte';
+  import Button from "../components/Button.svelte";
   import CoverIntroCarousel from '../components/CoverIntroCarousel.svelte';
   import { metatags } from '@sveltech/routify';
   metatags.title = 'T-O-D-H';
@@ -33,58 +34,63 @@
 
   <Slider></Slider>
 
-  <ContentArea>
-
-    <Area title="Crear como lo hace la Creación">
-    <p>
-      El Arte manifiesta lo sagrado en el mundo, una suerte de "cosas invisibles" que no parecen ser "de aquí", porque no las vemos, pero que hacen que nuestra existencia tenga algún sentido. Es curioso que la mayor parte de lo que hay no lo vemos. Según la moderna física cuántica el 99,999...% de todo lo que hay es vacío y todo surge del Big Bang. También los relatos cosmogónicos ancestrales de la mayoría de los pueblos hablan de lo mismo; huevos cósmicos que eclosionan y de los que surge la materia y también aguas infinitas repletas de potencialidad y vacuidad generadora.
-    </p>
-    <p>
-      Cuando nos remontamos al origen primigenio siempre llegamos a ese punto ulterior al cual lo que sea que ocurra está más allá de lo que podemos abarcar con nuestros 5 sentidos. Una dimensión de lo incognoscible, lo metafísico y, porqué no, del lenguaje poético, donde se gesta todo el relato símbólico que subyace, permea e imbrica nuestra cultura.
-    </p>
-    <p>
-      A través del simbolo los hinduistas nos hablan de un Visnú en forma de tortuga en un "océano de leche primordial" del que emerge una montaña que, como un palo (a modo de Axis Mundi) se usa para batir las aguas y hace emerger distintos elementos. La Ogdóada Hermopolitana, en Egipto, narra a cuatro parejas de dioses llamadas "las almas de Thot" que personifican la esencia de ese caos líquido primigenio, mar de Nun o estado primordial del que también surge un montículo de tierra con un huevo cósmico dentro. En posiblemente el primer relato de que tengamos constancia, el Enuma Elish mesopotámico, Apsu (océano) y Tiámat (mar) entremezclan sus aguas y dan origen a los "fangosos", etc. Ni qué hablar de los griegos y su acuoso Kaos hecho de silencio, tinieblas y potencialidad vital... y Gea, diosa de la Tierra, Madre universal. Cabe citar también el Tzimtzum de la mística judía, ese autovaciado del infinito potencial sobre sí mismo que se vierte como luz en vasijas-recipiente hasta llegar a Maljut, el mundo físico. Ni siquiera los cabalistas son capaces de describir cómo es exactamente la infinitud pura (Ein Sof), pero ahí está, como ese ingrediente secreto que no puede faltar en la ecuación.
-    </p>
-    <p>Éstos son sólo algunos ejemplos que espero me hayan servido para señalar que <b>existen patrones arquetípicos universales operando en la Creación.</b> Durante siglos nuestra especie los ha percibido y estudiado desde unas Ciencias Sagradas que ahora son vistas como charlatanería y mera superstición, claro.</p>
-
-    <BlockQuote quote='"Lo más importante en la vida es que lo más importante sea lo más importante"' author="Stephen Covey" variante={2} />
-
-    <p>Mi sentir desde siempre ha sido la necesidad de recuperar la legítima función sagrada del Arte entendido siempre desde su dimensión más metafísica, verdadera y original. No me interesa pintar un bello torso femenino sujetando una manzana y titularlo Venus en el Edén, sino que lo que pinto tiene que ser la encarnación del arquetipo venusiano, tiene que ser el disfrute mismo sucediendo. Desde mi visión el arte en su núcleo encarna una función que tiene que ver con la base de la realidad misma y con cómo la existencia y la no-existencia se sueñan mutuamente, recíprocamente.</p>
-    <p>Así como reza el viejo axioma hermético "como es arriba es abajo, como es adentro es afuera..."
-      <b>Existe una íntima y clara relación entre el oficio de realizar obras de arte y el modo en que parece operar la Inteligencia Creadora Última.</b> (por pretencioso que esto suene, así es como lo siento).
-    </p>
-    <p>
-      Y es que una obra de arte es ya un símbolo per sé, es meditación y es mediación, un objeto perceptible por los sentidos en un nivel que, a la vez, también deja espacio a la contemplación íntima y poética de lo sagrado, aquello que no podríamos percibir de ningún otro modo.
-    </p>
-    <p>
-      Mis creaciones buscan expresarse a sí mismas desde eso que me expresó a mí cuando nací. Son partes de una Unidad,  réplicas de lo que las atraviesa, y que quiere conocerse una y otra vez en su propio lenguaje. La Creación se oculta a si misma en lo creado para dejar espacio a lo que está siendo.
-    </p>
-    <p>
-      Vivimos un mundo laberíntico de espejos y reflejos, de corrientes de formas, de construcciones distorsionadas... En algún momento caímos como Ícaro, como Adán y Eva, como Faetón, y seguimos cayendo... Pero si consiguieramos recuperar aquella mirada ingénua y preclara de aquellos primeros hombres tan rudimentarios que veían vastos océanos de potencialidad y huevos prototipicos de los que emergían y se revelaban las cosas que no podían ver, tal vez todo tendría un sentido.
-    </p>
-    </Area>
-
-  </ContentArea>
+  <MainFeatures></MainFeatures>
 
   <Banner variante={2}>
-    <h2>Videocápsulas en torno al proceso de la Creación
-
-      <p>constantemente descubriendo cosas que ya fueron descubiertas.</p>
-    </h2>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/KAbnV6e8exs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/HFUOY7i4W8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/SRiftbEqnKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Kqc9iJTMWHE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+      <h2>Videocápsulas</h2>
+      <p>Poco a poco voy nutriendo mi propio canal en Youtube, te invito a pasarte por allí y escuchar la información que voy volcando.</p>
+      <Button variante={1} text="Ir al canal" url="https://www.youtube.com/channel/UC9C6HRn2RDG3bmWC4Soxtcw"/>
+    </div>
+    
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/KAbnV6e8exs" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </Banner>
+
+  <ContentArea>
+
+    <Area title="Notas sobre mi obra">
+
+      <p><strong>En su vertiente conceptual podríamos decir que las cosas que hago pueden ser comprendidas racionalmente desde una perspectiva metafísica, simbólica, pitagórica, aritmosófica, cosmogónica o alquímica. </strong></p>
+      <p>... pero son eminentemente vivenciales, así que me gustaría empezar explicando que estas cosas son artefactos cuya geometrías son concebidas y modeladas desde lo virtual; construyo una serie de mallas o estructuras poliédricas sobre las que aplico una serie de fuerzas y vibraciones que interactúan entre sí. La obra nace en mi cabeza y en el ordenador y luego es plasmada con una impresora 3D de gran formato. Después es cuando las pinto, entran en una fase de postproducción o acabados en los que aplico diferentes materiales como arenas, resinas, óxidos, etc. </p>
+
+      <p>Son cuadros tridimensionales de corte naturalista que invitan a una contemplación desnuda y cruda, sin artificios, con una fuerte componente emocional que uno va descubriendo ya que permiten una mirada más íntima a medida que uno va penetrando. Se deja espacio a un nuevo descubrimiento sutil en cada detalle, en los reflejos que emanan, en el modo en que incide la luz, en las resonancias cognitivas que evocan... Hay una búsqueda de un preciosismo delicado y a la vez contundente, una contención introspectiva que es a corazón descubierto, donde se puede dilucidar una emocionalidad que no busca ser más de lo que Es.</p>
+
+      <p>Afloran a la superficie texturas sutiles, moduladas con delicada aspereza. La arena, reina, con su indiscutible plasticidad, la tierra que el cuadro es y se comporta como el agua y como el aire. Con gestos sencillos permite construir algo elaborado, desde una continuidad vibracional que irradia equilibrio. Las ondas reconcilian el movimiento con la quietud y congelan las ideas y las emociones en forma de simbolos que podemos tocar con el alma.</p>
+
+      <BlockQuote quote='"Eres un universo de universos y tu alma una fuente de canciones."' author="Rubén Darío" variante={2} />
+
+      <p>Asomarme a la geometría pitagórica, el relato mitológico o herramientas como la kabbalah, o la astrología, por ejemplo, me sirve en lo personal para corroborar una y otra vez que la naturaleza de la existencia y su despliegue no son casuales sino que siguen una serie de patrones arquetípicos, un orden matricial que es universal.
+        Digamos que ese orden es el marco conceptual desde el que yo opero y del que no me interesa alejarme. Persigo una suerte de sincretismo holistico del conocimiento más secreto y velado, como algo que me disuelve y me destila constantemente, subterráneamente. Digamos que aprender y estudiar me sirve para tener herramientas de síntesis que me vacíen, me liberen y me enfoquen en lo que es esencial para mí.</p>
+      
+        <p>Es vital en el proceso creativo poder equilibrar coherentemente lo "de arriba con lo de abajo", el cielo con la tierra, el círculo con el cuadrado, lo intangible con lo concreto. Pero no desde la oposición sino desde la experiencia de lo Uno atravesando a lo Otro, siendo la misma cosa, en un mismo proceso indisoluble y eterno.</p>
+
+        <p>Así podemos encontrar ese orden que rebota en las formas y que revivifica la conexión con lo trascendente en varios de sus niveles de realidad al mismo tiempo.</p>
+
+      <p>Tanto los seres como las cosas somos habitados, constituidos y atravesados por algo intangible que permanentemente se nos da. Lo intangible (0) se oculta a sí mismo para precisamente poder Ser (1) y luego se despliega en una suerte de "corrientes de formas" (2,3) que cristalizan en lo concreto (4). Cada cuadro expresa mi experiencia de esa totalidad.</p>
+
+      <p>Digamos que lo invisible se manifiesta gracias a la misma concretud de las formas, de las rocas, del agua, la naturaleza, el ser humano o el cosmos mismo. Y éste es un recorrido cíclico y tiende a completarse y todo lo que puede hacer uno es darse cuenta y compartirlo. Así que te invito a experimentar ese movimiento eterno de la Creación, o por lo menos alguna de sus versiones porque la existencia se instancia y se auto-replica a si misma constantemente.</p>
+
+      <p>Te invito a sentirte tocado por estos artefactos y a descubrir las distintas maneras de relacionarte con lo invisible.</p>
+
+    </Area>
+
+    <Banner variante={2}>
+      <h2>“Y cuando el Todo hubo comenzado a ordenarse... todos los elementos recibieron del Creador sus figuras por la acción de las Ideas y de los Números...”<br>
+        <small>(Platón, Timeo, 360 aC)</small></h2>
+      <Figure caption="0 + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1">
+        <img src="/img/grafico-1.svg" alt="imagen">
+      </Figure>
+    </Banner>
+
+  </ContentArea>
  
   <Banner variante={1}>
-    <h2>“Y cuando el Todo hubo comenzado a ordenarse... todos los elementos recibieron del Creador sus figuras por la acción de las Ideas y de los Números...”<br>
-      <small>(Platón, Timeo, 360 aC)</small></h2>
-    <Figure caption="0 + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1">
-      <img src="/img/grafico-seis.jpg" alt="imagen">
+    <h2>Buscar materializa lo que se busca. El acto de observar convierte la onda en particula. Cuando observas el acto de observar no creas, eres consciencia y testigo de la Creación misma.</h2>
+    <Figure>
+      <img src="/img/img1.jpg" alt="imagen">
     </Figure>
   </Banner>
-
-  <MainFeatures></MainFeatures>
   
 </Content>

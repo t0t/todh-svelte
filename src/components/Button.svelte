@@ -1,5 +1,6 @@
 <script>
     export let text = "Name";
+    export let url = "url";
     export let variante = 0;
     let modificador = [
         "Default",
@@ -20,5 +21,5 @@
 </style>
 
 <button class="{modificador[variante]}">
-    {text}
+    <a href="{url}" target="_blank">{text}</a>
 </button>
