@@ -15,7 +15,7 @@
         background-color: $primary;
         &:hover {
             background-color: $dark_grey;
-            border: none;
+            /* border: none; */
         }
     }
 </style>

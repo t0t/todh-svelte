@@ -44,7 +44,7 @@
       top: 0;
       transition: transform 300ms ease-in-out;
       z-index: 1000;
-      background-color: $site_background;
+      /* background-color: $site_background; */
     }
     .show {
       transform: translateY(0%);

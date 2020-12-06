@@ -14,12 +14,12 @@
 <style lang="scss">
     @import "../styles/main.scss";
     .Main {
-        padding-top: $h5;
+        /* padding-top: $h5; */
         width: 100vw;
         display: block;
-        @include media(s1) {
+        /* @include media(s1) {
             padding-top: $h4;
-        }
+        } */
     }
     main {
         overflow-x: hidden;

@@ -3,7 +3,7 @@
     export let caption = false;
     export const modificadorImg = [
         "Default",
-        "bordered",
+        "bordered"
     ];
 </script>
 <style lang="scss">
@@ -13,6 +13,9 @@
         padding-right: $h1;
         color: $silver;
         @include type-setting(0);
+    }
+    .Default {
+        color: black;
     }
     .bordered :global(img) {
         border: $h0 solid $black;
