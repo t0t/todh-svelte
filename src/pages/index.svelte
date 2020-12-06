@@ -54,7 +54,7 @@
       <Button variante={1} text="Ir al canal" url="https://www.youtube.com/channel/UC9C6HRn2RDG3bmWC4Soxtcw" />
     </div>
 
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/KAbnV6e8exs" frameborder="0"
+    <iframe title="Video sobre TOT" width="100%" height="350" src="https://www.youtube.com/embed/KAbnV6e8exs" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
   </Banner>
