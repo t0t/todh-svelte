@@ -3,7 +3,7 @@
 	import { hslide } from './hslide.js';
 
 	let slides = [
-		{ content: 'Sergio Forés Raga - Arte Holístico', bg: 'img/img20.jpg' },
+		{ content: '+0+1234', bg: 'img/img20.jpg' },
 		{ content: '', bg: 'img/esquema-sintesis3.svg' },
 		{ content: 'Creando desde la Creación', bg: 'img/img3.jpg' }
 	]
@@ -53,7 +53,7 @@
 					in:hslide={transition_args}
 					out:hslide={transition_args}
 				>
-					<small class="caption">{slide.content}</small>		
+					<h1 class="caption">{slide.content}</h1>		
 				</div>
 				{/if}
 			{/each}
@@ -74,17 +74,10 @@
 	</div>
 </div>
 
-
 <style lang="scss">
     @import "../../styles/main.scss";
 	
-	.caption {
-		/* padding: $h1; */
-		/* background-color: $secondary; */
-		color: $tertiary;
-		width: $h7;
-		margin-right: $h4;
-	}
+	/* .caption {} */
 	button {
 		background: transparent;
 		color: #FFF;
@@ -155,8 +148,8 @@
 		flex: 1 0 auto;
 		width: 100%;
 		height: 100%;
-	  align-items: flex-end;
-		justify-content: flex-end;
+	  align-items: center;
+		justify-content: center;
 		display: flex;
 		/* text-align: center; */
 		color: white;

@@ -5,14 +5,34 @@
     export const modificadorImg = [
         "Default",
         "floatedleft",
+        "floatedright"
     ];
 </script>
 <style lang="scss">
     @import "../styles/main.scss";
+    .floatedright {
+        float: none;
+        max-width: 100%;
+        margin-bottom: $h1;
+        border-radius: 50%;
+        
+        @include media(s2) {
+            float: right;
+            margin-left: $h3;
+            max-width: 300px;
+        }
+    }
     .floatedleft {
-        float: left;
-        margin-right: 40px;
-        max-width: 300px;
+        float: none;
+        max-width: 100%;
+        margin-bottom: $h1;
+        border-radius: 50%;
+
+        @include media(s2) {
+            float: left;
+            margin-right: $h3;
+            max-width: 300px;
+        }
     }
 </style>
 

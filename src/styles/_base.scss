@@ -67,7 +67,20 @@ button:hover {
 //   }
 // }
 
-h1, 
+h1 {
+  @include media(s0) {
+    @include type-setting(0);
+    text-align: center;
+  }
+  @include media(s1) {
+    @include type-setting(2);
+    font-weight: 700;
+  }
+  @include media(s2) {
+    @include type-setting(3);
+  }
+} 
+
 h2 {
   @include media(s0) {
     @include type-setting(0);
