@@ -64,8 +64,13 @@
   <ContentArea>
 
     <Area title="Acerca de mi obra">
+    
+    <BlockQuote quote='"Quisiera que tú me entendieras a mí sin palabras.
+    Sin palabras hablarte, lo mismo que se habla mi gente.
+    Que tú me entendieras a mí sin palabras
+    como entiendo yo al mar o a la brisa enredada en un álamo verde..."' author="José Hierro" variante={2} />
 
-    <p><strong>Son cuadros tridimensionales de corte naturalista que invitan a una contemplación desnuda y cruda, sin artificios, con un fuerte componente emocional que uno va descubriendo a medida que alcanza cierta intimidad. Se deja espacio para el descubrimiento sutil de cada detalle a través de una luz viva que revelará u ocultará en función de la posición del espectador y de la perspectiva de su mirada.</strong></p>
+    <p><strong>Lo que hago son <i>creaturas</i> tridimensionales de corte naturalista que invitan a una contemplación desnuda y cruda, sin artificios, con un fuerte componente emocional que uno va descubriendo a medida que alcanza cierta intimidad. Se deja espacio para el descubrimiento sutil de cada detalle a través de una luz viva que revelará u ocultará en función de la posición del espectador y de la perspectiva de su mirada.</strong></p>
 
     <Image src="/img/grafico-1.jpg" variante="1" />
       
@@ -81,16 +86,15 @@
     
     <BlockQuote quote='"Aquel que ha sentido una vez en sus manos temblar la alegría no podrá morir nunca...."' author="José hierro" variante={2} />
 
-    <p>Son mandalas, son fotogramas tridimensionales, son el fruto de la meditación, son secuencias rítmicas, análogas a la propia naturaleza. Son un algo que ocurre y escapa al lenguaje. Y son un algo tan inefable que se dice a sí mismo siendo.</p>
+    <p>Pueden ser mandalas, pueden ser fotogramas tridimensionales, pueden ser el fruto de una meditación, o secuencias rítmicas, análogas a la propia naturaleza, o un algo que ocurre y escapa al lenguaje. Y son un algo tan inefable que se dice a sí mismo simplemente siendo.</p>
     
     <Image src="/img/grafico-diez.jpg" variante="1" />
 
-    <p>Durante el tiempo que dura ese lugar sagrado que es un cuadro podemos encontrar el orden, ese principio solar siempre presente que rebrota de las formas y que vivifica la conexión con lo trascendente.</p>
+    <p>Durante el tiempo que dura ese lugar sagrado que es un cuadro podemos encontrar ese principio solar siempre presente que rebrota de las formas y que vivifica la conexión con lo trascendente.</p>
     
-    <p>Todo desemboca en los 5 elementos que son uno, por eso sólo existe una obra.<p>Lo intangible<sub>0</sub> se oculta a sí mismo para precisamente poder Ser<sub>1</sub> y luego se despliega en una suerte de "corrientes de formas"<sub>2,3</sub> que cristalizan en lo concreto<sub>4</sub>.</p>
-
+    <p>Todo desemboca en los 5 elementos que son uno, por eso sólo existe una obra en la Creación, una obra en perpétuo movimiento; <p>Lo intangible<sub>0</sub> que se oculta a sí mismo para precisamente poder Ser<sub>1</sub> y luego se despliega en una suerte de "corrientes de formas"<sub>2,3</sub> que cristalizan en lo concreto<sub>4</sub>.</p>
     
-    <p>Mis obras son invitaciones a experimentar ese movimiento eterno de la Creación. Te invito, pues, a sentirte tocado por ellas y a descubrir ese misterio que gritan desde la poesía de su materia.</p>
+    <p>Mis obras son una invitacion a experimentar ese movimiento eterno que me anima. Te invito, pues, a sentirte también tocado por ellas y a descubrir aquel misterio que gritan abiertamente desde la poesía de su materia.</p>
 
     </Area>
 
