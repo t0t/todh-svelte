@@ -97,9 +97,9 @@
   <div class="Bio">
     <p>
       <strong>Sergio Forés</strong>
-      es Artista Plástico, Diseñador Gráfico y Desarrollador Frontend/UID. Eterno aprendiz de las denominadas Ciencias Sagradas y apasionado del pensamiento simbólico y la filosofía perenne. Desde 2019, además, modela y realiza impresiones 3D en gran formato y propone una suerte de experiencias sincréticas y holísticas de la Creación desde su proyecto TODH (+0+, tot, thot, 01234)
+      se formó en Artes Aplicadas y más tarde cursó Arte Electrónico y Diseño Digital. Ha ejercido desde 1999 como Diseñador gráfico, web y editorial, desde 2014 también como Maquetador Frontend y diseñador de Interfaces. En 2020 adopta la impresión 3D y se recocilia con el Arte abordándolo como vía de autoconocimiento y crecimiento personal. Se desarrolla en él una especie de "sincretismo perceptivo" que denomina TOT-01234 desde el cual experimenta una serie de experiencias sincréticas y holísticas de lo que la Creación, como tal, significa.
+      <small>Más información en las siguientes redes sociales:</small>
     </p>
-    <small>Más información en las siguientes redes sociales:</small>
   </div>
 
   <ul class="Links">

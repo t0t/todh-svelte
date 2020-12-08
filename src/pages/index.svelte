@@ -52,7 +52,7 @@
   <Banner variante={2}>
     <div>
       <h2>Video-vaciamientos</h2>
-      <p>Poco a poco voy nutriendo mi propio canal en Youtube, te invito a pasarte por allí y escuchar la información que voy volcando, reflexiones sobre TOT, TODH, la Función Toth, +0+1234</p>
+      <p>Poco a poco voy nutriendo mi canal en Youtube, te invito a pasarte por allí y ver la información que voy volcando, reflexiones sobre TOT, la Función Toth, +0+1234, etc.</p>
       <Button variante={1} text="Ir al canal" url="https://www.youtube.com/channel/UC9C6HRn2RDG3bmWC4Soxtcw" />
     </div>
 
@@ -63,37 +63,34 @@
 
   <ContentArea>
 
-    <Area title="Notas sobre mi obra">
+    <Area title="Acerca de mi obra">
 
-    <p><strong>En su vertiente conceptual podríamos decir que las cosas que hago pueden ser comprendidas racionalmente desde una perspectiva metafísica, simbólica, pitagórica, aritmosófica, cosmogónica o alquímica. </strong></p>
-
-    <p>...pero son eminentemente vivenciales, así que me gustaría empezar explicando que estas cosas son artefactos cuya geometrías son concebidas y modeladas desde lo virtual; construyo una serie de mallas o estructuras poliédricas sobre las que aplico una serie de fuerzas y vibraciones que interactúan entre sí. La obra nace en mi cabeza y en el ordenador y luego es plasmada con una impresora 3D de gran formato. Después es cuando las pinto, entran en una fase de postproducción o acabados en los que aplico diferentes materiales como arenas, resinas, óxidos, etc. </p>
+    <p><strong>Son cuadros tridimensionales de corte naturalista que invitan a una contemplación desnuda y cruda, sin artificios, con un fuerte componente emocional que uno va descubriendo a medida que alcanza cierta intimidad. Se deja espacio para el descubrimiento sutil de cada detalle a través de una luz viva que revelará u ocultará en función de la posición del espectador y de la perspectiva de su mirada.</strong></p>
 
     <Image src="/img/grafico-1.jpg" variante="1" />
-
-    <p>Son cuadros tridimensionales de corte naturalista que invitan a una contemplación desnuda y cruda, sin artificios, con una fuerte componente emocional que uno va descubriendo ya que permiten una mirada más íntima a medida que uno va penetrando. Se deja espacio a un nuevo descubrimiento sutil en cada detalle, en los reflejos que emanan, en el modo en que incide la luz, en las resonancias cognitivas que evocan... Hay una búsqueda de un preciosismo delicado y a la vez contundente, una contención introspectiva que es a corazón descubierto, donde se puede dilucidar una emocionalidad que no busca ser más de lo que Es.</p>
+      
+    <p>Es el observador quien genera aquello que encuentra, y a veces se produce un diálogo que puede ser tan mudo como ensordecedor, tan preciosista como contundente y que evoca desde una resonancia cognitiva los sabores más secretos. Estas piezas son pura contención introspectiva que busca expresar o dilucidar a corazón descubierto la verdad.</p>
     
-    <BlockQuote quote='"Eres un universo de universos y tu alma una fuente de canciones."' author="Rubén Darío" variante={2} />
+    <BlockQuote quote='"Eres un universo de universos y tu alma una fuente de canciones..."' author="Rubén Darío" variante={2} />
 
-    <p>Afloran a la superficie texturas sutiles, moduladas con delicada aspereza. La arena, reina, con su indiscutible plasticidad, la tierra que el cuadro es y se comporta como el agua y como el aire. Con gestos sencillos permite construir algo elaborado, desde una continuidad vibracional que irradia equilibrio. Las ondas reconcilian el movimiento con la quietud y congelan las ideas y las emociones en forma de simbolos que podemos tocar con el alma.</p>
-
+    <p>A medida que uno entra en la obra afloran a la superficie texturas sutiles que se modulan con delicada aspereza. La arena, reinando con su indiscutible plasticidad, coagula el agua y con gestos sencillos va plasmando una homogénea continuidad vibracional. Las ondas reconcilian el movimiento con la quietud y acaso congelan las ideas en forma de símbolos tan frescos como eternos, simbolos cristalizados que podemos tocar como una impronta que deja el alma.</p>
+    
     <Image src="/img/grafico-2.jpg" variante="2" />
 
-    <p>Asomarme a la geometría pitagórica, el relato mitológico o herramientas como la kabbalah, o la astrología, por ejemplo, me sirve en lo personal para corroborar una y otra vez que la naturaleza de la existencia y su despliegue no son casuales sino que siguen una serie de patrones arquetípicos, un orden matricial que es universal. Digamos que ese orden es el marco conceptual desde el que yo opero y del que no me interesa alejarme. Persigo una suerte de sincretismo holistico del conocimiento más secreto y velado, como algo que me disuelve y me destila constantemente, subterráneamente. Digamos que aprender y estudiar me sirve para tener herramientas de síntesis que me vacíen, me liberen y me enfoquen en lo que es esencial para mí.</p>
+    <p>Mi arte pretende topografíar el patrón arquetípico de la tretractys pitagórica que se repite en la esencia de todas las cosas, revelando lo metafisico desde lo cosmológico.</p>
+    
+    <BlockQuote quote='"Aquel que ha sentido una vez en sus manos temblar la alegría no podrá morir nunca...."' author="José hierro" variante={2} />
 
-    <p>Es vital en el proceso creativo poder equilibrar coherentemente lo "de arriba con lo de abajo", el cielo con la tierra, el círculo con el cuadrado, lo intangible con lo concreto. Pero no desde la oposición sino desde la experiencia de lo Uno atravesando a lo Otro, siendo la misma cosa, en un mismo proceso indisoluble y eterno.</p>
+    <p>Son mandalas, son fotogramas tridimensionales, son el fruto de la meditación, son secuencias rítmicas, análogas a la propia naturaleza. Son un algo que ocurre y escapa al lenguaje. Y son un algo tan inefable que se dice a sí mismo siendo.</p>
+    
+    <Image src="/img/grafico-diez.jpg" variante="1" />
 
+    <p>Durante el tiempo que dura ese lugar sagrado que es un cuadro podemos encontrar el orden, ese principio solar siempre presente que rebrota de las formas y que vivifica la conexión con lo trascendente.</p>
+    
+    <p>Todo desemboca en los 5 elementos que son uno, por eso sólo existe una obra.<p>Lo intangible<sub>0</sub> se oculta a sí mismo para precisamente poder Ser<sub>1</sub> y luego se despliega en una suerte de "corrientes de formas"<sub>2,3</sub> que cristalizan en lo concreto<sub>4</sub>.</p>
 
-    <p>Así podemos encontrar ese orden que rebota en las formas y que revivifica la conexión con lo trascendente en varios de sus niveles de realidad al mismo tiempo.</p>
-
-    <p>Tanto los seres como las cosas somos habitados, constituidos y atravesados por algo intangible que permanentemente se nos da. Lo intangible (0) se oculta a sí mismo para precisamente poder Ser (1) y luego se despliega en una suerte de "corrientes de formas" (2,3) que cristalizan en lo concreto (4). Cada cuadro expresa mi experiencia de esa totalidad.</p>
-
-      <Image src="/img/grafico-diez.jpg" variante="1" />
-
-
-    <p>Digamos que lo invisible se manifiesta gracias a la misma concretud de las formas, de las rocas, del agua, la naturaleza, el ser humano o el cosmos mismo. Y éste es un recorrido cíclico y tiende a completarse y todo lo que puede hacer uno es darse cuenta y compartirlo. Así que te invito a experimentar ese movimiento eterno de la Creación, o por lo menos alguna de sus versiones porque la existencia se instancia y se auto-replica a si misma constantemente.</p>
-
-    <p>Te invito a sentirte tocado por estos artefactos y a descubrir las distintas maneras de relacionarte con lo invisible.</p>
+    
+    <p>Mis obras son invitaciones a experimentar ese movimiento eterno de la Creación. Te invito, pues, a sentirte tocado por ellas y a descubrir ese misterio que gritan desde la poesía de su materia.</p>
 
     </Area>
 
@@ -106,7 +103,7 @@
     </Banner>
 
   </ContentArea>
+  
   <MainFeatures></MainFeatures>
-
 
 </Content>

@@ -92,7 +92,7 @@ let code_javascript =
             <figure class="MainFeature">
                 <img src="img/grafico-nueve.jpg" alt="">
                 <figcaption class="MainFeature__caption">
-                    <p>Toda finitud surge de un autovaciamiento del infinito, la letra surge de "vaciar la materia" y la visión surge de un espacio vacío comunicante revelador de haces de luz... El secreto es secreto precisamente por lo evidente que es.</p>
+                    <p>Las cosas que hago son artefactos cuyas geometrías son concebidas y modeladas desde un plano virtual; construyo una serie de mallas o estructuras poliédricas sobre las que aplico una serie de fuerzas y vibraciones que interactúan entre sí.</p>
                 </figcaption>
             </figure>
         </a>
@@ -110,7 +110,7 @@ let code_javascript =
         <figure class="MainFeature">
             <img src="img/grafico-ocho.jpg" alt="">
             <figcaption class="MainFeature__caption">
-                <p>Experimento con impresión 3D en gran formato y postproducción con resinas, arenas y óxidos.</p>
+                <p>La obra nace en mi cabeza y en el ordenador, y luego es manifestada en la materia con una impresora 3D de gran formato. Finalmente entran en una fase de postproducción o acabados finales en los que aplico diferentes materiales como arenas, resinas, óxidos, etc.</p>
             </figcaption>
         </figure>
     </div>
