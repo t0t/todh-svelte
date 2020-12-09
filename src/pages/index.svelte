@@ -26,8 +26,9 @@
 <style lang="scss">
   @import "../styles/main.scss";
   sub {
-    color:maroon;
+    color:springgreen;
     font-size: .5em;
+    line-height: initial;
   }
   :global(body) {
     background-color: $dark_grey;
@@ -43,7 +44,7 @@
   <Slider></Slider>
 
   <Banner variante={1}>
-    <Figure>
+    <Figure variante={1}>
       <img src="/img/grafico-3.jpg" alt="imagen">
     </Figure>
     <h2>¿Percibes<sub>2</sub> ese orden<sub>1</sub> atravesándote<sub>0</sub> en la forma<sub>4</sub> del encuentro<sub>3</sub>? Es lo inefable conociéndose a través de la Creación. 01234 son las llaves de tus ojos. Éstas son las cosas que yo he visto, a donde me llevan las corrientes de todas las formas...</h2>
@@ -70,7 +71,7 @@
     Que tú me entendieras a mí sin palabras
     como entiendo yo al mar o a la brisa enredada en un álamo verde..."' author="José Hierro" variante={2} />
 
-    <p><strong>Lo que hago son <i>creaturas</i> tridimensionales de corte naturalista que invitan a una contemplación desnuda y cruda, sin artificios, con un fuerte componente emocional que uno va descubriendo a medida que alcanza cierta intimidad. Se deja espacio para el descubrimiento sutil de cada detalle a través de una luz viva que revelará u ocultará en función de la posición del espectador y de la perspectiva de su mirada.</strong></p>
+    <p>Lo que hago son <i>creaturas</i> tridimensionales de corte naturalista que invitan a una contemplación desnuda y cruda, sin artificios, con un fuerte componente emocional que uno va descubriendo a medida que alcanza cierta intimidad. Se deja espacio para el descubrimiento sutil de cada detalle a través de una luz viva que revelará u ocultará en función de la posición del espectador y de la perspectiva de su mirada.</p>
 
     <Image src="/img/grafico-1.jpg" variante="1" />
       

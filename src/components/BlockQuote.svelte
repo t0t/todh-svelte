@@ -14,11 +14,12 @@
     @import "../styles/main.scss";
     .Grey {
         color: $silver;
-        /* font-weight: normal; */
     }
-    .Basic {
-        color: red;
+    .Invert {
+        color: rosybrown;
+        font-weight: inherit;
     }
+
 </style>
 
 <blockquote class="Quote {modificador[variante]}">

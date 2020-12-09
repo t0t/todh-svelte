@@ -27,9 +27,12 @@
         }
     }
     .BannerBlack {
-        background-color: $tertiary;
+        background-color: #363636;
         blockquote {
             color: $primary;
+        }
+        :global(h2) {
+            color: $silver;
         }
     }
     .BannerAlert {

@@ -53,8 +53,8 @@ let code_javascript =
             ;
         }
 
-        >div {
-            background-color: $color_3;
+        > div {
+            /* background-color: $color_2; */
             
             @include media(s0) {
                 margin-bottom: $h1;
@@ -80,9 +80,18 @@ let code_javascript =
         }
     }
     .MainFeature__caption {
+        color: rosybrown;
+        font-weight: 100;
         padding-left: $h2;
         padding-right: $h2;
         padding-bottom: $h2;
+        border-bottom: 1px solid $grey;
+        border-right: 1px solid $grey;
+        border-left: 1px solid $grey;
+        small {
+            font-style: normal;
+            font-weight: 800;
+        }
     }
 </style>
   
@@ -102,7 +111,7 @@ let code_javascript =
             <img src="img/grafico-siete.jpg" alt="">
             <figcaption class="MainFeature__caption">
                 <p>Showroom en Mediona, Barcelona. Encantado de recibirte si te apetece visitar mi estudio y ver las piezas al natural.</p>
-                <small>M. 619549032</small>
+                <p>WhatsApp <small>619 549 032</small></p>
             </figcaption>
         </figure>
     </div>

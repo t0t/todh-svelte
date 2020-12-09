@@ -121,7 +121,7 @@
 
 	.outer-wrapper {
 		width: 100%;
-		padding: 0 0 46.25%;
+		padding: 0 0 50.25%;
 		position: relative;
 	}
 	
@@ -130,6 +130,7 @@
 		width: 100%;
 		display: flex;
 		position: absolute;
+		padding: $h2;
 	}
 
 	.controls button:first-child {
@@ -153,6 +154,8 @@
 		display: flex;
 		/* text-align: center; */
 		color: white;
+		border-radius: 50%;
+		mix-blend-mode: luminosity;
 	}
 	
 	.controls {

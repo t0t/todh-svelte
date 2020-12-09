@@ -10,6 +10,8 @@
         padding-right: $h1;
         padding-bottom: $h1;
         padding-left: $h1;
+        color: $silver;
+        font-weight: 400;
 
         @include media(s1) {
             padding-top: $h2;

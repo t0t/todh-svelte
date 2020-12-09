@@ -1,8 +1,9 @@
 <script>
-    export let img = 0;
+    export let variante = 0;
     export let caption = false;
     export const modificadorImg = [
         "Default",
+        "rounded",
         "bordered"
     ];
 </script>
@@ -14,15 +15,19 @@
         color: $silver;
         @include type-setting(0);
     }
-    .Default {
-        color: black;
+    /* .Default :global(img) {} */
+    .rounded :global(img) {
+        border-radius: 50%;
+        border-color: $primary;
+        border-width: $h3;
+        border-style: solid;
     }
     .bordered :global(img) {
         border: $h0 solid $black;
     }
 </style>
 
-<figure class="{modificadorImg[img]}">
+<figure class="{modificadorImg[variante]}">
     <slot/>
     {#if caption}
     <figcaption>{caption}</figcaption>

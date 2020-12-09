@@ -6,7 +6,6 @@
     background-color: darken($silver,8%);
     p {
       max-width: $h8;
-      font-style: italic;
       margin-bottom: 0;
     }
     ul {
@@ -34,6 +33,7 @@
   .Bio {
     grid-area: b;
     max-width: $h9;
+    font-weight: 400;
   }
 
   .Avatar {
@@ -97,7 +97,7 @@
   <div class="Bio">
     <p>
       <strong>Sergio Forés</strong>
-      se formó en Artes Aplicadas y más tarde cursó Arte Electrónico y Diseño Digital. Ha ejercido desde 1999 como Diseñador gráfico, web y editorial, desde 2014 también como Maquetador Frontend y diseñador de Interfaces. En 2020 adopta la impresión 3D y se recocilia con el Arte abordándolo como vía de autoconocimiento y crecimiento personal. Se desarrolla en él una especie de "sincretismo perceptivo" que denomina TOT-01234 desde el cual experimenta una serie de experiencias sincréticas y holísticas de lo que la Creación, como tal, significa.
+      se formó en Artes Aplicadas y más tarde cursó Arte Electrónico y Diseño Digital. Ha ejercido desde 1999 como Diseñador gráfico, web y editorial, desde 2014 también como Maquetador Frontend y diseñador de Interfaces. En 2020 adopta la impresión 3D y dedica cada vez más energía al Arte abordándolo como vía para el autoconocimiento. Se desarrolla en él una especie de "sincretismo perceptivo" que denomina TOT-01234 desde el cual experimenta una serie de experiencias sincréticas y holísticas de lo que la Creación, como tal, significa.<br><br>
       <small>Más información en las siguientes redes sociales:</small>
     </p>
   </div>
