@@ -81,10 +81,11 @@
     <div class="mask"></div>
     <video 
       poster="/img/cover2.jpg"
-      src="/img/desdelapoesiadelamateria.webm" 
       playsinline
-      controls
+      controls="controls"
     >
+      <source src="/img/desdelapoesiadelamateria.webm" type="video/webm" />
+      <source src="/img/desdelapoesiadelamateria.mp4" type="video/mp4" />
       <p>Su navegador no soporta vídeos HTML5.</p>
     </video>
   </div>
