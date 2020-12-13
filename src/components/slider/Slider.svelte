@@ -3,7 +3,7 @@
 	import { hslide } from './hslide.js';
 
 	let slides = [
-		{ content: '+0+1234', bg: 'img/img20.jpg' },
+		{ content: '+0+1234', bg: 'img/cover2.jpg' },
 		{ content: '', bg: 'img/esquema-sintesis3.svg' },
 		{ content: 'Creando desde la Creación', bg: 'img/img3.jpg' }
 	]
@@ -130,7 +130,7 @@
 		width: 100%;
 		display: flex;
 		position: absolute;
-		padding: $h2;
+		/* padding: $h2; */
 	}
 
 	.controls button:first-child {
@@ -149,13 +149,12 @@
 		flex: 1 0 auto;
 		width: 100%;
 		height: 100%;
-	  align-items: center;
+	   	align-items: center;
 		justify-content: center;
 		display: flex;
-		/* text-align: center; */
-		color: white;
-		border-radius: 50%;
-		mix-blend-mode: luminosity;
+		/* color: $white; */
+		/* border-radius: 50%; */
+		/* mix-blend-mode: luminosity; */
 	}
 	
 	.controls {

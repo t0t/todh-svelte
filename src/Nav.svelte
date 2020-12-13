@@ -104,9 +104,9 @@
     {/each}
   </ul> -->
     
-  <div class="NavBar__center">
+  <!-- <div class="NavBar__center">
     <SiteBrand/>
-  </div>
+  </div> -->
 
   <!-- <ul>
     <li>Discernir Observar Hacer Transmitir</li>
